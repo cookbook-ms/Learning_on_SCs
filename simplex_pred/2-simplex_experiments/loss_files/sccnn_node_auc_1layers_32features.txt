@@ -1,0 +1,10 @@
+1layers_2orders_32features_1rlz:  0.981034
+1layers_2orders_32features_2rlz:  0.974934
+1layers_2orders_32features_3rlz:  0.991845
+1layers_2orders_32features_4rlz:  0.980452
+1layers_2orders_32features_5rlz:  0.987068
+1layers_2orders_32features_6rlz:  0.981344
+1layers_2orders_32features_7rlz:  0.987706
+1layers_2orders_32features_8rlz:  0.979326
+1layers_2orders_32features_9rlz:  0.986402
+1layers_2orders_32features_10rlz:  0.994313

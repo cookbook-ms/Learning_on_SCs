@@ -1,0 +1,4228 @@
+epoch 0, loss: 0.692559
+model updated at epoch 0 
+epoch 0, 
+ train loss: 0.692559, val loss: 0.689142 
+ val auc: 0.502515,  test auc: 0.499653
+epoch 1, loss: 0.689246
+model updated at epoch 1 
+epoch 1, 
+ train loss: 0.689246, val loss: 0.686169 
+ val auc: 0.514565,  test auc: 0.509844
+epoch 2, loss: 0.686896
+model updated at epoch 2 
+epoch 2, 
+ train loss: 0.686896, val loss: 0.684265 
+ val auc: 0.529129,  test auc: 0.524991
+epoch 3, loss: 0.685122
+model updated at epoch 3 
+epoch 3, 
+ train loss: 0.685122, val loss: 0.682868 
+ val auc: 0.535773,  test auc: 0.535464
+epoch 4, loss: 0.683670
+model updated at epoch 4 
+epoch 4, 
+ train loss: 0.683670, val loss: 0.681662 
+ val auc: 0.542155,  test auc: 0.545252
+epoch 5, loss: 0.682341
+model updated at epoch 5 
+epoch 5, 
+ train loss: 0.682341, val loss: 0.680448 
+ val auc: 0.552703,  test auc: 0.554336
+epoch 6, loss: 0.681105
+model updated at epoch 6 
+epoch 6, 
+ train loss: 0.681105, val loss: 0.679246 
+ val auc: 0.562800,  test auc: 0.563335
+epoch 7, loss: 0.679923
+model updated at epoch 7 
+epoch 7, 
+ train loss: 0.679923, val loss: 0.678159 
+ val auc: 0.577665,  test auc: 0.573883
+epoch 8, loss: 0.678827
+model updated at epoch 8 
+epoch 8, 
+ train loss: 0.678827, val loss: 0.677162 
+ val auc: 0.587575,  test auc: 0.582329
+epoch 9, loss: 0.677775
+model updated at epoch 9 
+epoch 9, 
+ train loss: 0.677775, val loss: 0.676215 
+ val auc: 0.593131,  test auc: 0.588429
+epoch 10, loss: 0.676848
+model updated at epoch 10 
+epoch 10, 
+ train loss: 0.676848, val loss: 0.675386 
+ val auc: 0.596847,  test auc: 0.591582
+epoch 11, loss: 0.675961
+model updated at epoch 11 
+epoch 11, 
+ train loss: 0.675961, val loss: 0.674639 
+ val auc: 0.599812,  test auc: 0.594707
+epoch 12, loss: 0.675038
+model updated at epoch 12 
+epoch 12, 
+ train loss: 0.675038, val loss: 0.673881 
+ val auc: 0.603641,  test auc: 0.598189
+epoch 13, loss: 0.674035
+model updated at epoch 13 
+epoch 13, 
+ train loss: 0.674035, val loss: 0.673035 
+ val auc: 0.608483,  test auc: 0.602477
+epoch 14, loss: 0.673012
+model updated at epoch 14 
+epoch 14, 
+ train loss: 0.673012, val loss: 0.672193 
+ val auc: 0.613176,  test auc: 0.605790
+epoch 15, loss: 0.671951
+model updated at epoch 15 
+epoch 15, 
+ train loss: 0.671951, val loss: 0.671340 
+ val auc: 0.616404,  test auc: 0.608709
+epoch 16, loss: 0.670810
+model updated at epoch 16 
+epoch 16, 
+ train loss: 0.670810, val loss: 0.670411 
+ val auc: 0.619520,  test auc: 0.611890
+epoch 17, loss: 0.669601
+model updated at epoch 17 
+epoch 17, 
+ train loss: 0.669601, val loss: 0.669435 
+ val auc: 0.622185,  test auc: 0.615794
+epoch 18, loss: 0.668326
+model updated at epoch 18 
+epoch 18, 
+ train loss: 0.668326, val loss: 0.668343 
+ val auc: 0.626051,  test auc: 0.619867
+epoch 19, loss: 0.666982
+model updated at epoch 19 
+epoch 19, 
+ train loss: 0.666982, val loss: 0.667150 
+ val auc: 0.629955,  test auc: 0.624906
+epoch 20, loss: 0.665565
+model updated at epoch 20 
+epoch 20, 
+ train loss: 0.665565, val loss: 0.665872 
+ val auc: 0.634835,  test auc: 0.630358
+epoch 21, loss: 0.664062
+model updated at epoch 21 
+epoch 21, 
+ train loss: 0.664062, val loss: 0.664486 
+ val auc: 0.639715,  test auc: 0.635886
+epoch 22, loss: 0.662478
+model updated at epoch 22 
+epoch 22, 
+ train loss: 0.662478, val loss: 0.662972 
+ val auc: 0.645345,  test auc: 0.642061
+epoch 23, loss: 0.660854
+model updated at epoch 23 
+epoch 23, 
+ train loss: 0.660854, val loss: 0.661382 
+ val auc: 0.650075,  test auc: 0.646959
+epoch 24, loss: 0.659211
+model updated at epoch 24 
+epoch 24, 
+ train loss: 0.659211, val loss: 0.659806 
+ val auc: 0.655781,  test auc: 0.652158
+epoch 25, loss: 0.657534
+model updated at epoch 25 
+epoch 25, 
+ train loss: 0.657534, val loss: 0.658291 
+ val auc: 0.660623,  test auc: 0.657020
+epoch 26, loss: 0.655771
+model updated at epoch 26 
+epoch 26, 
+ train loss: 0.655771, val loss: 0.656757 
+ val auc: 0.665878,  test auc: 0.661458
+epoch 27, loss: 0.653924
+model updated at epoch 27 
+epoch 27, 
+ train loss: 0.653924, val loss: 0.655132 
+ val auc: 0.670383,  test auc: 0.666263
+epoch 28, loss: 0.652014
+model updated at epoch 28 
+epoch 28, 
+ train loss: 0.652014, val loss: 0.653556 
+ val auc: 0.674662,  test auc: 0.670392
+epoch 29, loss: 0.649972
+model updated at epoch 29 
+epoch 29, 
+ train loss: 0.649972, val loss: 0.651949 
+ val auc: 0.678303,  test auc: 0.674568
+epoch 30, loss: 0.647871
+model updated at epoch 30 
+epoch 30, 
+ train loss: 0.647871, val loss: 0.650284 
+ val auc: 0.682245,  test auc: 0.678238
+epoch 31, loss: 0.645648
+model updated at epoch 31 
+epoch 31, 
+ train loss: 0.645648, val loss: 0.648482 
+ val auc: 0.686787,  test auc: 0.682695
+epoch 32, loss: 0.643309
+model updated at epoch 32 
+epoch 32, 
+ train loss: 0.643309, val loss: 0.646527 
+ val auc: 0.690653,  test auc: 0.687500
+epoch 33, loss: 0.640845
+model updated at epoch 33 
+epoch 33, 
+ train loss: 0.640845, val loss: 0.644427 
+ val auc: 0.695608,  test auc: 0.692483
+epoch 34, loss: 0.638346
+model updated at epoch 34 
+epoch 34, 
+ train loss: 0.638346, val loss: 0.642353 
+ val auc: 0.699962,  test auc: 0.697297
+epoch 35, loss: 0.635791
+model updated at epoch 35 
+epoch 35, 
+ train loss: 0.635791, val loss: 0.640199 
+ val auc: 0.704392,  test auc: 0.702046
+epoch 36, loss: 0.633170
+model updated at epoch 36 
+epoch 36, 
+ train loss: 0.633170, val loss: 0.638003 
+ val auc: 0.708971,  test auc: 0.706410
+epoch 37, loss: 0.630643
+model updated at epoch 37 
+epoch 37, 
+ train loss: 0.630643, val loss: 0.635867 
+ val auc: 0.712087,  test auc: 0.709994
+epoch 38, loss: 0.628042
+model updated at epoch 38 
+epoch 38, 
+ train loss: 0.628042, val loss: 0.633662 
+ val auc: 0.716254,  test auc: 0.713767
+epoch 39, loss: 0.625322
+model updated at epoch 39 
+epoch 39, 
+ train loss: 0.625322, val loss: 0.631204 
+ val auc: 0.721171,  test auc: 0.718065
+epoch 40, loss: 0.622616
+model updated at epoch 40 
+epoch 40, 
+ train loss: 0.622616, val loss: 0.628500 
+ val auc: 0.725976,  test auc: 0.723057
+epoch 41, loss: 0.619888
+model updated at epoch 41 
+epoch 41, 
+ train loss: 0.619888, val loss: 0.625752 
+ val auc: 0.729880,  test auc: 0.728022
+epoch 42, loss: 0.617163
+model updated at epoch 42 
+epoch 42, 
+ train loss: 0.617163, val loss: 0.623040 
+ val auc: 0.733784,  test auc: 0.732423
+epoch 43, loss: 0.614422
+model updated at epoch 43 
+epoch 43, 
+ train loss: 0.614422, val loss: 0.620486 
+ val auc: 0.736562,  test auc: 0.736130
+epoch 44, loss: 0.611606
+model updated at epoch 44 
+epoch 44, 
+ train loss: 0.611606, val loss: 0.617919 
+ val auc: 0.739039,  test auc: 0.739790
+epoch 45, loss: 0.608709
+model updated at epoch 45 
+epoch 45, 
+ train loss: 0.608709, val loss: 0.615237 
+ val auc: 0.741216,  test auc: 0.743647
+epoch 46, loss: 0.605765
+model updated at epoch 46 
+epoch 46, 
+ train loss: 0.605765, val loss: 0.612506 
+ val auc: 0.744107,  test auc: 0.747926
+epoch 47, loss: 0.602749
+model updated at epoch 47 
+epoch 47, 
+ train loss: 0.602749, val loss: 0.609745 
+ val auc: 0.747523,  test auc: 0.752008
+epoch 48, loss: 0.599678
+model updated at epoch 48 
+epoch 48, 
+ train loss: 0.599678, val loss: 0.606919 
+ val auc: 0.751989,  test auc: 0.757179
+epoch 49, loss: 0.596545
+model updated at epoch 49 
+epoch 49, 
+ train loss: 0.596545, val loss: 0.603793 
+ val auc: 0.756869,  test auc: 0.762997
+epoch 50, loss: 0.593291
+model updated at epoch 50 
+epoch 50, 
+ train loss: 0.593291, val loss: 0.600510 
+ val auc: 0.761411,  test auc: 0.768318
+epoch 51, loss: 0.589974
+model updated at epoch 51 
+epoch 51, 
+ train loss: 0.589974, val loss: 0.597357 
+ val auc: 0.764977,  test auc: 0.772260
+epoch 52, loss: 0.586510
+model updated at epoch 52 
+epoch 52, 
+ train loss: 0.586510, val loss: 0.594422 
+ val auc: 0.768093,  test auc: 0.775422
+epoch 53, loss: 0.582882
+model updated at epoch 53 
+epoch 53, 
+ train loss: 0.582882, val loss: 0.591186 
+ val auc: 0.771697,  test auc: 0.779176
+epoch 54, loss: 0.579198
+model updated at epoch 54 
+epoch 54, 
+ train loss: 0.579198, val loss: 0.587524 
+ val auc: 0.775826,  test auc: 0.783352
+epoch 55, loss: 0.575401
+model updated at epoch 55 
+epoch 55, 
+ train loss: 0.575401, val loss: 0.584414 
+ val auc: 0.779505,  test auc: 0.789114
+epoch 56, loss: 0.571519
+model updated at epoch 56 
+epoch 56, 
+ train loss: 0.571519, val loss: 0.581470 
+ val auc: 0.784497,  test auc: 0.794914
+epoch 57, loss: 0.567380
+model updated at epoch 57 
+epoch 57, 
+ train loss: 0.567380, val loss: 0.577409 
+ val auc: 0.787913,  test auc: 0.799578
+epoch 58, loss: 0.563153
+model updated at epoch 58 
+epoch 58, 
+ train loss: 0.563153, val loss: 0.572869 
+ val auc: 0.792868,  test auc: 0.804326
+epoch 59, loss: 0.558734
+model updated at epoch 59 
+epoch 59, 
+ train loss: 0.558734, val loss: 0.569172 
+ val auc: 0.796246,  test auc: 0.808643
+epoch 60, loss: 0.554283
+model updated at epoch 60 
+epoch 60, 
+ train loss: 0.554283, val loss: 0.565478 
+ val auc: 0.800188,  test auc: 0.813392
+epoch 61, loss: 0.549679
+model updated at epoch 61 
+epoch 61, 
+ train loss: 0.549679, val loss: 0.560547 
+ val auc: 0.805593,  test auc: 0.818131
+epoch 62, loss: 0.544869
+model updated at epoch 62 
+epoch 62, 
+ train loss: 0.544869, val loss: 0.555792 
+ val auc: 0.809797,  test auc: 0.823011
+epoch 63, loss: 0.539997
+model updated at epoch 63 
+epoch 63, 
+ train loss: 0.539997, val loss: 0.551697 
+ val auc: 0.813438,  test auc: 0.827815
+epoch 64, loss: 0.535075
+model updated at epoch 64 
+epoch 64, 
+ train loss: 0.535075, val loss: 0.546975 
+ val auc: 0.817230,  test auc: 0.831907
+epoch 65, loss: 0.530076
+model updated at epoch 65 
+epoch 65, 
+ train loss: 0.530076, val loss: 0.541390 
+ val auc: 0.821847,  test auc: 0.836674
+epoch 66, loss: 0.524975
+model updated at epoch 66 
+epoch 66, 
+ train loss: 0.524975, val loss: 0.536984 
+ val auc: 0.824437,  test auc: 0.840531
+epoch 67, loss: 0.519746
+model updated at epoch 67 
+epoch 67, 
+ train loss: 0.519746, val loss: 0.532942 
+ val auc: 0.827665,  test auc: 0.844107
+epoch 68, loss: 0.514265
+model updated at epoch 68 
+epoch 68, 
+ train loss: 0.514265, val loss: 0.526989 
+ val auc: 0.832620,  test auc: 0.848667
+epoch 69, loss: 0.508655
+model updated at epoch 69 
+epoch 69, 
+ train loss: 0.508655, val loss: 0.521090 
+ val auc: 0.837162,  test auc: 0.852956
+epoch 70, loss: 0.503092
+model updated at epoch 70 
+epoch 70, 
+ train loss: 0.503092, val loss: 0.516422 
+ val auc: 0.840278,  test auc: 0.855781
+epoch 71, loss: 0.497432
+model updated at epoch 71 
+epoch 71, 
+ train loss: 0.497432, val loss: 0.510820 
+ val auc: 0.845721,  test auc: 0.860041
+epoch 72, loss: 0.491646
+model updated at epoch 72 
+epoch 72, 
+ train loss: 0.491646, val loss: 0.506471 
+ val auc: 0.848273,  test auc: 0.862819
+epoch 73, loss: 0.485680
+model updated at epoch 73 
+epoch 73, 
+ train loss: 0.485680, val loss: 0.500360 
+ val auc: 0.853341,  test auc: 0.866629
+epoch 74, loss: 0.479687
+model updated at epoch 74 
+epoch 74, 
+ train loss: 0.479687, val loss: 0.494962 
+ val auc: 0.856569,  test auc: 0.870223
+epoch 75, loss: 0.473581
+model updated at epoch 75 
+epoch 75, 
+ train loss: 0.473581, val loss: 0.489653 
+ val auc: 0.860473,  test auc: 0.873714
+epoch 76, loss: 0.467309
+model updated at epoch 76 
+epoch 76, 
+ train loss: 0.467309, val loss: 0.483590 
+ val auc: 0.864264,  test auc: 0.877158
+epoch 77, loss: 0.460933
+model updated at epoch 77 
+epoch 77, 
+ train loss: 0.460933, val loss: 0.478491 
+ val auc: 0.866254,  test auc: 0.879608
+epoch 78, loss: 0.454618
+model updated at epoch 78 
+epoch 78, 
+ train loss: 0.454618, val loss: 0.471180 
+ val auc: 0.873536,  test auc: 0.884253
+epoch 79, loss: 0.448710
+epoch 79, 
+ train loss: 0.448710, val loss: 0.471715 
+ val auc: 0.867605,  test auc: 0.883014
+epoch 80, loss: 0.442598
+model updated at epoch 80 
+epoch 80, 
+ train loss: 0.442598, val loss: 0.458428 
+ val auc: 0.884722,  test auc: 0.892145
+epoch 81, loss: 0.435286
+epoch 81, 
+ train loss: 0.435286, val loss: 0.459037 
+ val auc: 0.877290,  test auc: 0.890925
+epoch 82, loss: 0.428273
+model updated at epoch 82 
+epoch 82, 
+ train loss: 0.428273, val loss: 0.453276 
+ val auc: 0.881119,  test auc: 0.894782
+epoch 83, loss: 0.422147
+model updated at epoch 83 
+epoch 83, 
+ train loss: 0.422147, val loss: 0.442724 
+ val auc: 0.892192,  test auc: 0.901652
+epoch 84, loss: 0.414497
+model updated at epoch 84 
+epoch 84, 
+ train loss: 0.414497, val loss: 0.441503 
+ val auc: 0.889114,  test auc: 0.902083
+epoch 85, loss: 0.407715
+model updated at epoch 85 
+epoch 85, 
+ train loss: 0.407715, val loss: 0.436358 
+ val auc: 0.891517,  test auc: 0.904870
+epoch 86, loss: 0.400912
+model updated at epoch 86 
+epoch 86, 
+ train loss: 0.400912, val loss: 0.425235 
+ val auc: 0.900751,  test auc: 0.910755
+epoch 87, loss: 0.393316
+model updated at epoch 87 
+epoch 87, 
+ train loss: 0.393316, val loss: 0.422682 
+ val auc: 0.900000,  test auc: 0.912528
+epoch 88, loss: 0.386257
+model updated at epoch 88 
+epoch 88, 
+ train loss: 0.386257, val loss: 0.417745 
+ val auc: 0.901877,  test auc: 0.915315
+epoch 89, loss: 0.378832
+model updated at epoch 89 
+epoch 89, 
+ train loss: 0.378832, val loss: 0.407262 
+ val auc: 0.908559,  test auc: 0.919923
+epoch 90, loss: 0.371278
+model updated at epoch 90 
+epoch 90, 
+ train loss: 0.371278, val loss: 0.404540 
+ val auc: 0.909384,  test auc: 0.922072
+epoch 91, loss: 0.364235
+model updated at epoch 91 
+epoch 91, 
+ train loss: 0.364235, val loss: 0.399866 
+ val auc: 0.911074,  test auc: 0.924155
+epoch 92, loss: 0.357408
+model updated at epoch 92 
+epoch 92, 
+ train loss: 0.357408, val loss: 0.389706 
+ val auc: 0.917718,  test auc: 0.928275
+epoch 93, loss: 0.349991
+model updated at epoch 93 
+epoch 93, 
+ train loss: 0.349991, val loss: 0.388390 
+ val auc: 0.916892,  test auc: 0.929814
+epoch 94, loss: 0.343159
+model updated at epoch 94 
+epoch 94, 
+ train loss: 0.343159, val loss: 0.382037 
+ val auc: 0.920833,  test auc: 0.932892
+epoch 95, loss: 0.336507
+model updated at epoch 95 
+epoch 95, 
+ train loss: 0.336507, val loss: 0.373953 
+ val auc: 0.923986,  test auc: 0.935539
+epoch 96, loss: 0.330153
+model updated at epoch 96 
+epoch 96, 
+ train loss: 0.330153, val loss: 0.372399 
+ val auc: 0.924212,  test auc: 0.936946
+epoch 97, loss: 0.323567
+model updated at epoch 97 
+epoch 97, 
+ train loss: 0.323567, val loss: 0.364132 
+ val auc: 0.928041,  test auc: 0.939752
+epoch 98, loss: 0.317375
+model updated at epoch 98 
+epoch 98, 
+ train loss: 0.317375, val loss: 0.360034 
+ val auc: 0.929542,  test auc: 0.941282
+epoch 99, loss: 0.311449
+model updated at epoch 99 
+epoch 99, 
+ train loss: 0.311449, val loss: 0.357308 
+ val auc: 0.930368,  test auc: 0.942277
+epoch 100, loss: 0.305800
+model updated at epoch 100 
+epoch 100, 
+ train loss: 0.305800, val loss: 0.348995 
+ val auc: 0.934347,  test auc: 0.944322
+epoch 101, loss: 0.300246
+epoch 101, 
+ train loss: 0.300246, val loss: 0.351466 
+ val auc: 0.932132,  test auc: 0.943666
+epoch 102, loss: 0.294732
+model updated at epoch 102 
+epoch 102, 
+ train loss: 0.294732, val loss: 0.341370 
+ val auc: 0.935961,  test auc: 0.945815
+epoch 103, loss: 0.289590
+epoch 103, 
+ train loss: 0.289590, val loss: 0.343578 
+ val auc: 0.933446,  test auc: 0.945580
+epoch 104, loss: 0.284487
+model updated at epoch 104 
+epoch 104, 
+ train loss: 0.284487, val loss: 0.335165 
+ val auc: 0.937462,  test auc: 0.947607
+epoch 105, loss: 0.279619
+model updated at epoch 105 
+epoch 105, 
+ train loss: 0.279619, val loss: 0.334315 
+ val auc: 0.936862,  test auc: 0.948320
+epoch 106, loss: 0.275061
+model updated at epoch 106 
+epoch 106, 
+ train loss: 0.275061, val loss: 0.330566 
+ val auc: 0.938138,  test auc: 0.949352
+epoch 107, loss: 0.270544
+model updated at epoch 107 
+epoch 107, 
+ train loss: 0.270544, val loss: 0.325846 
+ val auc: 0.940015,  test auc: 0.950572
+epoch 108, loss: 0.266305
+model updated at epoch 108 
+epoch 108, 
+ train loss: 0.266305, val loss: 0.324724 
+ val auc: 0.940353,  test auc: 0.951051
+epoch 109, loss: 0.262301
+model updated at epoch 109 
+epoch 109, 
+ train loss: 0.262301, val loss: 0.317090 
+ val auc: 0.943093,  test auc: 0.952665
+epoch 110, loss: 0.259034
+epoch 110, 
+ train loss: 0.259034, val loss: 0.321647 
+ val auc: 0.941404,  test auc: 0.952187
+epoch 111, loss: 0.256080
+model updated at epoch 111 
+epoch 111, 
+ train loss: 0.256080, val loss: 0.308959 
+ val auc: 0.945533,  test auc: 0.954139
+epoch 112, loss: 0.253200
+epoch 112, 
+ train loss: 0.253200, val loss: 0.318351 
+ val auc: 0.942793,  test auc: 0.953482
+epoch 113, loss: 0.247740
+model updated at epoch 113 
+epoch 113, 
+ train loss: 0.247740, val loss: 0.304663 
+ val auc: 0.947147,  test auc: 0.955875
+epoch 114, loss: 0.244216
+model updated at epoch 114 
+epoch 114, 
+ train loss: 0.244216, val loss: 0.303014 
+ val auc: 0.946809,  test auc: 0.956475
+epoch 115, loss: 0.242429
+epoch 115, 
+ train loss: 0.242429, val loss: 0.309435 
+ val auc: 0.945233,  test auc: 0.955556
+epoch 116, loss: 0.239299
+model updated at epoch 116 
+epoch 116, 
+ train loss: 0.239299, val loss: 0.297313 
+ val auc: 0.948086,  test auc: 0.956879
+epoch 117, loss: 0.235216
+epoch 117, 
+ train loss: 0.235216, val loss: 0.300069 
+ val auc: 0.947785,  test auc: 0.957245
+epoch 118, loss: 0.232479
+epoch 118, 
+ train loss: 0.232479, val loss: 0.298736 
+ val auc: 0.947523,  test auc: 0.957526
+epoch 119, loss: 0.230659
+model updated at epoch 119 
+epoch 119, 
+ train loss: 0.230659, val loss: 0.291204 
+ val auc: 0.949625,  test auc: 0.958211
+epoch 120, loss: 0.228118
+epoch 120, 
+ train loss: 0.228118, val loss: 0.297728 
+ val auc: 0.948086,  test auc: 0.958268
+epoch 121, loss: 0.224273
+model updated at epoch 121 
+epoch 121, 
+ train loss: 0.224273, val loss: 0.288883 
+ val auc: 0.950526,  test auc: 0.959488
+epoch 122, loss: 0.222475
+model updated at epoch 122 
+epoch 122, 
+ train loss: 0.222475, val loss: 0.285474 
+ val auc: 0.951239,  test auc: 0.959929
+epoch 123, loss: 0.221285
+epoch 123, 
+ train loss: 0.221285, val loss: 0.293780 
+ val auc: 0.949362,  test auc: 0.959169
+epoch 124, loss: 0.217622
+model updated at epoch 124 
+epoch 124, 
+ train loss: 0.217622, val loss: 0.282361 
+ val auc: 0.952177,  test auc: 0.960651
+epoch 125, loss: 0.215268
+model updated at epoch 125 
+epoch 125, 
+ train loss: 0.215268, val loss: 0.281651 
+ val auc: 0.952365,  test auc: 0.961158
+epoch 126, loss: 0.214257
+epoch 126, 
+ train loss: 0.214257, val loss: 0.287599 
+ val auc: 0.951126,  test auc: 0.960473
+epoch 127, loss: 0.211866
+model updated at epoch 127 
+epoch 127, 
+ train loss: 0.211866, val loss: 0.278348 
+ val auc: 0.952665,  test auc: 0.961440
+epoch 128, loss: 0.209253
+epoch 128, 
+ train loss: 0.209253, val loss: 0.280141 
+ val auc: 0.953191,  test auc: 0.961824
+epoch 129, loss: 0.207768
+epoch 129, 
+ train loss: 0.207768, val loss: 0.280964 
+ val auc: 0.953078,  test auc: 0.961890
+epoch 130, loss: 0.206298
+model updated at epoch 130 
+epoch 130, 
+ train loss: 0.206298, val loss: 0.274559 
+ val auc: 0.954129,  test auc: 0.962228
+epoch 131, loss: 0.204400
+epoch 131, 
+ train loss: 0.204400, val loss: 0.278797 
+ val auc: 0.954129,  test auc: 0.962444
+epoch 132, loss: 0.202286
+model updated at epoch 132 
+epoch 132, 
+ train loss: 0.202286, val loss: 0.273830 
+ val auc: 0.955143,  test auc: 0.963091
+epoch 133, loss: 0.200923
+model updated at epoch 133 
+epoch 133, 
+ train loss: 0.200923, val loss: 0.270810 
+ val auc: 0.956344,  test auc: 0.963560
+epoch 134, loss: 0.199761
+epoch 134, 
+ train loss: 0.199761, val loss: 0.275123 
+ val auc: 0.956156,  test auc: 0.963654
+epoch 135, loss: 0.197969
+model updated at epoch 135 
+epoch 135, 
+ train loss: 0.197969, val loss: 0.267869 
+ val auc: 0.957583,  test auc: 0.964227
+epoch 136, loss: 0.196212
+epoch 136, 
+ train loss: 0.196212, val loss: 0.269523 
+ val auc: 0.957207,  test auc: 0.964433
+epoch 137, loss: 0.194878
+epoch 137, 
+ train loss: 0.194878, val loss: 0.269248 
+ val auc: 0.957470,  test auc: 0.964405
+epoch 138, loss: 0.193765
+model updated at epoch 138 
+epoch 138, 
+ train loss: 0.193765, val loss: 0.265147 
+ val auc: 0.958258,  test auc: 0.964818
+epoch 139, loss: 0.192513
+epoch 139, 
+ train loss: 0.192513, val loss: 0.269879 
+ val auc: 0.957733,  test auc: 0.964574
+epoch 140, loss: 0.190926
+model updated at epoch 140 
+epoch 140, 
+ train loss: 0.190926, val loss: 0.264135 
+ val auc: 0.958559,  test auc: 0.965221
+epoch 141, loss: 0.189460
+epoch 141, 
+ train loss: 0.189460, val loss: 0.265099 
+ val auc: 0.958559,  test auc: 0.965334
+epoch 142, loss: 0.188299
+epoch 142, 
+ train loss: 0.188299, val loss: 0.264909 
+ val auc: 0.959122,  test auc: 0.965578
+epoch 143, loss: 0.187256
+model updated at epoch 143 
+epoch 143, 
+ train loss: 0.187256, val loss: 0.260802 
+ val auc: 0.959722,  test auc: 0.965982
+epoch 144, loss: 0.186223
+epoch 144, 
+ train loss: 0.186223, val loss: 0.264785 
+ val auc: 0.959384,  test auc: 0.965897
+epoch 145, loss: 0.184959
+model updated at epoch 145 
+epoch 145, 
+ train loss: 0.184959, val loss: 0.258506 
+ val auc: 0.960923,  test auc: 0.966807
+epoch 146, loss: 0.183697
+epoch 146, 
+ train loss: 0.183697, val loss: 0.261368 
+ val auc: 0.960886,  test auc: 0.966535
+epoch 147, loss: 0.182485
+model updated at epoch 147 
+epoch 147, 
+ train loss: 0.182485, val loss: 0.258236 
+ val auc: 0.961787,  test auc: 0.967230
+epoch 148, loss: 0.181458
+model updated at epoch 148 
+epoch 148, 
+ train loss: 0.181458, val loss: 0.257111 
+ val auc: 0.961937,  test auc: 0.967399
+epoch 149, loss: 0.180551
+epoch 149, 
+ train loss: 0.180551, val loss: 0.258727 
+ val auc: 0.961937,  test auc: 0.967314
+epoch 150, loss: 0.179652
+model updated at epoch 150 
+epoch 150, 
+ train loss: 0.179652, val loss: 0.254100 
+ val auc: 0.962913,  test auc: 0.967830
+epoch 151, loss: 0.178751
+epoch 151, 
+ train loss: 0.178751, val loss: 0.257987 
+ val auc: 0.962012,  test auc: 0.967342
+epoch 152, loss: 0.177758
+model updated at epoch 152 
+epoch 152, 
+ train loss: 0.177758, val loss: 0.252106 
+ val auc: 0.963176,  test auc: 0.968037
+epoch 153, loss: 0.176750
+epoch 153, 
+ train loss: 0.176750, val loss: 0.255435 
+ val auc: 0.962725,  test auc: 0.967708
+epoch 154, loss: 0.175708
+model updated at epoch 154 
+epoch 154, 
+ train loss: 0.175708, val loss: 0.250946 
+ val auc: 0.963664,  test auc: 0.968422
+epoch 155, loss: 0.174739
+epoch 155, 
+ train loss: 0.174739, val loss: 0.252107 
+ val auc: 0.963401,  test auc: 0.968365
+epoch 156, loss: 0.173821
+model updated at epoch 156 
+epoch 156, 
+ train loss: 0.173821, val loss: 0.250422 
+ val auc: 0.964039,  test auc: 0.968741
+epoch 157, loss: 0.172961
+model updated at epoch 157 
+epoch 157, 
+ train loss: 0.172961, val loss: 0.249199 
+ val auc: 0.964414,  test auc: 0.968956
+epoch 158, loss: 0.172163
+epoch 158, 
+ train loss: 0.172163, val loss: 0.250576 
+ val auc: 0.964077,  test auc: 0.968816
+epoch 159, loss: 0.171424
+model updated at epoch 159 
+epoch 159, 
+ train loss: 0.171424, val loss: 0.247135 
+ val auc: 0.964452,  test auc: 0.969154
+epoch 160, loss: 0.170820
+epoch 160, 
+ train loss: 0.170820, val loss: 0.251411 
+ val auc: 0.964039,  test auc: 0.968863
+epoch 161, loss: 0.170254
+model updated at epoch 161 
+epoch 161, 
+ train loss: 0.170254, val loss: 0.244823 
+ val auc: 0.965053,  test auc: 0.969398
+epoch 162, loss: 0.169931
+epoch 162, 
+ train loss: 0.169931, val loss: 0.252545 
+ val auc: 0.963964,  test auc: 0.968816
+epoch 163, loss: 0.169149
+model updated at epoch 163 
+epoch 163, 
+ train loss: 0.169149, val loss: 0.242699 
+ val auc: 0.965240,  test auc: 0.969717
+epoch 164, loss: 0.168399
+epoch 164, 
+ train loss: 0.168399, val loss: 0.251012 
+ val auc: 0.964152,  test auc: 0.968938
+epoch 165, loss: 0.166999
+model updated at epoch 165 
+epoch 165, 
+ train loss: 0.166999, val loss: 0.241886 
+ val auc: 0.965916,  test auc: 0.970130
+epoch 166, loss: 0.165827
+epoch 166, 
+ train loss: 0.165827, val loss: 0.244664 
+ val auc: 0.965353,  test auc: 0.969801
+epoch 167, loss: 0.165109
+epoch 167, 
+ train loss: 0.165109, val loss: 0.244023 
+ val auc: 0.965465,  test auc: 0.969979
+epoch 168, loss: 0.164688
+model updated at epoch 168 
+epoch 168, 
+ train loss: 0.164688, val loss: 0.240131 
+ val auc: 0.966592,  test auc: 0.970524
+epoch 169, loss: 0.164381
+epoch 169, 
+ train loss: 0.164381, val loss: 0.246016 
+ val auc: 0.965090,  test auc: 0.969801
+epoch 170, loss: 0.163719
+model updated at epoch 170 
+epoch 170, 
+ train loss: 0.163719, val loss: 0.238136 
+ val auc: 0.966742,  test auc: 0.970824
+epoch 171, loss: 0.162901
+epoch 171, 
+ train loss: 0.162901, val loss: 0.244146 
+ val auc: 0.965616,  test auc: 0.970139
+epoch 172, loss: 0.161882
+epoch 172, 
+ train loss: 0.161882, val loss: 0.238160 
+ val auc: 0.966967,  test auc: 0.971096
+epoch 173, loss: 0.161083
+epoch 173, 
+ train loss: 0.161083, val loss: 0.239331 
+ val auc: 0.966667,  test auc: 0.970749
+epoch 174, loss: 0.160531
+epoch 174, 
+ train loss: 0.160531, val loss: 0.240084 
+ val auc: 0.966742,  test auc: 0.970805
+epoch 175, loss: 0.160017
+model updated at epoch 175 
+epoch 175, 
+ train loss: 0.160017, val loss: 0.236678 
+ val auc: 0.967117,  test auc: 0.971274
+epoch 176, loss: 0.159401
+epoch 176, 
+ train loss: 0.159401, val loss: 0.240071 
+ val auc: 0.966892,  test auc: 0.970965
+epoch 177, loss: 0.158678
+model updated at epoch 177 
+epoch 177, 
+ train loss: 0.158678, val loss: 0.236336 
+ val auc: 0.967492,  test auc: 0.971387
+epoch 178, loss: 0.158011
+epoch 178, 
+ train loss: 0.158011, val loss: 0.237035 
+ val auc: 0.967755,  test auc: 0.971481
+epoch 179, loss: 0.157452
+epoch 179, 
+ train loss: 0.157452, val loss: 0.236989 
+ val auc: 0.967755,  test auc: 0.971565
+epoch 180, loss: 0.156935
+model updated at epoch 180 
+epoch 180, 
+ train loss: 0.156935, val loss: 0.234501 
+ val auc: 0.968131,  test auc: 0.971800
+epoch 181, loss: 0.156399
+epoch 181, 
+ train loss: 0.156399, val loss: 0.236502 
+ val auc: 0.968168,  test auc: 0.971687
+epoch 182, loss: 0.155816
+model updated at epoch 182 
+epoch 182, 
+ train loss: 0.155816, val loss: 0.233253 
+ val auc: 0.968656,  test auc: 0.972100
+epoch 183, loss: 0.155210
+epoch 183, 
+ train loss: 0.155210, val loss: 0.234704 
+ val auc: 0.968243,  test auc: 0.971866
+epoch 184, loss: 0.154635
+epoch 184, 
+ train loss: 0.154635, val loss: 0.233324 
+ val auc: 0.968656,  test auc: 0.972100
+epoch 185, loss: 0.154119
+model updated at epoch 185 
+epoch 185, 
+ train loss: 0.154119, val loss: 0.232445 
+ val auc: 0.968919,  test auc: 0.972250
+epoch 186, loss: 0.153626
+epoch 186, 
+ train loss: 0.153626, val loss: 0.233379 
+ val auc: 0.968769,  test auc: 0.972157
+epoch 187, loss: 0.153157
+model updated at epoch 187 
+epoch 187, 
+ train loss: 0.153157, val loss: 0.230671 
+ val auc: 0.969369,  test auc: 0.972532
+epoch 188, loss: 0.152719
+epoch 188, 
+ train loss: 0.152719, val loss: 0.233307 
+ val auc: 0.968956,  test auc: 0.972166
+epoch 189, loss: 0.152292
+model updated at epoch 189 
+epoch 189, 
+ train loss: 0.152292, val loss: 0.229031 
+ val auc: 0.969632,  test auc: 0.972607
+epoch 190, loss: 0.151909
+epoch 190, 
+ train loss: 0.151909, val loss: 0.233369 
+ val auc: 0.968731,  test auc: 0.971875
+epoch 191, loss: 0.151505
+model updated at epoch 191 
+epoch 191, 
+ train loss: 0.151505, val loss: 0.227498 
+ val auc: 0.969745,  test auc: 0.972785
+epoch 192, loss: 0.151161
+epoch 192, 
+ train loss: 0.151161, val loss: 0.233339 
+ val auc: 0.968956,  test auc: 0.971913
+epoch 193, loss: 0.150645
+model updated at epoch 193 
+epoch 193, 
+ train loss: 0.150645, val loss: 0.226229 
+ val auc: 0.970120,  test auc: 0.972898
+epoch 194, loss: 0.150214
+epoch 194, 
+ train loss: 0.150214, val loss: 0.232542 
+ val auc: 0.969032,  test auc: 0.971988
+epoch 195, loss: 0.149643
+model updated at epoch 195 
+epoch 195, 
+ train loss: 0.149643, val loss: 0.225689 
+ val auc: 0.970045,  test auc: 0.973057
+epoch 196, loss: 0.149102
+epoch 196, 
+ train loss: 0.149102, val loss: 0.231360 
+ val auc: 0.969332,  test auc: 0.972391
+epoch 197, loss: 0.148475
+model updated at epoch 197 
+epoch 197, 
+ train loss: 0.148475, val loss: 0.225637 
+ val auc: 0.970270,  test auc: 0.973095
+epoch 198, loss: 0.147893
+epoch 198, 
+ train loss: 0.147893, val loss: 0.229188 
+ val auc: 0.969670,  test auc: 0.972635
+epoch 199, loss: 0.147333
+epoch 199, 
+ train loss: 0.147333, val loss: 0.225859 
+ val auc: 0.970083,  test auc: 0.973104
+epoch 200, loss: 0.146832
+epoch 200, 
+ train loss: 0.146832, val loss: 0.226777 
+ val auc: 0.970270,  test auc: 0.973020
+epoch 201, loss: 0.146381
+epoch 201, 
+ train loss: 0.146381, val loss: 0.226288 
+ val auc: 0.970345,  test auc: 0.973114
+epoch 202, loss: 0.145968
+model updated at epoch 202 
+epoch 202, 
+ train loss: 0.145968, val loss: 0.224775 
+ val auc: 0.970608,  test auc: 0.973292
+epoch 203, loss: 0.145569
+epoch 203, 
+ train loss: 0.145569, val loss: 0.226546 
+ val auc: 0.970495,  test auc: 0.973255
+epoch 204, loss: 0.145134
+model updated at epoch 204 
+epoch 204, 
+ train loss: 0.145134, val loss: 0.223511 
+ val auc: 0.970646,  test auc: 0.973442
+epoch 205, loss: 0.144686
+epoch 205, 
+ train loss: 0.144686, val loss: 0.225608 
+ val auc: 0.970533,  test auc: 0.973292
+epoch 206, loss: 0.144211
+model updated at epoch 206 
+epoch 206, 
+ train loss: 0.144211, val loss: 0.222819 
+ val auc: 0.970983,  test auc: 0.973602
+epoch 207, loss: 0.143745
+epoch 207, 
+ train loss: 0.143745, val loss: 0.223805 
+ val auc: 0.970946,  test auc: 0.973639
+epoch 208, loss: 0.143299
+model updated at epoch 208 
+epoch 208, 
+ train loss: 0.143299, val loss: 0.222432 
+ val auc: 0.971209,  test auc: 0.973724
+epoch 209, loss: 0.142867
+model updated at epoch 209 
+epoch 209, 
+ train loss: 0.142867, val loss: 0.222257 
+ val auc: 0.971321,  test auc: 0.973836
+epoch 210, loss: 0.142434
+model updated at epoch 210 
+epoch 210, 
+ train loss: 0.142434, val loss: 0.221492 
+ val auc: 0.971584,  test auc: 0.973996
+epoch 211, loss: 0.142007
+model updated at epoch 211 
+epoch 211, 
+ train loss: 0.142007, val loss: 0.220978 
+ val auc: 0.971697,  test auc: 0.974024
+epoch 212, loss: 0.141573
+model updated at epoch 212 
+epoch 212, 
+ train loss: 0.141573, val loss: 0.220827 
+ val auc: 0.971734,  test auc: 0.974071
+epoch 213, loss: 0.141149
+model updated at epoch 213 
+epoch 213, 
+ train loss: 0.141149, val loss: 0.220644 
+ val auc: 0.971659,  test auc: 0.974090
+epoch 214, loss: 0.140733
+epoch 214, 
+ train loss: 0.140733, val loss: 0.220882 
+ val auc: 0.971547,  test auc: 0.974099
+epoch 215, loss: 0.140312
+model updated at epoch 215 
+epoch 215, 
+ train loss: 0.140312, val loss: 0.220271 
+ val auc: 0.971809,  test auc: 0.974165
+epoch 216, loss: 0.139896
+epoch 216, 
+ train loss: 0.139896, val loss: 0.220400 
+ val auc: 0.971734,  test auc: 0.974137
+epoch 217, loss: 0.139472
+model updated at epoch 217 
+epoch 217, 
+ train loss: 0.139472, val loss: 0.219191 
+ val auc: 0.972185,  test auc: 0.974315
+epoch 218, loss: 0.139050
+epoch 218, 
+ train loss: 0.139050, val loss: 0.219748 
+ val auc: 0.971997,  test auc: 0.974240
+epoch 219, loss: 0.138628
+model updated at epoch 219 
+epoch 219, 
+ train loss: 0.138628, val loss: 0.218044 
+ val auc: 0.972485,  test auc: 0.974409
+epoch 220, loss: 0.138236
+epoch 220, 
+ train loss: 0.138236, val loss: 0.219910 
+ val auc: 0.971884,  test auc: 0.974202
+epoch 221, loss: 0.137892
+model updated at epoch 221 
+epoch 221, 
+ train loss: 0.137892, val loss: 0.216640 
+ val auc: 0.972635,  test auc: 0.974540
+epoch 222, loss: 0.137739
+epoch 222, 
+ train loss: 0.137739, val loss: 0.221391 
+ val auc: 0.971809,  test auc: 0.974024
+epoch 223, loss: 0.137782
+model updated at epoch 223 
+epoch 223, 
+ train loss: 0.137782, val loss: 0.214350 
+ val auc: 0.973011,  test auc: 0.974934
+epoch 224, loss: 0.138462
+epoch 224, 
+ train loss: 0.138462, val loss: 0.225256 
+ val auc: 0.971171,  test auc: 0.973658
+epoch 225, loss: 0.138503
+model updated at epoch 225 
+epoch 225, 
+ train loss: 0.138503, val loss: 0.212170 
+ val auc: 0.973048,  test auc: 0.975272
+epoch 226, loss: 0.138792
+epoch 226, 
+ train loss: 0.138792, val loss: 0.227224 
+ val auc: 0.970871,  test auc: 0.973433
+epoch 227, loss: 0.136364
+epoch 227, 
+ train loss: 0.136364, val loss: 0.212551 
+ val auc: 0.973273,  test auc: 0.975432
+epoch 228, loss: 0.134877
+epoch 228, 
+ train loss: 0.134877, val loss: 0.216423 
+ val auc: 0.972748,  test auc: 0.974916
+epoch 229, loss: 0.135010
+epoch 229, 
+ train loss: 0.135010, val loss: 0.219430 
+ val auc: 0.972222,  test auc: 0.974465
+epoch 230, loss: 0.135727
+model updated at epoch 230 
+epoch 230, 
+ train loss: 0.135727, val loss: 0.211766 
+ val auc: 0.973498,  test auc: 0.975497
+epoch 231, loss: 0.136343
+epoch 231, 
+ train loss: 0.136343, val loss: 0.224738 
+ val auc: 0.971359,  test auc: 0.973874
+epoch 232, loss: 0.134218
+model updated at epoch 232 
+epoch 232, 
+ train loss: 0.134218, val loss: 0.211639 
+ val auc: 0.973949,  test auc: 0.975723
+epoch 233, loss: 0.133072
+epoch 233, 
+ train loss: 0.133072, val loss: 0.214770 
+ val auc: 0.973273,  test auc: 0.975385
+epoch 234, loss: 0.133261
+epoch 234, 
+ train loss: 0.133261, val loss: 0.218711 
+ val auc: 0.972710,  test auc: 0.975019
+epoch 235, loss: 0.133243
+epoch 235, 
+ train loss: 0.133243, val loss: 0.211876 
+ val auc: 0.973874,  test auc: 0.975676
+epoch 236, loss: 0.132480
+epoch 236, 
+ train loss: 0.132480, val loss: 0.218234 
+ val auc: 0.972598,  test auc: 0.974991
+epoch 237, loss: 0.131667
+epoch 237, 
+ train loss: 0.131667, val loss: 0.214595 
+ val auc: 0.973236,  test auc: 0.975291
+epoch 238, loss: 0.131705
+model updated at epoch 238 
+epoch 238, 
+ train loss: 0.131705, val loss: 0.211597 
+ val auc: 0.974062,  test auc: 0.975723
+epoch 239, loss: 0.131710
+epoch 239, 
+ train loss: 0.131710, val loss: 0.217703 
+ val auc: 0.972935,  test auc: 0.975028
+epoch 240, loss: 0.130815
+model updated at epoch 240 
+epoch 240, 
+ train loss: 0.130815, val loss: 0.209966 
+ val auc: 0.974212,  test auc: 0.975873
+epoch 241, loss: 0.130149
+epoch 241, 
+ train loss: 0.130149, val loss: 0.210670 
+ val auc: 0.974212,  test auc: 0.975816
+epoch 242, loss: 0.130088
+epoch 242, 
+ train loss: 0.130088, val loss: 0.213242 
+ val auc: 0.973761,  test auc: 0.975479
+epoch 243, loss: 0.129825
+model updated at epoch 243 
+epoch 243, 
+ train loss: 0.129825, val loss: 0.207663 
+ val auc: 0.974775,  test auc: 0.976117
+epoch 244, loss: 0.129202
+epoch 244, 
+ train loss: 0.129202, val loss: 0.211974 
+ val auc: 0.973836,  test auc: 0.975516
+epoch 245, loss: 0.128659
+epoch 245, 
+ train loss: 0.128659, val loss: 0.209981 
+ val auc: 0.974399,  test auc: 0.975798
+epoch 246, loss: 0.128478
+epoch 246, 
+ train loss: 0.128478, val loss: 0.208287 
+ val auc: 0.974550,  test auc: 0.975920
+epoch 247, loss: 0.128272
+epoch 247, 
+ train loss: 0.128272, val loss: 0.212770 
+ val auc: 0.973836,  test auc: 0.975544
+epoch 248, loss: 0.127726
+epoch 248, 
+ train loss: 0.127726, val loss: 0.208080 
+ val auc: 0.974662,  test auc: 0.976004
+epoch 249, loss: 0.127205
+epoch 249, 
+ train loss: 0.127205, val loss: 0.209681 
+ val auc: 0.974437,  test auc: 0.975948
+epoch 250, loss: 0.126920
+epoch 250, 
+ train loss: 0.126920, val loss: 0.210578 
+ val auc: 0.974287,  test auc: 0.975892
+epoch 251, loss: 0.126686
+model updated at epoch 251 
+epoch 251, 
+ train loss: 0.126686, val loss: 0.207485 
+ val auc: 0.974812,  test auc: 0.976239
+epoch 252, loss: 0.126293
+epoch 252, 
+ train loss: 0.126293, val loss: 0.211113 
+ val auc: 0.974249,  test auc: 0.975882
+epoch 253, loss: 0.125797
+epoch 253, 
+ train loss: 0.125797, val loss: 0.208566 
+ val auc: 0.974700,  test auc: 0.976267
+epoch 254, loss: 0.125433
+epoch 254, 
+ train loss: 0.125433, val loss: 0.208527 
+ val auc: 0.974737,  test auc: 0.976248
+epoch 255, loss: 0.125172
+epoch 255, 
+ train loss: 0.125172, val loss: 0.210400 
+ val auc: 0.974399,  test auc: 0.975938
+epoch 256, loss: 0.124840
+model updated at epoch 256 
+epoch 256, 
+ train loss: 0.124840, val loss: 0.206672 
+ val auc: 0.975188,  test auc: 0.976539
+epoch 257, loss: 0.124405
+epoch 257, 
+ train loss: 0.124405, val loss: 0.208966 
+ val auc: 0.974737,  test auc: 0.976229
+epoch 258, loss: 0.123966
+epoch 258, 
+ train loss: 0.123966, val loss: 0.207002 
+ val auc: 0.975113,  test auc: 0.976539
+epoch 259, loss: 0.123628
+model updated at epoch 259 
+epoch 259, 
+ train loss: 0.123628, val loss: 0.206181 
+ val auc: 0.975263,  test auc: 0.976623
+epoch 260, loss: 0.123326
+epoch 260, 
+ train loss: 0.123326, val loss: 0.208009 
+ val auc: 0.975188,  test auc: 0.976426
+epoch 261, loss: 0.122982
+model updated at epoch 261 
+epoch 261, 
+ train loss: 0.122982, val loss: 0.204942 
+ val auc: 0.975450,  test auc: 0.976755
+epoch 262, loss: 0.122595
+epoch 262, 
+ train loss: 0.122595, val loss: 0.207523 
+ val auc: 0.975263,  test auc: 0.976548
+epoch 263, loss: 0.122231
+epoch 263, 
+ train loss: 0.122231, val loss: 0.205544 
+ val auc: 0.975450,  test auc: 0.976821
+epoch 264, loss: 0.121875
+epoch 264, 
+ train loss: 0.121875, val loss: 0.206574 
+ val auc: 0.975375,  test auc: 0.976680
+epoch 265, loss: 0.121526
+epoch 265, 
+ train loss: 0.121526, val loss: 0.205939 
+ val auc: 0.975526,  test auc: 0.976792
+epoch 266, loss: 0.121189
+epoch 266, 
+ train loss: 0.121189, val loss: 0.205524 
+ val auc: 0.975526,  test auc: 0.976877
+epoch 267, loss: 0.120860
+epoch 267, 
+ train loss: 0.120860, val loss: 0.206217 
+ val auc: 0.975375,  test auc: 0.976764
+epoch 268, loss: 0.120509
+epoch 268, 
+ train loss: 0.120509, val loss: 0.204966 
+ val auc: 0.975638,  test auc: 0.976924
+epoch 269, loss: 0.120153
+epoch 269, 
+ train loss: 0.120153, val loss: 0.206058 
+ val auc: 0.975300,  test auc: 0.976727
+epoch 270, loss: 0.119797
+epoch 270, 
+ train loss: 0.119797, val loss: 0.204999 
+ val auc: 0.975488,  test auc: 0.976802
+epoch 271, loss: 0.119445
+epoch 271, 
+ train loss: 0.119445, val loss: 0.205502 
+ val auc: 0.975488,  test auc: 0.976745
+epoch 272, loss: 0.119107
+epoch 272, 
+ train loss: 0.119107, val loss: 0.205012 
+ val auc: 0.975526,  test auc: 0.976783
+epoch 273, loss: 0.118772
+model updated at epoch 273 
+epoch 273, 
+ train loss: 0.118772, val loss: 0.204556 
+ val auc: 0.975676,  test auc: 0.976830
+epoch 274, loss: 0.118434
+epoch 274, 
+ train loss: 0.118434, val loss: 0.204670 
+ val auc: 0.975676,  test auc: 0.976802
+epoch 275, loss: 0.118103
+model updated at epoch 275 
+epoch 275, 
+ train loss: 0.118103, val loss: 0.203580 
+ val auc: 0.975901,  test auc: 0.977008
+epoch 276, loss: 0.117769
+epoch 276, 
+ train loss: 0.117769, val loss: 0.204264 
+ val auc: 0.975788,  test auc: 0.976924
+epoch 277, loss: 0.117431
+model updated at epoch 277 
+epoch 277, 
+ train loss: 0.117431, val loss: 0.202738 
+ val auc: 0.976164,  test auc: 0.977121
+epoch 278, loss: 0.117085
+epoch 278, 
+ train loss: 0.117085, val loss: 0.204021 
+ val auc: 0.975901,  test auc: 0.976961
+epoch 279, loss: 0.116756
+model updated at epoch 279 
+epoch 279, 
+ train loss: 0.116756, val loss: 0.202626 
+ val auc: 0.975901,  test auc: 0.977036
+epoch 280, loss: 0.116426
+epoch 280, 
+ train loss: 0.116426, val loss: 0.203967 
+ val auc: 0.975788,  test auc: 0.976933
+epoch 281, loss: 0.116090
+model updated at epoch 281 
+epoch 281, 
+ train loss: 0.116090, val loss: 0.202127 
+ val auc: 0.976126,  test auc: 0.977140
+epoch 282, loss: 0.115767
+epoch 282, 
+ train loss: 0.115767, val loss: 0.203629 
+ val auc: 0.976014,  test auc: 0.977008
+epoch 283, loss: 0.115455
+model updated at epoch 283 
+epoch 283, 
+ train loss: 0.115455, val loss: 0.201198 
+ val auc: 0.976314,  test auc: 0.977243
+epoch 284, loss: 0.115128
+epoch 284, 
+ train loss: 0.115128, val loss: 0.203624 
+ val auc: 0.975938,  test auc: 0.977036
+epoch 285, loss: 0.114926
+model updated at epoch 285 
+epoch 285, 
+ train loss: 0.114926, val loss: 0.200959 
+ val auc: 0.976164,  test auc: 0.977177
+epoch 286, loss: 0.115145
+epoch 286, 
+ train loss: 0.115145, val loss: 0.206717 
+ val auc: 0.975188,  test auc: 0.976652
+epoch 287, loss: 0.116450
+model updated at epoch 287 
+epoch 287, 
+ train loss: 0.116450, val loss: 0.198561 
+ val auc: 0.976577,  test auc: 0.977637
+epoch 288, loss: 0.120866
+epoch 288, 
+ train loss: 0.120866, val loss: 0.220141 
+ val auc: 0.972973,  test auc: 0.975066
+epoch 289, loss: 0.119946
+model updated at epoch 289 
+epoch 289, 
+ train loss: 0.119946, val loss: 0.197969 
+ val auc: 0.976502,  test auc: 0.977750
+epoch 290, loss: 0.117088
+epoch 290, 
+ train loss: 0.117088, val loss: 0.213110 
+ val auc: 0.973986,  test auc: 0.975976
+epoch 291, loss: 0.112929
+epoch 291, 
+ train loss: 0.112929, val loss: 0.200178 
+ val auc: 0.976764,  test auc: 0.977496
+epoch 292, loss: 0.115479
+model updated at epoch 292 
+epoch 292, 
+ train loss: 0.115479, val loss: 0.196683 
+ val auc: 0.976839,  test auc: 0.977881
+epoch 293, loss: 0.118497
+epoch 293, 
+ train loss: 0.118497, val loss: 0.217300 
+ val auc: 0.973536,  test auc: 0.975488
+epoch 294, loss: 0.112618
+epoch 294, 
+ train loss: 0.112618, val loss: 0.198123 
+ val auc: 0.976952,  test auc: 0.977843
+epoch 295, loss: 0.113963
+model updated at epoch 295 
+epoch 295, 
+ train loss: 0.113963, val loss: 0.196461 
+ val auc: 0.977065,  test auc: 0.978087
+epoch 296, loss: 0.117780
+epoch 296, 
+ train loss: 0.117780, val loss: 0.217658 
+ val auc: 0.973574,  test auc: 0.975563
+epoch 297, loss: 0.111541
+epoch 297, 
+ train loss: 0.111541, val loss: 0.197943 
+ val auc: 0.977290,  test auc: 0.977834
+epoch 298, loss: 0.113936
+model updated at epoch 298 
+epoch 298, 
+ train loss: 0.113936, val loss: 0.196216 
+ val auc: 0.976764,  test auc: 0.977881
+epoch 299, loss: 0.116114
+epoch 299, 
+ train loss: 0.116114, val loss: 0.215517 
+ val auc: 0.973836,  test auc: 0.975741
+epoch 300, loss: 0.110390
+epoch 300, 
+ train loss: 0.110390, val loss: 0.200202 
+ val auc: 0.976464,  test auc: 0.977440
+epoch 301, loss: 0.115393
+model updated at epoch 301 
+epoch 301, 
+ train loss: 0.115393, val loss: 0.195842 
+ val auc: 0.976989,  test auc: 0.978134
+epoch 302, loss: 0.114390
+epoch 302, 
+ train loss: 0.114390, val loss: 0.212852 
+ val auc: 0.974287,  test auc: 0.976004
+epoch 303, loss: 0.110245
+epoch 303, 
+ train loss: 0.110245, val loss: 0.203028 
+ val auc: 0.976239,  test auc: 0.977158
+epoch 304, loss: 0.116059
+model updated at epoch 304 
+epoch 304, 
+ train loss: 0.116059, val loss: 0.195054 
+ val auc: 0.977553,  test auc: 0.978331
+epoch 305, loss: 0.110950
+epoch 305, 
+ train loss: 0.110950, val loss: 0.206603 
+ val auc: 0.975526,  test auc: 0.976595
+epoch 306, loss: 0.110986
+epoch 306, 
+ train loss: 0.110986, val loss: 0.207213 
+ val auc: 0.975488,  test auc: 0.976670
+epoch 307, loss: 0.112633
+model updated at epoch 307 
+epoch 307, 
+ train loss: 0.112633, val loss: 0.194563 
+ val auc: 0.977290,  test auc: 0.978144
+epoch 308, loss: 0.108187
+epoch 308, 
+ train loss: 0.108187, val loss: 0.198703 
+ val auc: 0.977102,  test auc: 0.977599
+epoch 309, loss: 0.111036
+epoch 309, 
+ train loss: 0.111036, val loss: 0.209565 
+ val auc: 0.974587,  test auc: 0.976201
+epoch 310, loss: 0.108261
+epoch 310, 
+ train loss: 0.108261, val loss: 0.195572 
+ val auc: 0.977515,  test auc: 0.977984
+epoch 311, loss: 0.108665
+model updated at epoch 311 
+epoch 311, 
+ train loss: 0.108665, val loss: 0.194457 
+ val auc: 0.977740,  test auc: 0.978238
+epoch 312, loss: 0.108962
+epoch 312, 
+ train loss: 0.108962, val loss: 0.205026 
+ val auc: 0.975863,  test auc: 0.976830
+epoch 313, loss: 0.107031
+epoch 313, 
+ train loss: 0.107031, val loss: 0.199058 
+ val auc: 0.977140,  test auc: 0.977637
+epoch 314, loss: 0.108835
+model updated at epoch 314 
+epoch 314, 
+ train loss: 0.108835, val loss: 0.192578 
+ val auc: 0.977890,  test auc: 0.978453
+epoch 315, loss: 0.106545
+epoch 315, 
+ train loss: 0.106545, val loss: 0.198846 
+ val auc: 0.977215,  test auc: 0.977637
+epoch 316, loss: 0.107145
+epoch 316, 
+ train loss: 0.107145, val loss: 0.201952 
+ val auc: 0.976652,  test auc: 0.977271
+epoch 317, loss: 0.106629
+epoch 317, 
+ train loss: 0.106629, val loss: 0.193076 
+ val auc: 0.977965,  test auc: 0.978435
+epoch 318, loss: 0.105611
+epoch 318, 
+ train loss: 0.105611, val loss: 0.194467 
+ val auc: 0.978041,  test auc: 0.978247
+epoch 319, loss: 0.106350
+epoch 319, 
+ train loss: 0.106350, val loss: 0.201875 
+ val auc: 0.976426,  test auc: 0.977177
+epoch 320, loss: 0.104952
+epoch 320, 
+ train loss: 0.104952, val loss: 0.195140 
+ val auc: 0.978003,  test auc: 0.978181
+epoch 321, loss: 0.105506
+model updated at epoch 321 
+epoch 321, 
+ train loss: 0.105506, val loss: 0.192575 
+ val auc: 0.978191,  test auc: 0.978491
+epoch 322, loss: 0.104921
+epoch 322, 
+ train loss: 0.104921, val loss: 0.199121 
+ val auc: 0.976989,  test auc: 0.977421
+epoch 323, loss: 0.104340
+epoch 323, 
+ train loss: 0.104340, val loss: 0.197380 
+ val auc: 0.977402,  test auc: 0.977693
+epoch 324, loss: 0.104730
+model updated at epoch 324 
+epoch 324, 
+ train loss: 0.104730, val loss: 0.192046 
+ val auc: 0.978191,  test auc: 0.978472
+epoch 325, loss: 0.103715
+epoch 325, 
+ train loss: 0.103715, val loss: 0.196163 
+ val auc: 0.977553,  test auc: 0.977815
+epoch 326, loss: 0.103746
+epoch 326, 
+ train loss: 0.103746, val loss: 0.197359 
+ val auc: 0.977477,  test auc: 0.977684
+epoch 327, loss: 0.103566
+model updated at epoch 327 
+epoch 327, 
+ train loss: 0.103566, val loss: 0.191793 
+ val auc: 0.978453,  test auc: 0.978519
+epoch 328, loss: 0.102946
+epoch 328, 
+ train loss: 0.102946, val loss: 0.193241 
+ val auc: 0.978416,  test auc: 0.978313
+epoch 329, loss: 0.103108
+epoch 329, 
+ train loss: 0.103108, val loss: 0.197067 
+ val auc: 0.977440,  test auc: 0.977712
+epoch 330, loss: 0.102482
+epoch 330, 
+ train loss: 0.102482, val loss: 0.192821 
+ val auc: 0.978303,  test auc: 0.978238
+epoch 331, loss: 0.102362
+epoch 331, 
+ train loss: 0.102362, val loss: 0.192195 
+ val auc: 0.978453,  test auc: 0.978350
+epoch 332, loss: 0.102184
+epoch 332, 
+ train loss: 0.102184, val loss: 0.196300 
+ val auc: 0.977703,  test auc: 0.977872
+epoch 333, loss: 0.101671
+epoch 333, 
+ train loss: 0.101671, val loss: 0.194222 
+ val auc: 0.978041,  test auc: 0.978087
+epoch 334, loss: 0.101687
+epoch 334, 
+ train loss: 0.101687, val loss: 0.191910 
+ val auc: 0.978529,  test auc: 0.978472
+epoch 335, loss: 0.101234
+epoch 335, 
+ train loss: 0.101234, val loss: 0.194954 
+ val auc: 0.977965,  test auc: 0.977975
+epoch 336, loss: 0.100990
+epoch 336, 
+ train loss: 0.100990, val loss: 0.194817 
+ val auc: 0.978003,  test auc: 0.978031
+epoch 337, loss: 0.100846
+model updated at epoch 337 
+epoch 337, 
+ train loss: 0.100846, val loss: 0.191435 
+ val auc: 0.978566,  test auc: 0.978444
+epoch 338, loss: 0.100386
+epoch 338, 
+ train loss: 0.100386, val loss: 0.192991 
+ val auc: 0.978341,  test auc: 0.978313
+epoch 339, loss: 0.100269
+epoch 339, 
+ train loss: 0.100269, val loss: 0.194415 
+ val auc: 0.978191,  test auc: 0.978031
+epoch 340, loss: 0.099946
+model updated at epoch 340 
+epoch 340, 
+ train loss: 0.099946, val loss: 0.191272 
+ val auc: 0.978641,  test auc: 0.978482
+epoch 341, loss: 0.099614
+epoch 341, 
+ train loss: 0.099614, val loss: 0.191717 
+ val auc: 0.978604,  test auc: 0.978444
+epoch 342, loss: 0.099452
+epoch 342, 
+ train loss: 0.099452, val loss: 0.193869 
+ val auc: 0.978453,  test auc: 0.978219
+epoch 343, loss: 0.099082
+epoch 343, 
+ train loss: 0.099082, val loss: 0.191672 
+ val auc: 0.978641,  test auc: 0.978500
+epoch 344, loss: 0.098845
+epoch 344, 
+ train loss: 0.098845, val loss: 0.191326 
+ val auc: 0.978604,  test auc: 0.978453
+epoch 345, loss: 0.098607
+epoch 345, 
+ train loss: 0.098607, val loss: 0.193545 
+ val auc: 0.978341,  test auc: 0.978247
+epoch 346, loss: 0.098262
+epoch 346, 
+ train loss: 0.098262, val loss: 0.192234 
+ val auc: 0.978378,  test auc: 0.978369
+epoch 347, loss: 0.098057
+model updated at epoch 347 
+epoch 347, 
+ train loss: 0.098057, val loss: 0.191072 
+ val auc: 0.978716,  test auc: 0.978585
+epoch 348, loss: 0.097795
+epoch 348, 
+ train loss: 0.097795, val loss: 0.193051 
+ val auc: 0.978416,  test auc: 0.978388
+epoch 349, loss: 0.097487
+epoch 349, 
+ train loss: 0.097487, val loss: 0.191988 
+ val auc: 0.978604,  test auc: 0.978472
+epoch 350, loss: 0.097287
+model updated at epoch 350 
+epoch 350, 
+ train loss: 0.097287, val loss: 0.190862 
+ val auc: 0.978754,  test auc: 0.978604
+epoch 351, loss: 0.096996
+epoch 351, 
+ train loss: 0.096996, val loss: 0.192527 
+ val auc: 0.978679,  test auc: 0.978482
+epoch 352, loss: 0.096719
+epoch 352, 
+ train loss: 0.096719, val loss: 0.191959 
+ val auc: 0.978716,  test auc: 0.978529
+epoch 353, loss: 0.096503
+model updated at epoch 353 
+epoch 353, 
+ train loss: 0.096503, val loss: 0.190312 
+ val auc: 0.978904,  test auc: 0.978754
+epoch 354, loss: 0.096202
+epoch 354, 
+ train loss: 0.096202, val loss: 0.191309 
+ val auc: 0.978791,  test auc: 0.978613
+epoch 355, loss: 0.095947
+epoch 355, 
+ train loss: 0.095947, val loss: 0.190889 
+ val auc: 0.978866,  test auc: 0.978641
+epoch 356, loss: 0.095712
+model updated at epoch 356 
+epoch 356, 
+ train loss: 0.095712, val loss: 0.189370 
+ val auc: 0.979054,  test auc: 0.978848
+epoch 357, loss: 0.095425
+epoch 357, 
+ train loss: 0.095425, val loss: 0.190200 
+ val auc: 0.979054,  test auc: 0.978773
+epoch 358, loss: 0.095177
+epoch 358, 
+ train loss: 0.095177, val loss: 0.190280 
+ val auc: 0.979129,  test auc: 0.978801
+epoch 359, loss: 0.094928
+model updated at epoch 359 
+epoch 359, 
+ train loss: 0.094928, val loss: 0.189082 
+ val auc: 0.979242,  test auc: 0.978960
+epoch 360, loss: 0.094644
+epoch 360, 
+ train loss: 0.094644, val loss: 0.189804 
+ val auc: 0.979129,  test auc: 0.978885
+epoch 361, loss: 0.094394
+epoch 361, 
+ train loss: 0.094394, val loss: 0.190133 
+ val auc: 0.979129,  test auc: 0.978866
+epoch 362, loss: 0.094141
+epoch 362, 
+ train loss: 0.094141, val loss: 0.189228 
+ val auc: 0.979129,  test auc: 0.978913
+epoch 363, loss: 0.093869
+epoch 363, 
+ train loss: 0.093869, val loss: 0.189894 
+ val auc: 0.979054,  test auc: 0.978838
+epoch 364, loss: 0.093618
+epoch 364, 
+ train loss: 0.093618, val loss: 0.190250 
+ val auc: 0.979017,  test auc: 0.978876
+epoch 365, loss: 0.093365
+epoch 365, 
+ train loss: 0.093365, val loss: 0.189360 
+ val auc: 0.979092,  test auc: 0.978970
+epoch 366, loss: 0.093104
+epoch 366, 
+ train loss: 0.093104, val loss: 0.189696 
+ val auc: 0.978979,  test auc: 0.978941
+epoch 367, loss: 0.092859
+epoch 367, 
+ train loss: 0.092859, val loss: 0.189808 
+ val auc: 0.979092,  test auc: 0.978923
+epoch 368, loss: 0.092614
+model updated at epoch 368 
+epoch 368, 
+ train loss: 0.092614, val loss: 0.188939 
+ val auc: 0.979167,  test auc: 0.979035
+epoch 369, loss: 0.092364
+epoch 369, 
+ train loss: 0.092364, val loss: 0.189248 
+ val auc: 0.979054,  test auc: 0.978970
+epoch 370, loss: 0.092123
+epoch 370, 
+ train loss: 0.092123, val loss: 0.189525 
+ val auc: 0.979129,  test auc: 0.979026
+epoch 371, loss: 0.091880
+epoch 371, 
+ train loss: 0.091880, val loss: 0.188960 
+ val auc: 0.979167,  test auc: 0.979063
+epoch 372, loss: 0.091636
+epoch 372, 
+ train loss: 0.091636, val loss: 0.189416 
+ val auc: 0.978979,  test auc: 0.978951
+epoch 373, loss: 0.091400
+epoch 373, 
+ train loss: 0.091400, val loss: 0.189566 
+ val auc: 0.979017,  test auc: 0.978979
+epoch 374, loss: 0.091161
+epoch 374, 
+ train loss: 0.091161, val loss: 0.189001 
+ val auc: 0.979129,  test auc: 0.979035
+epoch 375, loss: 0.090915
+epoch 375, 
+ train loss: 0.090915, val loss: 0.189061 
+ val auc: 0.979092,  test auc: 0.979045
+epoch 376, loss: 0.090675
+model updated at epoch 376 
+epoch 376, 
+ train loss: 0.090675, val loss: 0.188808 
+ val auc: 0.979242,  test auc: 0.979073
+epoch 377, loss: 0.090443
+model updated at epoch 377 
+epoch 377, 
+ train loss: 0.090443, val loss: 0.188254 
+ val auc: 0.979242,  test auc: 0.979176
+epoch 378, loss: 0.090210
+epoch 378, 
+ train loss: 0.090210, val loss: 0.188688 
+ val auc: 0.979204,  test auc: 0.979157
+epoch 379, loss: 0.089975
+epoch 379, 
+ train loss: 0.089975, val loss: 0.188263 
+ val auc: 0.979167,  test auc: 0.979223
+epoch 380, loss: 0.089743
+epoch 380, 
+ train loss: 0.089743, val loss: 0.188437 
+ val auc: 0.979242,  test auc: 0.979214
+epoch 381, loss: 0.089510
+epoch 381, 
+ train loss: 0.089510, val loss: 0.188604 
+ val auc: 0.979242,  test auc: 0.979261
+epoch 382, loss: 0.089286
+model updated at epoch 382 
+epoch 382, 
+ train loss: 0.089286, val loss: 0.187986 
+ val auc: 0.979317,  test auc: 0.979317
+epoch 383, loss: 0.089061
+epoch 383, 
+ train loss: 0.089061, val loss: 0.188723 
+ val auc: 0.979317,  test auc: 0.979298
+epoch 384, loss: 0.088828
+model updated at epoch 384 
+epoch 384, 
+ train loss: 0.088828, val loss: 0.187865 
+ val auc: 0.979392,  test auc: 0.979364
+epoch 385, loss: 0.088594
+epoch 385, 
+ train loss: 0.088594, val loss: 0.188245 
+ val auc: 0.979580,  test auc: 0.979448
+epoch 386, loss: 0.088373
+epoch 386, 
+ train loss: 0.088373, val loss: 0.188188 
+ val auc: 0.979542,  test auc: 0.979448
+epoch 387, loss: 0.088148
+model updated at epoch 387 
+epoch 387, 
+ train loss: 0.088148, val loss: 0.187735 
+ val auc: 0.979429,  test auc: 0.979467
+epoch 388, loss: 0.087919
+epoch 388, 
+ train loss: 0.087919, val loss: 0.188083 
+ val auc: 0.979467,  test auc: 0.979448
+epoch 389, loss: 0.087699
+model updated at epoch 389 
+epoch 389, 
+ train loss: 0.087699, val loss: 0.187532 
+ val auc: 0.979505,  test auc: 0.979505
+epoch 390, loss: 0.087476
+model updated at epoch 390 
+epoch 390, 
+ train loss: 0.087476, val loss: 0.187397 
+ val auc: 0.979429,  test auc: 0.979523
+epoch 391, loss: 0.087258
+epoch 391, 
+ train loss: 0.087258, val loss: 0.187692 
+ val auc: 0.979467,  test auc: 0.979505
+epoch 392, loss: 0.087038
+epoch 392, 
+ train loss: 0.087038, val loss: 0.187403 
+ val auc: 0.979429,  test auc: 0.979542
+epoch 393, loss: 0.086824
+epoch 393, 
+ train loss: 0.086824, val loss: 0.187642 
+ val auc: 0.979429,  test auc: 0.979598
+epoch 394, loss: 0.086603
+epoch 394, 
+ train loss: 0.086603, val loss: 0.187752 
+ val auc: 0.979505,  test auc: 0.979542
+epoch 395, loss: 0.086387
+epoch 395, 
+ train loss: 0.086387, val loss: 0.187463 
+ val auc: 0.979467,  test auc: 0.979542
+epoch 396, loss: 0.086168
+epoch 396, 
+ train loss: 0.086168, val loss: 0.187796 
+ val auc: 0.979505,  test auc: 0.979561
+epoch 397, loss: 0.085972
+model updated at epoch 397 
+epoch 397, 
+ train loss: 0.085972, val loss: 0.186715 
+ val auc: 0.979692,  test auc: 0.979664
+epoch 398, loss: 0.085769
+epoch 398, 
+ train loss: 0.085769, val loss: 0.187897 
+ val auc: 0.979542,  test auc: 0.979589
+epoch 399, loss: 0.085541
+model updated at epoch 399 
+epoch 399, 
+ train loss: 0.085541, val loss: 0.186686 
+ val auc: 0.979617,  test auc: 0.979683
+epoch 400, loss: 0.085313
+epoch 400, 
+ train loss: 0.085313, val loss: 0.187325 
+ val auc: 0.979505,  test auc: 0.979692
+epoch 401, loss: 0.085121
+epoch 401, 
+ train loss: 0.085121, val loss: 0.188121 
+ val auc: 0.979429,  test auc: 0.979570
+epoch 402, loss: 0.084908
+epoch 402, 
+ train loss: 0.084908, val loss: 0.186992 
+ val auc: 0.979580,  test auc: 0.979692
+epoch 403, loss: 0.084687
+epoch 403, 
+ train loss: 0.084687, val loss: 0.187436 
+ val auc: 0.979505,  test auc: 0.979673
+epoch 404, loss: 0.084482
+epoch 404, 
+ train loss: 0.084482, val loss: 0.187598 
+ val auc: 0.979429,  test auc: 0.979645
+epoch 405, loss: 0.084276
+model updated at epoch 405 
+epoch 405, 
+ train loss: 0.084276, val loss: 0.186589 
+ val auc: 0.979692,  test auc: 0.979730
+epoch 406, loss: 0.084061
+epoch 406, 
+ train loss: 0.084061, val loss: 0.187367 
+ val auc: 0.979505,  test auc: 0.979655
+epoch 407, loss: 0.083843
+epoch 407, 
+ train loss: 0.083843, val loss: 0.186996 
+ val auc: 0.979580,  test auc: 0.979702
+epoch 408, loss: 0.083640
+model updated at epoch 408 
+epoch 408, 
+ train loss: 0.083640, val loss: 0.186363 
+ val auc: 0.979692,  test auc: 0.979739
+epoch 409, loss: 0.083430
+epoch 409, 
+ train loss: 0.083430, val loss: 0.186883 
+ val auc: 0.979617,  test auc: 0.979692
+epoch 410, loss: 0.083215
+model updated at epoch 410 
+epoch 410, 
+ train loss: 0.083215, val loss: 0.186331 
+ val auc: 0.979730,  test auc: 0.979748
+epoch 411, loss: 0.083005
+model updated at epoch 411 
+epoch 411, 
+ train loss: 0.083005, val loss: 0.186227 
+ val auc: 0.979767,  test auc: 0.979748
+epoch 412, loss: 0.082805
+epoch 412, 
+ train loss: 0.082805, val loss: 0.186900 
+ val auc: 0.979730,  test auc: 0.979739
+epoch 413, loss: 0.082593
+model updated at epoch 413 
+epoch 413, 
+ train loss: 0.082593, val loss: 0.186086 
+ val auc: 0.979880,  test auc: 0.979833
+epoch 414, loss: 0.082380
+epoch 414, 
+ train loss: 0.082380, val loss: 0.186368 
+ val auc: 0.979767,  test auc: 0.979833
+epoch 415, loss: 0.082172
+epoch 415, 
+ train loss: 0.082172, val loss: 0.186406 
+ val auc: 0.979730,  test auc: 0.979870
+epoch 416, loss: 0.081969
+model updated at epoch 416 
+epoch 416, 
+ train loss: 0.081969, val loss: 0.185720 
+ val auc: 0.979805,  test auc: 0.979899
+epoch 417, loss: 0.081761
+epoch 417, 
+ train loss: 0.081761, val loss: 0.186134 
+ val auc: 0.979767,  test auc: 0.979917
+epoch 418, loss: 0.081551
+epoch 418, 
+ train loss: 0.081551, val loss: 0.186037 
+ val auc: 0.979767,  test auc: 0.979936
+epoch 419, loss: 0.081343
+epoch 419, 
+ train loss: 0.081343, val loss: 0.185728 
+ val auc: 0.979917,  test auc: 0.979964
+epoch 420, loss: 0.081139
+epoch 420, 
+ train loss: 0.081139, val loss: 0.186101 
+ val auc: 0.979842,  test auc: 0.979964
+epoch 421, loss: 0.080933
+model updated at epoch 421 
+epoch 421, 
+ train loss: 0.080933, val loss: 0.185611 
+ val auc: 0.979842,  test auc: 0.979964
+epoch 422, loss: 0.080723
+epoch 422, 
+ train loss: 0.080723, val loss: 0.185729 
+ val auc: 0.979880,  test auc: 0.979992
+epoch 423, loss: 0.080517
+model updated at epoch 423 
+epoch 423, 
+ train loss: 0.080517, val loss: 0.185586 
+ val auc: 0.979917,  test auc: 0.979992
+epoch 424, loss: 0.080310
+model updated at epoch 424 
+epoch 424, 
+ train loss: 0.080310, val loss: 0.185093 
+ val auc: 0.980218,  test auc: 0.980133
+epoch 425, loss: 0.080112
+epoch 425, 
+ train loss: 0.080112, val loss: 0.185398 
+ val auc: 0.980293,  test auc: 0.980143
+epoch 426, loss: 0.079921
+model updated at epoch 426 
+epoch 426, 
+ train loss: 0.079921, val loss: 0.185040 
+ val auc: 0.980518,  test auc: 0.980218
+epoch 427, loss: 0.079736
+epoch 427, 
+ train loss: 0.079736, val loss: 0.185095 
+ val auc: 0.980556,  test auc: 0.980218
+epoch 428, loss: 0.079546
+epoch 428, 
+ train loss: 0.079546, val loss: 0.185448 
+ val auc: 0.980368,  test auc: 0.980171
+epoch 429, loss: 0.079360
+model updated at epoch 429 
+epoch 429, 
+ train loss: 0.079360, val loss: 0.184904 
+ val auc: 0.980330,  test auc: 0.980199
+epoch 430, loss: 0.079180
+epoch 430, 
+ train loss: 0.079180, val loss: 0.185697 
+ val auc: 0.980405,  test auc: 0.980208
+epoch 431, loss: 0.078994
+model updated at epoch 431 
+epoch 431, 
+ train loss: 0.078994, val loss: 0.184620 
+ val auc: 0.980631,  test auc: 0.980265
+epoch 432, loss: 0.078802
+epoch 432, 
+ train loss: 0.078802, val loss: 0.185719 
+ val auc: 0.980368,  test auc: 0.980246
+epoch 433, loss: 0.078604
+epoch 433, 
+ train loss: 0.078604, val loss: 0.184895 
+ val auc: 0.980631,  test auc: 0.980330
+epoch 434, loss: 0.078410
+epoch 434, 
+ train loss: 0.078410, val loss: 0.185291 
+ val auc: 0.980556,  test auc: 0.980330
+epoch 435, loss: 0.078225
+epoch 435, 
+ train loss: 0.078225, val loss: 0.185507 
+ val auc: 0.980480,  test auc: 0.980255
+epoch 436, loss: 0.078043
+model updated at epoch 436 
+epoch 436, 
+ train loss: 0.078043, val loss: 0.184586 
+ val auc: 0.980631,  test auc: 0.980321
+epoch 437, loss: 0.077856
+epoch 437, 
+ train loss: 0.077856, val loss: 0.185498 
+ val auc: 0.980443,  test auc: 0.980274
+epoch 438, loss: 0.077662
+epoch 438, 
+ train loss: 0.077662, val loss: 0.184838 
+ val auc: 0.980593,  test auc: 0.980358
+epoch 439, loss: 0.077475
+epoch 439, 
+ train loss: 0.077475, val loss: 0.184964 
+ val auc: 0.980593,  test auc: 0.980349
+epoch 440, loss: 0.077298
+epoch 440, 
+ train loss: 0.077298, val loss: 0.185379 
+ val auc: 0.980443,  test auc: 0.980302
+epoch 441, loss: 0.077124
+model updated at epoch 441 
+epoch 441, 
+ train loss: 0.077124, val loss: 0.184581 
+ val auc: 0.980518,  test auc: 0.980358
+epoch 442, loss: 0.076948
+epoch 442, 
+ train loss: 0.076948, val loss: 0.185768 
+ val auc: 0.980405,  test auc: 0.980293
+epoch 443, loss: 0.076771
+model updated at epoch 443 
+epoch 443, 
+ train loss: 0.076771, val loss: 0.184434 
+ val auc: 0.980480,  test auc: 0.980377
+epoch 444, loss: 0.076591
+epoch 444, 
+ train loss: 0.076591, val loss: 0.185881 
+ val auc: 0.980443,  test auc: 0.980349
+epoch 445, loss: 0.076403
+epoch 445, 
+ train loss: 0.076403, val loss: 0.184585 
+ val auc: 0.980593,  test auc: 0.980452
+epoch 446, loss: 0.076210
+epoch 446, 
+ train loss: 0.076210, val loss: 0.185251 
+ val auc: 0.980443,  test auc: 0.980387
+epoch 447, loss: 0.076031
+epoch 447, 
+ train loss: 0.076031, val loss: 0.184939 
+ val auc: 0.980518,  test auc: 0.980434
+epoch 448, loss: 0.075855
+epoch 448, 
+ train loss: 0.075855, val loss: 0.184530 
+ val auc: 0.980480,  test auc: 0.980471
+epoch 449, loss: 0.075682
+epoch 449, 
+ train loss: 0.075682, val loss: 0.185419 
+ val auc: 0.980480,  test auc: 0.980424
+epoch 450, loss: 0.075512
+model updated at epoch 450 
+epoch 450, 
+ train loss: 0.075512, val loss: 0.184218 
+ val auc: 0.980593,  test auc: 0.980499
+epoch 451, loss: 0.075334
+epoch 451, 
+ train loss: 0.075334, val loss: 0.185358 
+ val auc: 0.980556,  test auc: 0.980452
+epoch 452, loss: 0.075149
+epoch 452, 
+ train loss: 0.075149, val loss: 0.184328 
+ val auc: 0.980706,  test auc: 0.980537
+epoch 453, loss: 0.074969
+epoch 453, 
+ train loss: 0.074969, val loss: 0.185073 
+ val auc: 0.980593,  test auc: 0.980471
+epoch 454, loss: 0.074792
+epoch 454, 
+ train loss: 0.074792, val loss: 0.184634 
+ val auc: 0.980706,  test auc: 0.980556
+epoch 455, loss: 0.074615
+epoch 455, 
+ train loss: 0.074615, val loss: 0.184717 
+ val auc: 0.980668,  test auc: 0.980537
+epoch 456, loss: 0.074446
+epoch 456, 
+ train loss: 0.074446, val loss: 0.185039 
+ val auc: 0.980706,  test auc: 0.980565
+epoch 457, loss: 0.074277
+epoch 457, 
+ train loss: 0.074277, val loss: 0.184508 
+ val auc: 0.980706,  test auc: 0.980621
+epoch 458, loss: 0.074108
+epoch 458, 
+ train loss: 0.074108, val loss: 0.185433 
+ val auc: 0.980668,  test auc: 0.980537
+epoch 459, loss: 0.073937
+epoch 459, 
+ train loss: 0.073937, val loss: 0.184631 
+ val auc: 0.980706,  test auc: 0.980631
+epoch 460, loss: 0.073762
+epoch 460, 
+ train loss: 0.073762, val loss: 0.185043 
+ val auc: 0.980631,  test auc: 0.980574
+epoch 461, loss: 0.073594
+epoch 461, 
+ train loss: 0.073594, val loss: 0.185150 
+ val auc: 0.980668,  test auc: 0.980584
+epoch 462, loss: 0.073429
+epoch 462, 
+ train loss: 0.073429, val loss: 0.184586 
+ val auc: 0.980668,  test auc: 0.980659
+epoch 463, loss: 0.073259
+epoch 463, 
+ train loss: 0.073259, val loss: 0.185303 
+ val auc: 0.980593,  test auc: 0.980556
+epoch 464, loss: 0.073089
+epoch 464, 
+ train loss: 0.073089, val loss: 0.184699 
+ val auc: 0.980631,  test auc: 0.980621
+epoch 465, loss: 0.072920
+epoch 465, 
+ train loss: 0.072920, val loss: 0.184700 
+ val auc: 0.980668,  test auc: 0.980659
+epoch 466, loss: 0.072755
+epoch 466, 
+ train loss: 0.072755, val loss: 0.184844 
+ val auc: 0.980631,  test auc: 0.980631
+epoch 467, loss: 0.072587
+epoch 467, 
+ train loss: 0.072587, val loss: 0.184607 
+ val auc: 0.980668,  test auc: 0.980687
+epoch 468, loss: 0.072420
+epoch 468, 
+ train loss: 0.072420, val loss: 0.185073 
+ val auc: 0.980518,  test auc: 0.980621
+epoch 469, loss: 0.072259
+epoch 469, 
+ train loss: 0.072259, val loss: 0.184923 
+ val auc: 0.980593,  test auc: 0.980649
+epoch 470, loss: 0.072093
+epoch 470, 
+ train loss: 0.072093, val loss: 0.185109 
+ val auc: 0.980556,  test auc: 0.980640
+epoch 471, loss: 0.071927
+epoch 471, 
+ train loss: 0.071927, val loss: 0.185132 
+ val auc: 0.980556,  test auc: 0.980659
+epoch 472, loss: 0.071764
+epoch 472, 
+ train loss: 0.071764, val loss: 0.185115 
+ val auc: 0.980518,  test auc: 0.980668
+epoch 473, loss: 0.071600
+epoch 473, 
+ train loss: 0.071600, val loss: 0.185223 
+ val auc: 0.980631,  test auc: 0.980706
+epoch 474, loss: 0.071438
+epoch 474, 
+ train loss: 0.071438, val loss: 0.184947 
+ val auc: 0.980668,  test auc: 0.980724
+epoch 475, loss: 0.071275
+epoch 475, 
+ train loss: 0.071275, val loss: 0.185312 
+ val auc: 0.980593,  test auc: 0.980706
+epoch 476, loss: 0.071112
+epoch 476, 
+ train loss: 0.071112, val loss: 0.184784 
+ val auc: 0.980668,  test auc: 0.980781
+epoch 477, loss: 0.070949
+epoch 477, 
+ train loss: 0.070949, val loss: 0.185165 
+ val auc: 0.980631,  test auc: 0.980762
+epoch 478, loss: 0.070786
+epoch 478, 
+ train loss: 0.070786, val loss: 0.184876 
+ val auc: 0.980668,  test auc: 0.980800
+epoch 479, loss: 0.070628
+epoch 479, 
+ train loss: 0.070628, val loss: 0.184792 
+ val auc: 0.980743,  test auc: 0.980828
+epoch 480, loss: 0.070465
+epoch 480, 
+ train loss: 0.070465, val loss: 0.185369 
+ val auc: 0.980706,  test auc: 0.980800
+epoch 481, loss: 0.070303
+epoch 481, 
+ train loss: 0.070303, val loss: 0.184944 
+ val auc: 0.980668,  test auc: 0.980828
+epoch 482, loss: 0.070144
+epoch 482, 
+ train loss: 0.070144, val loss: 0.185726 
+ val auc: 0.980631,  test auc: 0.980790
+epoch 483, loss: 0.069981
+epoch 483, 
+ train loss: 0.069981, val loss: 0.185044 
+ val auc: 0.980668,  test auc: 0.980884
+epoch 484, loss: 0.069816
+epoch 484, 
+ train loss: 0.069816, val loss: 0.185380 
+ val auc: 0.980593,  test auc: 0.980800
+epoch 485, loss: 0.069653
+epoch 485, 
+ train loss: 0.069653, val loss: 0.185303 
+ val auc: 0.980593,  test auc: 0.980837
+epoch 486, loss: 0.069497
+epoch 486, 
+ train loss: 0.069497, val loss: 0.184965 
+ val auc: 0.980631,  test auc: 0.980875
+epoch 487, loss: 0.069337
+epoch 487, 
+ train loss: 0.069337, val loss: 0.185447 
+ val auc: 0.980706,  test auc: 0.980837
+epoch 488, loss: 0.069174
+epoch 488, 
+ train loss: 0.069174, val loss: 0.184841 
+ val auc: 0.980781,  test auc: 0.980950
+epoch 489, loss: 0.069013
+epoch 489, 
+ train loss: 0.069013, val loss: 0.185489 
+ val auc: 0.980668,  test auc: 0.980856
+epoch 490, loss: 0.068853
+epoch 490, 
+ train loss: 0.068853, val loss: 0.185481 
+ val auc: 0.980743,  test auc: 0.980903
+epoch 491, loss: 0.068695
+epoch 491, 
+ train loss: 0.068695, val loss: 0.185054 
+ val auc: 0.980781,  test auc: 0.980912
+epoch 492, loss: 0.068540
+epoch 492, 
+ train loss: 0.068540, val loss: 0.185857 
+ val auc: 0.980781,  test auc: 0.980865
+epoch 493, loss: 0.068385
+epoch 493, 
+ train loss: 0.068385, val loss: 0.184704 
+ val auc: 0.980856,  test auc: 0.980978
+epoch 494, loss: 0.068221
+epoch 494, 
+ train loss: 0.068221, val loss: 0.185850 
+ val auc: 0.980818,  test auc: 0.980875
+epoch 495, loss: 0.068050
+epoch 495, 
+ train loss: 0.068050, val loss: 0.185210 
+ val auc: 0.980818,  test auc: 0.980940
+epoch 496, loss: 0.067885
+epoch 496, 
+ train loss: 0.067885, val loss: 0.185407 
+ val auc: 0.980781,  test auc: 0.980950
+epoch 497, loss: 0.067730
+epoch 497, 
+ train loss: 0.067730, val loss: 0.185946 
+ val auc: 0.980856,  test auc: 0.980922
+epoch 498, loss: 0.067584
+epoch 498, 
+ train loss: 0.067584, val loss: 0.184603 
+ val auc: 0.980893,  test auc: 0.981025
+epoch 499, loss: 0.067455
+epoch 499, 
+ train loss: 0.067455, val loss: 0.186865 
+ val auc: 0.980593,  test auc: 0.980828
+epoch 500, loss: 0.067365
+model updated at epoch 500 
+epoch 500, 
+ train loss: 0.067365, val loss: 0.183272 
+ val auc: 0.981231,  test auc: 0.981222
+epoch 501, loss: 0.067352
+epoch 501, 
+ train loss: 0.067352, val loss: 0.188752 
+ val auc: 0.980593,  test auc: 0.980771
+epoch 502, loss: 0.067257
+model updated at epoch 502 
+epoch 502, 
+ train loss: 0.067257, val loss: 0.182291 
+ val auc: 0.981419,  test auc: 0.981344
+epoch 503, loss: 0.067024
+epoch 503, 
+ train loss: 0.067024, val loss: 0.188802 
+ val auc: 0.980706,  test auc: 0.980856
+epoch 504, loss: 0.066691
+epoch 504, 
+ train loss: 0.066691, val loss: 0.185665 
+ val auc: 0.981119,  test auc: 0.981072
+epoch 505, loss: 0.066607
+epoch 505, 
+ train loss: 0.066607, val loss: 0.184731 
+ val auc: 0.981081,  test auc: 0.981194
+epoch 506, loss: 0.066554
+epoch 506, 
+ train loss: 0.066554, val loss: 0.189110 
+ val auc: 0.980781,  test auc: 0.980828
+epoch 507, loss: 0.066310
+epoch 507, 
+ train loss: 0.066310, val loss: 0.184202 
+ val auc: 0.981231,  test auc: 0.981250
+epoch 508, loss: 0.066050
+epoch 508, 
+ train loss: 0.066050, val loss: 0.186533 
+ val auc: 0.980743,  test auc: 0.981015
+epoch 509, loss: 0.065936
+epoch 509, 
+ train loss: 0.065936, val loss: 0.187132 
+ val auc: 0.980781,  test auc: 0.980875
+epoch 510, loss: 0.065857
+epoch 510, 
+ train loss: 0.065857, val loss: 0.183110 
+ val auc: 0.981419,  test auc: 0.981297
+epoch 511, loss: 0.065682
+epoch 511, 
+ train loss: 0.065682, val loss: 0.187166 
+ val auc: 0.980818,  test auc: 0.980903
+epoch 512, loss: 0.065425
+epoch 512, 
+ train loss: 0.065425, val loss: 0.184665 
+ val auc: 0.981081,  test auc: 0.981109
+epoch 513, loss: 0.065275
+epoch 513, 
+ train loss: 0.065275, val loss: 0.185381 
+ val auc: 0.980968,  test auc: 0.981090
+epoch 514, loss: 0.065184
+epoch 514, 
+ train loss: 0.065184, val loss: 0.188082 
+ val auc: 0.980706,  test auc: 0.980893
+epoch 515, loss: 0.065026
+epoch 515, 
+ train loss: 0.065026, val loss: 0.184297 
+ val auc: 0.981081,  test auc: 0.981278
+epoch 516, loss: 0.064820
+epoch 516, 
+ train loss: 0.064820, val loss: 0.187002 
+ val auc: 0.980931,  test auc: 0.981053
+epoch 517, loss: 0.064650
+epoch 517, 
+ train loss: 0.064650, val loss: 0.186799 
+ val auc: 0.980856,  test auc: 0.981090
+epoch 518, loss: 0.064521
+epoch 518, 
+ train loss: 0.064521, val loss: 0.185581 
+ val auc: 0.980931,  test auc: 0.981203
+epoch 519, loss: 0.064392
+epoch 519, 
+ train loss: 0.064392, val loss: 0.188386 
+ val auc: 0.980593,  test auc: 0.980987
+epoch 520, loss: 0.064214
+epoch 520, 
+ train loss: 0.064214, val loss: 0.185867 
+ val auc: 0.980968,  test auc: 0.981231
+epoch 521, loss: 0.064033
+epoch 521, 
+ train loss: 0.064033, val loss: 0.186747 
+ val auc: 0.980856,  test auc: 0.981147
+epoch 522, loss: 0.063901
+epoch 522, 
+ train loss: 0.063901, val loss: 0.186861 
+ val auc: 0.980781,  test auc: 0.981090
+epoch 523, loss: 0.063776
+epoch 523, 
+ train loss: 0.063776, val loss: 0.185212 
+ val auc: 0.981194,  test auc: 0.981353
+epoch 524, loss: 0.063631
+epoch 524, 
+ train loss: 0.063631, val loss: 0.188004 
+ val auc: 0.980631,  test auc: 0.981062
+epoch 525, loss: 0.063475
+epoch 525, 
+ train loss: 0.063475, val loss: 0.185829 
+ val auc: 0.981044,  test auc: 0.981306
+epoch 526, loss: 0.063303
+epoch 526, 
+ train loss: 0.063303, val loss: 0.186968 
+ val auc: 0.980931,  test auc: 0.981241
+epoch 527, loss: 0.063168
+epoch 527, 
+ train loss: 0.063168, val loss: 0.187358 
+ val auc: 0.980818,  test auc: 0.981166
+epoch 528, loss: 0.063046
+epoch 528, 
+ train loss: 0.063046, val loss: 0.185868 
+ val auc: 0.981044,  test auc: 0.981306
+epoch 529, loss: 0.062897
+epoch 529, 
+ train loss: 0.062897, val loss: 0.188302 
+ val auc: 0.980593,  test auc: 0.981090
+epoch 530, loss: 0.062746
+epoch 530, 
+ train loss: 0.062746, val loss: 0.186385 
+ val auc: 0.981081,  test auc: 0.981325
+epoch 531, loss: 0.062596
+epoch 531, 
+ train loss: 0.062596, val loss: 0.187361 
+ val auc: 0.980931,  test auc: 0.981241
+epoch 532, loss: 0.062449
+epoch 532, 
+ train loss: 0.062449, val loss: 0.187060 
+ val auc: 0.980893,  test auc: 0.981241
+epoch 533, loss: 0.062320
+epoch 533, 
+ train loss: 0.062320, val loss: 0.186307 
+ val auc: 0.981119,  test auc: 0.981381
+epoch 534, loss: 0.062189
+epoch 534, 
+ train loss: 0.062189, val loss: 0.187853 
+ val auc: 0.980818,  test auc: 0.981184
+epoch 535, loss: 0.062053
+epoch 535, 
+ train loss: 0.062053, val loss: 0.186066 
+ val auc: 0.981119,  test auc: 0.981410
+epoch 536, loss: 0.061912
+epoch 536, 
+ train loss: 0.061912, val loss: 0.188248 
+ val auc: 0.980743,  test auc: 0.981212
+epoch 537, loss: 0.061759
+epoch 537, 
+ train loss: 0.061759, val loss: 0.186838 
+ val auc: 0.981006,  test auc: 0.981334
+epoch 538, loss: 0.061618
+epoch 538, 
+ train loss: 0.061618, val loss: 0.187026 
+ val auc: 0.981006,  test auc: 0.981363
+epoch 539, loss: 0.061487
+epoch 539, 
+ train loss: 0.061487, val loss: 0.187684 
+ val auc: 0.980856,  test auc: 0.981259
+epoch 540, loss: 0.061362
+epoch 540, 
+ train loss: 0.061362, val loss: 0.186209 
+ val auc: 0.981156,  test auc: 0.981381
+epoch 541, loss: 0.061231
+epoch 541, 
+ train loss: 0.061231, val loss: 0.188081 
+ val auc: 0.980743,  test auc: 0.981203
+epoch 542, loss: 0.061090
+epoch 542, 
+ train loss: 0.061090, val loss: 0.186639 
+ val auc: 0.981081,  test auc: 0.981419
+epoch 543, loss: 0.060947
+epoch 543, 
+ train loss: 0.060947, val loss: 0.188216 
+ val auc: 0.980781,  test auc: 0.981288
+epoch 544, loss: 0.060810
+epoch 544, 
+ train loss: 0.060810, val loss: 0.187543 
+ val auc: 0.981081,  test auc: 0.981363
+epoch 545, loss: 0.060678
+epoch 545, 
+ train loss: 0.060678, val loss: 0.187356 
+ val auc: 0.981044,  test auc: 0.981391
+epoch 546, loss: 0.060548
+epoch 546, 
+ train loss: 0.060548, val loss: 0.188130 
+ val auc: 0.980931,  test auc: 0.981344
+epoch 547, loss: 0.060428
+epoch 547, 
+ train loss: 0.060428, val loss: 0.186614 
+ val auc: 0.981194,  test auc: 0.981400
+epoch 548, loss: 0.060304
+epoch 548, 
+ train loss: 0.060304, val loss: 0.188890 
+ val auc: 0.980781,  test auc: 0.981288
+epoch 549, loss: 0.060176
+epoch 549, 
+ train loss: 0.060176, val loss: 0.186540 
+ val auc: 0.981231,  test auc: 0.981550
+epoch 550, loss: 0.060039
+epoch 550, 
+ train loss: 0.060039, val loss: 0.188595 
+ val auc: 0.981006,  test auc: 0.981381
+epoch 551, loss: 0.059899
+epoch 551, 
+ train loss: 0.059899, val loss: 0.187248 
+ val auc: 0.981231,  test auc: 0.981503
+epoch 552, loss: 0.059764
+epoch 552, 
+ train loss: 0.059764, val loss: 0.188417 
+ val auc: 0.981081,  test auc: 0.981438
+epoch 553, loss: 0.059636
+epoch 553, 
+ train loss: 0.059636, val loss: 0.188047 
+ val auc: 0.981231,  test auc: 0.981485
+epoch 554, loss: 0.059510
+epoch 554, 
+ train loss: 0.059510, val loss: 0.187905 
+ val auc: 0.981119,  test auc: 0.981513
+epoch 555, loss: 0.059384
+epoch 555, 
+ train loss: 0.059384, val loss: 0.188715 
+ val auc: 0.981044,  test auc: 0.981428
+epoch 556, loss: 0.059259
+epoch 556, 
+ train loss: 0.059259, val loss: 0.187615 
+ val auc: 0.981156,  test auc: 0.981513
+epoch 557, loss: 0.059135
+epoch 557, 
+ train loss: 0.059135, val loss: 0.189126 
+ val auc: 0.981006,  test auc: 0.981456
+epoch 558, loss: 0.059009
+epoch 558, 
+ train loss: 0.059009, val loss: 0.187765 
+ val auc: 0.981119,  test auc: 0.981522
+epoch 559, loss: 0.058882
+epoch 559, 
+ train loss: 0.058882, val loss: 0.189091 
+ val auc: 0.981006,  test auc: 0.981466
+epoch 560, loss: 0.058754
+epoch 560, 
+ train loss: 0.058754, val loss: 0.188028 
+ val auc: 0.981156,  test auc: 0.981607
+epoch 561, loss: 0.058628
+epoch 561, 
+ train loss: 0.058628, val loss: 0.189203 
+ val auc: 0.980931,  test auc: 0.981456
+epoch 562, loss: 0.058505
+epoch 562, 
+ train loss: 0.058505, val loss: 0.188323 
+ val auc: 0.981119,  test auc: 0.981588
+epoch 563, loss: 0.058381
+epoch 563, 
+ train loss: 0.058381, val loss: 0.189304 
+ val auc: 0.980931,  test auc: 0.981513
+epoch 564, loss: 0.058256
+epoch 564, 
+ train loss: 0.058256, val loss: 0.188549 
+ val auc: 0.981044,  test auc: 0.981560
+epoch 565, loss: 0.058135
+epoch 565, 
+ train loss: 0.058135, val loss: 0.189061 
+ val auc: 0.980931,  test auc: 0.981532
+epoch 566, loss: 0.058016
+epoch 566, 
+ train loss: 0.058016, val loss: 0.188891 
+ val auc: 0.981119,  test auc: 0.981635
+epoch 567, loss: 0.057894
+epoch 567, 
+ train loss: 0.057894, val loss: 0.189032 
+ val auc: 0.981006,  test auc: 0.981597
+epoch 568, loss: 0.057774
+epoch 568, 
+ train loss: 0.057774, val loss: 0.188971 
+ val auc: 0.981044,  test auc: 0.981578
+epoch 569, loss: 0.057657
+epoch 569, 
+ train loss: 0.057657, val loss: 0.189398 
+ val auc: 0.981044,  test auc: 0.981588
+epoch 570, loss: 0.057536
+epoch 570, 
+ train loss: 0.057536, val loss: 0.189129 
+ val auc: 0.981044,  test auc: 0.981607
+epoch 571, loss: 0.057419
+epoch 571, 
+ train loss: 0.057419, val loss: 0.189539 
+ val auc: 0.981006,  test auc: 0.981560
+epoch 572, loss: 0.057304
+epoch 572, 
+ train loss: 0.057304, val loss: 0.189134 
+ val auc: 0.981156,  test auc: 0.981682
+epoch 573, loss: 0.057186
+epoch 573, 
+ train loss: 0.057186, val loss: 0.189908 
+ val auc: 0.980968,  test auc: 0.981578
+epoch 574, loss: 0.057073
+epoch 574, 
+ train loss: 0.057073, val loss: 0.188902 
+ val auc: 0.981081,  test auc: 0.981625
+epoch 575, loss: 0.056958
+epoch 575, 
+ train loss: 0.056958, val loss: 0.190249 
+ val auc: 0.981006,  test auc: 0.981597
+epoch 576, loss: 0.056846
+epoch 576, 
+ train loss: 0.056846, val loss: 0.188830 
+ val auc: 0.981231,  test auc: 0.981719
+epoch 577, loss: 0.056736
+epoch 577, 
+ train loss: 0.056736, val loss: 0.190737 
+ val auc: 0.980931,  test auc: 0.981569
+epoch 578, loss: 0.056624
+epoch 578, 
+ train loss: 0.056624, val loss: 0.188731 
+ val auc: 0.981119,  test auc: 0.981682
+epoch 579, loss: 0.056518
+epoch 579, 
+ train loss: 0.056518, val loss: 0.191321 
+ val auc: 0.980893,  test auc: 0.981588
+epoch 580, loss: 0.056412
+epoch 580, 
+ train loss: 0.056412, val loss: 0.188576 
+ val auc: 0.981231,  test auc: 0.981757
+epoch 581, loss: 0.056308
+epoch 581, 
+ train loss: 0.056308, val loss: 0.191668 
+ val auc: 0.980856,  test auc: 0.981597
+epoch 582, loss: 0.056203
+epoch 582, 
+ train loss: 0.056203, val loss: 0.188371 
+ val auc: 0.981269,  test auc: 0.981813
+epoch 583, loss: 0.056099
+epoch 583, 
+ train loss: 0.056099, val loss: 0.192002 
+ val auc: 0.980893,  test auc: 0.981597
+epoch 584, loss: 0.055990
+epoch 584, 
+ train loss: 0.055990, val loss: 0.188483 
+ val auc: 0.981344,  test auc: 0.981832
+epoch 585, loss: 0.055878
+epoch 585, 
+ train loss: 0.055878, val loss: 0.192121 
+ val auc: 0.980893,  test auc: 0.981635
+epoch 586, loss: 0.055766
+epoch 586, 
+ train loss: 0.055766, val loss: 0.188452 
+ val auc: 0.981344,  test auc: 0.981869
+epoch 587, loss: 0.055659
+epoch 587, 
+ train loss: 0.055659, val loss: 0.192427 
+ val auc: 0.980893,  test auc: 0.981700
+epoch 588, loss: 0.055545
+epoch 588, 
+ train loss: 0.055545, val loss: 0.188742 
+ val auc: 0.981381,  test auc: 0.981916
+epoch 589, loss: 0.055431
+epoch 589, 
+ train loss: 0.055431, val loss: 0.192651 
+ val auc: 0.980893,  test auc: 0.981682
+epoch 590, loss: 0.055320
+epoch 590, 
+ train loss: 0.055320, val loss: 0.189247 
+ val auc: 0.981156,  test auc: 0.981898
+epoch 591, loss: 0.055211
+epoch 591, 
+ train loss: 0.055211, val loss: 0.192446 
+ val auc: 0.981081,  test auc: 0.981757
+epoch 592, loss: 0.055103
+epoch 592, 
+ train loss: 0.055103, val loss: 0.188962 
+ val auc: 0.981381,  test auc: 0.981973
+epoch 593, loss: 0.054998
+epoch 593, 
+ train loss: 0.054998, val loss: 0.192795 
+ val auc: 0.981081,  test auc: 0.981794
+epoch 594, loss: 0.054898
+epoch 594, 
+ train loss: 0.054898, val loss: 0.188971 
+ val auc: 0.981419,  test auc: 0.982038
+epoch 595, loss: 0.054801
+epoch 595, 
+ train loss: 0.054801, val loss: 0.193194 
+ val auc: 0.981006,  test auc: 0.981776
+epoch 596, loss: 0.054718
+epoch 596, 
+ train loss: 0.054718, val loss: 0.188650 
+ val auc: 0.981419,  test auc: 0.982076
+epoch 597, loss: 0.054637
+epoch 597, 
+ train loss: 0.054637, val loss: 0.193807 
+ val auc: 0.980931,  test auc: 0.981747
+epoch 598, loss: 0.054562
+epoch 598, 
+ train loss: 0.054562, val loss: 0.188293 
+ val auc: 0.981456,  test auc: 0.982113
+epoch 599, loss: 0.054495
+epoch 599, 
+ train loss: 0.054495, val loss: 0.194867 
+ val auc: 0.980968,  test auc: 0.981794
+epoch 600, loss: 0.054422
+epoch 600, 
+ train loss: 0.054422, val loss: 0.187651 
+ val auc: 0.981607,  test auc: 0.982217
+epoch 601, loss: 0.054344
+epoch 601, 
+ train loss: 0.054344, val loss: 0.195253 
+ val auc: 0.980818,  test auc: 0.981719
+epoch 602, loss: 0.054265
+epoch 602, 
+ train loss: 0.054265, val loss: 0.187357 
+ val auc: 0.981569,  test auc: 0.982235
+epoch 603, loss: 0.054161
+epoch 603, 
+ train loss: 0.054161, val loss: 0.195660 
+ val auc: 0.980856,  test auc: 0.981757
+epoch 604, loss: 0.054045
+epoch 604, 
+ train loss: 0.054045, val loss: 0.187724 
+ val auc: 0.981569,  test auc: 0.982264
+epoch 605, loss: 0.053902
+epoch 605, 
+ train loss: 0.053902, val loss: 0.195426 
+ val auc: 0.980893,  test auc: 0.981785
+epoch 606, loss: 0.053746
+epoch 606, 
+ train loss: 0.053746, val loss: 0.188201 
+ val auc: 0.981494,  test auc: 0.982235
+epoch 607, loss: 0.053580
+epoch 607, 
+ train loss: 0.053580, val loss: 0.194122 
+ val auc: 0.981044,  test auc: 0.981851
+epoch 608, loss: 0.053427
+epoch 608, 
+ train loss: 0.053427, val loss: 0.189616 
+ val auc: 0.981419,  test auc: 0.982113
+epoch 609, loss: 0.053286
+epoch 609, 
+ train loss: 0.053286, val loss: 0.192819 
+ val auc: 0.981194,  test auc: 0.982001
+epoch 610, loss: 0.053161
+epoch 610, 
+ train loss: 0.053161, val loss: 0.190859 
+ val auc: 0.981381,  test auc: 0.982113
+epoch 611, loss: 0.053054
+epoch 611, 
+ train loss: 0.053054, val loss: 0.191301 
+ val auc: 0.981419,  test auc: 0.982132
+epoch 612, loss: 0.052959
+epoch 612, 
+ train loss: 0.052959, val loss: 0.191940 
+ val auc: 0.981381,  test auc: 0.982085
+epoch 613, loss: 0.052875
+epoch 613, 
+ train loss: 0.052875, val loss: 0.190170 
+ val auc: 0.981532,  test auc: 0.982188
+epoch 614, loss: 0.052808
+epoch 614, 
+ train loss: 0.052808, val loss: 0.193351 
+ val auc: 0.981156,  test auc: 0.981973
+epoch 615, loss: 0.052745
+epoch 615, 
+ train loss: 0.052745, val loss: 0.189185 
+ val auc: 0.981494,  test auc: 0.982264
+epoch 616, loss: 0.052700
+epoch 616, 
+ train loss: 0.052700, val loss: 0.194653 
+ val auc: 0.981156,  test auc: 0.981935
+epoch 617, loss: 0.052675
+epoch 617, 
+ train loss: 0.052675, val loss: 0.188090 
+ val auc: 0.981569,  test auc: 0.982376
+epoch 618, loss: 0.052649
+epoch 618, 
+ train loss: 0.052649, val loss: 0.196242 
+ val auc: 0.981006,  test auc: 0.981888
+epoch 619, loss: 0.052627
+epoch 619, 
+ train loss: 0.052627, val loss: 0.187547 
+ val auc: 0.981757,  test auc: 0.982442
+epoch 620, loss: 0.052598
+epoch 620, 
+ train loss: 0.052598, val loss: 0.197282 
+ val auc: 0.980893,  test auc: 0.981851
+epoch 621, loss: 0.052550
+epoch 621, 
+ train loss: 0.052550, val loss: 0.186584 
+ val auc: 0.981907,  test auc: 0.982489
+epoch 622, loss: 0.052452
+epoch 622, 
+ train loss: 0.052452, val loss: 0.197493 
+ val auc: 0.980818,  test auc: 0.981860
+epoch 623, loss: 0.052317
+epoch 623, 
+ train loss: 0.052317, val loss: 0.186745 
+ val auc: 0.981869,  test auc: 0.982498
+epoch 624, loss: 0.052114
+epoch 624, 
+ train loss: 0.052114, val loss: 0.196606 
+ val auc: 0.981006,  test auc: 0.981907
+epoch 625, loss: 0.051896
+epoch 625, 
+ train loss: 0.051896, val loss: 0.188432 
+ val auc: 0.981607,  test auc: 0.982376
+epoch 626, loss: 0.051681
+epoch 626, 
+ train loss: 0.051681, val loss: 0.194284 
+ val auc: 0.981269,  test auc: 0.982104
+epoch 627, loss: 0.051513
+epoch 627, 
+ train loss: 0.051513, val loss: 0.190442 
+ val auc: 0.981532,  test auc: 0.982339
+epoch 628, loss: 0.051393
+epoch 628, 
+ train loss: 0.051393, val loss: 0.191783 
+ val auc: 0.981456,  test auc: 0.982273
+epoch 629, loss: 0.051318
+epoch 629, 
+ train loss: 0.051318, val loss: 0.193070 
+ val auc: 0.981381,  test auc: 0.982226
+epoch 630, loss: 0.051274
+epoch 630, 
+ train loss: 0.051274, val loss: 0.189911 
+ val auc: 0.981569,  test auc: 0.982376
+epoch 631, loss: 0.051235
+epoch 631, 
+ train loss: 0.051235, val loss: 0.194789 
+ val auc: 0.981194,  test auc: 0.982113
+epoch 632, loss: 0.051204
+epoch 632, 
+ train loss: 0.051204, val loss: 0.188493 
+ val auc: 0.981719,  test auc: 0.982479
+epoch 633, loss: 0.051156
+epoch 633, 
+ train loss: 0.051156, val loss: 0.195769 
+ val auc: 0.981156,  test auc: 0.982123
+epoch 634, loss: 0.051104
+epoch 634, 
+ train loss: 0.051104, val loss: 0.188152 
+ val auc: 0.981832,  test auc: 0.982554
+epoch 635, loss: 0.051027
+epoch 635, 
+ train loss: 0.051027, val loss: 0.196805 
+ val auc: 0.981081,  test auc: 0.982085
+epoch 636, loss: 0.050933
+epoch 636, 
+ train loss: 0.050933, val loss: 0.188180 
+ val auc: 0.981757,  test auc: 0.982564
+epoch 637, loss: 0.050798
+epoch 637, 
+ train loss: 0.050798, val loss: 0.196674 
+ val auc: 0.981156,  test auc: 0.982113
+epoch 638, loss: 0.050642
+epoch 638, 
+ train loss: 0.050642, val loss: 0.189186 
+ val auc: 0.981719,  test auc: 0.982564
+epoch 639, loss: 0.050462
+epoch 639, 
+ train loss: 0.050462, val loss: 0.195287 
+ val auc: 0.981156,  test auc: 0.982198
+epoch 640, loss: 0.050293
+epoch 640, 
+ train loss: 0.050293, val loss: 0.190679 
+ val auc: 0.981644,  test auc: 0.982470
+epoch 641, loss: 0.050147
+epoch 641, 
+ train loss: 0.050147, val loss: 0.193069 
+ val auc: 0.981306,  test auc: 0.982310
+epoch 642, loss: 0.050029
+epoch 642, 
+ train loss: 0.050029, val loss: 0.192390 
+ val auc: 0.981419,  test auc: 0.982357
+epoch 643, loss: 0.049939
+epoch 643, 
+ train loss: 0.049939, val loss: 0.191086 
+ val auc: 0.981644,  test auc: 0.982451
+epoch 644, loss: 0.049871
+epoch 644, 
+ train loss: 0.049871, val loss: 0.194227 
+ val auc: 0.981231,  test auc: 0.982273
+epoch 645, loss: 0.049810
+epoch 645, 
+ train loss: 0.049810, val loss: 0.190078 
+ val auc: 0.981682,  test auc: 0.982592
+epoch 646, loss: 0.049748
+epoch 646, 
+ train loss: 0.049748, val loss: 0.195415 
+ val auc: 0.981194,  test auc: 0.982235
+epoch 647, loss: 0.049694
+epoch 647, 
+ train loss: 0.049694, val loss: 0.189558 
+ val auc: 0.981682,  test auc: 0.982611
+epoch 648, loss: 0.049633
+epoch 648, 
+ train loss: 0.049633, val loss: 0.196543 
+ val auc: 0.981081,  test auc: 0.982207
+epoch 649, loss: 0.049573
+epoch 649, 
+ train loss: 0.049573, val loss: 0.189334 
+ val auc: 0.981794,  test auc: 0.982695
+epoch 650, loss: 0.049490
+epoch 650, 
+ train loss: 0.049490, val loss: 0.197050 
+ val auc: 0.981044,  test auc: 0.982179
+epoch 651, loss: 0.049406
+epoch 651, 
+ train loss: 0.049406, val loss: 0.189341 
+ val auc: 0.981869,  test auc: 0.982733
+epoch 652, loss: 0.049294
+epoch 652, 
+ train loss: 0.049294, val loss: 0.196714 
+ val auc: 0.981119,  test auc: 0.982226
+epoch 653, loss: 0.049187
+epoch 653, 
+ train loss: 0.049187, val loss: 0.189617 
+ val auc: 0.981794,  test auc: 0.982770
+epoch 654, loss: 0.049064
+epoch 654, 
+ train loss: 0.049064, val loss: 0.196249 
+ val auc: 0.981119,  test auc: 0.982273
+epoch 655, loss: 0.048942
+epoch 655, 
+ train loss: 0.048942, val loss: 0.190243 
+ val auc: 0.981757,  test auc: 0.982723
+epoch 656, loss: 0.048814
+epoch 656, 
+ train loss: 0.048814, val loss: 0.195447 
+ val auc: 0.981231,  test auc: 0.982310
+epoch 657, loss: 0.048699
+epoch 657, 
+ train loss: 0.048699, val loss: 0.191313 
+ val auc: 0.981532,  test auc: 0.982545
+epoch 658, loss: 0.048591
+epoch 658, 
+ train loss: 0.048591, val loss: 0.194800 
+ val auc: 0.981194,  test auc: 0.982329
+epoch 659, loss: 0.048488
+epoch 659, 
+ train loss: 0.048488, val loss: 0.192355 
+ val auc: 0.981456,  test auc: 0.982554
+epoch 660, loss: 0.048390
+epoch 660, 
+ train loss: 0.048390, val loss: 0.194177 
+ val auc: 0.981269,  test auc: 0.982451
+epoch 661, loss: 0.048296
+epoch 661, 
+ train loss: 0.048296, val loss: 0.193092 
+ val auc: 0.981419,  test auc: 0.982508
+epoch 662, loss: 0.048207
+epoch 662, 
+ train loss: 0.048207, val loss: 0.193654 
+ val auc: 0.981419,  test auc: 0.982489
+epoch 663, loss: 0.048121
+epoch 663, 
+ train loss: 0.048121, val loss: 0.193888 
+ val auc: 0.981419,  test auc: 0.982498
+epoch 664, loss: 0.048036
+epoch 664, 
+ train loss: 0.048036, val loss: 0.193207 
+ val auc: 0.981456,  test auc: 0.982554
+epoch 665, loss: 0.047955
+epoch 665, 
+ train loss: 0.047955, val loss: 0.194385 
+ val auc: 0.981344,  test auc: 0.982461
+epoch 666, loss: 0.047879
+epoch 666, 
+ train loss: 0.047879, val loss: 0.192476 
+ val auc: 0.981494,  test auc: 0.982564
+epoch 667, loss: 0.047808
+epoch 667, 
+ train loss: 0.047808, val loss: 0.195175 
+ val auc: 0.981231,  test auc: 0.982395
+epoch 668, loss: 0.047745
+epoch 668, 
+ train loss: 0.047745, val loss: 0.191943 
+ val auc: 0.981494,  test auc: 0.982630
+epoch 669, loss: 0.047691
+epoch 669, 
+ train loss: 0.047691, val loss: 0.196588 
+ val auc: 0.981081,  test auc: 0.982329
+epoch 670, loss: 0.047648
+epoch 670, 
+ train loss: 0.047648, val loss: 0.191075 
+ val auc: 0.981719,  test auc: 0.982723
+epoch 671, loss: 0.047596
+epoch 671, 
+ train loss: 0.047596, val loss: 0.197431 
+ val auc: 0.981044,  test auc: 0.982357
+epoch 672, loss: 0.047537
+epoch 672, 
+ train loss: 0.047537, val loss: 0.190676 
+ val auc: 0.981794,  test auc: 0.982752
+epoch 673, loss: 0.047453
+epoch 673, 
+ train loss: 0.047453, val loss: 0.197987 
+ val auc: 0.981044,  test auc: 0.982329
+epoch 674, loss: 0.047373
+epoch 674, 
+ train loss: 0.047373, val loss: 0.190691 
+ val auc: 0.981757,  test auc: 0.982780
+epoch 675, loss: 0.047263
+epoch 675, 
+ train loss: 0.047263, val loss: 0.198013 
+ val auc: 0.981044,  test auc: 0.982339
+epoch 676, loss: 0.047129
+epoch 676, 
+ train loss: 0.047129, val loss: 0.191612 
+ val auc: 0.981644,  test auc: 0.982723
+epoch 677, loss: 0.047005
+epoch 677, 
+ train loss: 0.047005, val loss: 0.196875 
+ val auc: 0.981156,  test auc: 0.982451
+epoch 678, loss: 0.046885
+epoch 678, 
+ train loss: 0.046885, val loss: 0.192522 
+ val auc: 0.981456,  test auc: 0.982705
+epoch 679, loss: 0.046776
+epoch 679, 
+ train loss: 0.046776, val loss: 0.195862 
+ val auc: 0.981156,  test auc: 0.982442
+epoch 680, loss: 0.046671
+epoch 680, 
+ train loss: 0.046671, val loss: 0.193634 
+ val auc: 0.981381,  test auc: 0.982611
+epoch 681, loss: 0.046577
+epoch 681, 
+ train loss: 0.046577, val loss: 0.195143 
+ val auc: 0.981194,  test auc: 0.982508
+epoch 682, loss: 0.046487
+epoch 682, 
+ train loss: 0.046487, val loss: 0.194818 
+ val auc: 0.981231,  test auc: 0.982554
+epoch 683, loss: 0.046403
+epoch 683, 
+ train loss: 0.046403, val loss: 0.194584 
+ val auc: 0.981269,  test auc: 0.982554
+epoch 684, loss: 0.046323
+epoch 684, 
+ train loss: 0.046323, val loss: 0.195855 
+ val auc: 0.981194,  test auc: 0.982545
+epoch 685, loss: 0.046249
+epoch 685, 
+ train loss: 0.046249, val loss: 0.193760 
+ val auc: 0.981344,  test auc: 0.982667
+epoch 686, loss: 0.046178
+epoch 686, 
+ train loss: 0.046178, val loss: 0.196571 
+ val auc: 0.981194,  test auc: 0.982526
+epoch 687, loss: 0.046121
+epoch 687, 
+ train loss: 0.046121, val loss: 0.192908 
+ val auc: 0.981456,  test auc: 0.982705
+epoch 688, loss: 0.046074
+epoch 688, 
+ train loss: 0.046074, val loss: 0.197938 
+ val auc: 0.981044,  test auc: 0.982395
+epoch 689, loss: 0.046048
+epoch 689, 
+ train loss: 0.046048, val loss: 0.192027 
+ val auc: 0.981607,  test auc: 0.982864
+epoch 690, loss: 0.046056
+epoch 690, 
+ train loss: 0.046056, val loss: 0.199928 
+ val auc: 0.980781,  test auc: 0.982357
+epoch 691, loss: 0.046091
+epoch 691, 
+ train loss: 0.046091, val loss: 0.190660 
+ val auc: 0.981794,  test auc: 0.982995
+epoch 692, loss: 0.046132
+epoch 692, 
+ train loss: 0.046132, val loss: 0.201748 
+ val auc: 0.980668,  test auc: 0.982292
+epoch 693, loss: 0.046230
+epoch 693, 
+ train loss: 0.046230, val loss: 0.189186 
+ val auc: 0.981869,  test auc: 0.983117
+epoch 694, loss: 0.046273
+epoch 694, 
+ train loss: 0.046273, val loss: 0.203874 
+ val auc: 0.980631,  test auc: 0.982217
+epoch 695, loss: 0.046335
+epoch 695, 
+ train loss: 0.046335, val loss: 0.188531 
+ val auc: 0.981944,  test auc: 0.983183
+epoch 696, loss: 0.046208
+epoch 696, 
+ train loss: 0.046208, val loss: 0.204723 
+ val auc: 0.980556,  test auc: 0.982188
+epoch 697, loss: 0.046019
+epoch 697, 
+ train loss: 0.046019, val loss: 0.189150 
+ val auc: 0.981869,  test auc: 0.983108
+epoch 698, loss: 0.045656
+epoch 698, 
+ train loss: 0.045656, val loss: 0.202076 
+ val auc: 0.980668,  test auc: 0.982282
+epoch 699, loss: 0.045301
+epoch 699, 
+ train loss: 0.045301, val loss: 0.192060 
+ val auc: 0.981607,  test auc: 0.982911
+epoch 700, loss: 0.045050
+epoch 700, 
+ train loss: 0.045050, val loss: 0.196960 
+ val auc: 0.981344,  test auc: 0.982658
+epoch 701, loss: 0.044977
+epoch 701, 
+ train loss: 0.044977, val loss: 0.197084 
+ val auc: 0.981269,  test auc: 0.982620
+epoch 702, loss: 0.045033
+epoch 702, 
+ train loss: 0.045033, val loss: 0.192542 
+ val auc: 0.981607,  test auc: 0.982967
+epoch 703, loss: 0.045105
+epoch 703, 
+ train loss: 0.045105, val loss: 0.201195 
+ val auc: 0.980781,  test auc: 0.982367
+epoch 704, loss: 0.045118
+epoch 704, 
+ train loss: 0.045118, val loss: 0.191244 
+ val auc: 0.981682,  test auc: 0.983052
+epoch 705, loss: 0.044998
+epoch 705, 
+ train loss: 0.044998, val loss: 0.201748 
+ val auc: 0.980818,  test auc: 0.982348
+epoch 706, loss: 0.044809
+epoch 706, 
+ train loss: 0.044809, val loss: 0.192361 
+ val auc: 0.981607,  test auc: 0.983014
+epoch 707, loss: 0.044592
+epoch 707, 
+ train loss: 0.044592, val loss: 0.199111 
+ val auc: 0.981081,  test auc: 0.982536
+epoch 708, loss: 0.044432
+epoch 708, 
+ train loss: 0.044432, val loss: 0.195379 
+ val auc: 0.981344,  test auc: 0.982733
+epoch 709, loss: 0.044354
+epoch 709, 
+ train loss: 0.044354, val loss: 0.195557 
+ val auc: 0.981419,  test auc: 0.982733
+epoch 710, loss: 0.044342
+epoch 710, 
+ train loss: 0.044342, val loss: 0.198906 
+ val auc: 0.981081,  test auc: 0.982592
+epoch 711, loss: 0.044349
+epoch 711, 
+ train loss: 0.044349, val loss: 0.193295 
+ val auc: 0.981644,  test auc: 0.982986
+epoch 712, loss: 0.044329
+epoch 712, 
+ train loss: 0.044329, val loss: 0.200922 
+ val auc: 0.980818,  test auc: 0.982386
+epoch 713, loss: 0.044261
+epoch 713, 
+ train loss: 0.044261, val loss: 0.193211 
+ val auc: 0.981644,  test auc: 0.982949
+epoch 714, loss: 0.044132
+epoch 714, 
+ train loss: 0.044132, val loss: 0.200650 
+ val auc: 0.980856,  test auc: 0.982442
+epoch 715, loss: 0.043976
+epoch 715, 
+ train loss: 0.043976, val loss: 0.194861 
+ val auc: 0.981419,  test auc: 0.982864
+epoch 716, loss: 0.043842
+epoch 716, 
+ train loss: 0.043842, val loss: 0.198063 
+ val auc: 0.981044,  test auc: 0.982639
+epoch 717, loss: 0.043760
+epoch 717, 
+ train loss: 0.043760, val loss: 0.197360 
+ val auc: 0.981231,  test auc: 0.982733
+epoch 718, loss: 0.043715
+epoch 718, 
+ train loss: 0.043715, val loss: 0.195588 
+ val auc: 0.981344,  test auc: 0.982827
+epoch 719, loss: 0.043694
+epoch 719, 
+ train loss: 0.043694, val loss: 0.199577 
+ val auc: 0.980968,  test auc: 0.982554
+epoch 720, loss: 0.043665
+epoch 720, 
+ train loss: 0.043665, val loss: 0.194251 
+ val auc: 0.981532,  test auc: 0.982939
+epoch 721, loss: 0.043611
+epoch 721, 
+ train loss: 0.043611, val loss: 0.200652 
+ val auc: 0.980856,  test auc: 0.982489
+epoch 722, loss: 0.043535
+epoch 722, 
+ train loss: 0.043535, val loss: 0.194387 
+ val auc: 0.981456,  test auc: 0.982911
+epoch 723, loss: 0.043434
+epoch 723, 
+ train loss: 0.043434, val loss: 0.200464 
+ val auc: 0.980856,  test auc: 0.982498
+epoch 724, loss: 0.043326
+epoch 724, 
+ train loss: 0.043326, val loss: 0.195665 
+ val auc: 0.981344,  test auc: 0.982864
+epoch 725, loss: 0.043218
+epoch 725, 
+ train loss: 0.043218, val loss: 0.199109 
+ val auc: 0.981006,  test auc: 0.982658
+epoch 726, loss: 0.043129
+epoch 726, 
+ train loss: 0.043129, val loss: 0.197538 
+ val auc: 0.981194,  test auc: 0.982780
+epoch 727, loss: 0.043063
+epoch 727, 
+ train loss: 0.043063, val loss: 0.197073 
+ val auc: 0.981269,  test auc: 0.982817
+epoch 728, loss: 0.043014
+epoch 728, 
+ train loss: 0.043014, val loss: 0.199037 
+ val auc: 0.980968,  test auc: 0.982676
+epoch 729, loss: 0.042973
+epoch 729, 
+ train loss: 0.042973, val loss: 0.195744 
+ val auc: 0.981344,  test auc: 0.982902
+epoch 730, loss: 0.042929
+epoch 730, 
+ train loss: 0.042929, val loss: 0.200202 
+ val auc: 0.980893,  test auc: 0.982601
+epoch 731, loss: 0.042875
+epoch 731, 
+ train loss: 0.042875, val loss: 0.195299 
+ val auc: 0.981532,  test auc: 0.982967
+epoch 732, loss: 0.042807
+epoch 732, 
+ train loss: 0.042807, val loss: 0.200688 
+ val auc: 0.980893,  test auc: 0.982601
+epoch 733, loss: 0.042736
+epoch 733, 
+ train loss: 0.042736, val loss: 0.195566 
+ val auc: 0.981381,  test auc: 0.982977
+epoch 734, loss: 0.042653
+epoch 734, 
+ train loss: 0.042653, val loss: 0.200451 
+ val auc: 0.980931,  test auc: 0.982630
+epoch 735, loss: 0.042568
+epoch 735, 
+ train loss: 0.042568, val loss: 0.196295 
+ val auc: 0.981419,  test auc: 0.982958
+epoch 736, loss: 0.042485
+epoch 736, 
+ train loss: 0.042485, val loss: 0.199950 
+ val auc: 0.980968,  test auc: 0.982676
+epoch 737, loss: 0.042407
+epoch 737, 
+ train loss: 0.042407, val loss: 0.197209 
+ val auc: 0.981194,  test auc: 0.982864
+epoch 738, loss: 0.042330
+epoch 738, 
+ train loss: 0.042330, val loss: 0.199138 
+ val auc: 0.981081,  test auc: 0.982770
+epoch 739, loss: 0.042257
+epoch 739, 
+ train loss: 0.042257, val loss: 0.198084 
+ val auc: 0.981119,  test auc: 0.982808
+epoch 740, loss: 0.042191
+epoch 740, 
+ train loss: 0.042191, val loss: 0.198426 
+ val auc: 0.981119,  test auc: 0.982817
+epoch 741, loss: 0.042127
+epoch 741, 
+ train loss: 0.042127, val loss: 0.198840 
+ val auc: 0.981081,  test auc: 0.982808
+epoch 742, loss: 0.042066
+epoch 742, 
+ train loss: 0.042066, val loss: 0.197901 
+ val auc: 0.981156,  test auc: 0.982845
+epoch 743, loss: 0.042005
+epoch 743, 
+ train loss: 0.042005, val loss: 0.199309 
+ val auc: 0.981119,  test auc: 0.982808
+epoch 744, loss: 0.041946
+epoch 744, 
+ train loss: 0.041946, val loss: 0.197515 
+ val auc: 0.981269,  test auc: 0.982902
+epoch 745, loss: 0.041888
+epoch 745, 
+ train loss: 0.041888, val loss: 0.199829 
+ val auc: 0.981119,  test auc: 0.982798
+epoch 746, loss: 0.041834
+epoch 746, 
+ train loss: 0.041834, val loss: 0.197073 
+ val auc: 0.981269,  test auc: 0.983005
+epoch 747, loss: 0.041786
+epoch 747, 
+ train loss: 0.041786, val loss: 0.200522 
+ val auc: 0.981119,  test auc: 0.982798
+epoch 748, loss: 0.041743
+epoch 748, 
+ train loss: 0.041743, val loss: 0.196320 
+ val auc: 0.981344,  test auc: 0.983071
+epoch 749, loss: 0.041705
+epoch 749, 
+ train loss: 0.041705, val loss: 0.201188 
+ val auc: 0.981194,  test auc: 0.982817
+epoch 750, loss: 0.041677
+epoch 750, 
+ train loss: 0.041677, val loss: 0.195334 
+ val auc: 0.981494,  test auc: 0.983174
+epoch 751, loss: 0.041613
+epoch 751, 
+ train loss: 0.041613, val loss: 0.201315 
+ val auc: 0.981194,  test auc: 0.982798
+epoch 752, loss: 0.041513
+epoch 752, 
+ train loss: 0.041513, val loss: 0.196136 
+ val auc: 0.981456,  test auc: 0.983127
+epoch 753, loss: 0.041399
+epoch 753, 
+ train loss: 0.041399, val loss: 0.200161 
+ val auc: 0.981231,  test auc: 0.982883
+epoch 754, loss: 0.041309
+epoch 754, 
+ train loss: 0.041309, val loss: 0.198223 
+ val auc: 0.981306,  test auc: 0.983005
+epoch 755, loss: 0.041249
+epoch 755, 
+ train loss: 0.041249, val loss: 0.198138 
+ val auc: 0.981381,  test auc: 0.983014
+epoch 756, loss: 0.041215
+epoch 756, 
+ train loss: 0.041215, val loss: 0.200282 
+ val auc: 0.981269,  test auc: 0.982939
+epoch 757, loss: 0.041204
+epoch 757, 
+ train loss: 0.041204, val loss: 0.196079 
+ val auc: 0.981569,  test auc: 0.983202
+epoch 758, loss: 0.041185
+epoch 758, 
+ train loss: 0.041185, val loss: 0.201616 
+ val auc: 0.981231,  test auc: 0.982864
+epoch 759, loss: 0.041139
+epoch 759, 
+ train loss: 0.041139, val loss: 0.195556 
+ val auc: 0.981569,  test auc: 0.983221
+epoch 760, loss: 0.041044
+epoch 760, 
+ train loss: 0.041044, val loss: 0.201319 
+ val auc: 0.981381,  test auc: 0.982930
+epoch 761, loss: 0.040953
+epoch 761, 
+ train loss: 0.040953, val loss: 0.196247 
+ val auc: 0.981569,  test auc: 0.983221
+epoch 762, loss: 0.040856
+epoch 762, 
+ train loss: 0.040856, val loss: 0.200003 
+ val auc: 0.981381,  test auc: 0.982977
+epoch 763, loss: 0.040761
+epoch 763, 
+ train loss: 0.040761, val loss: 0.198226 
+ val auc: 0.981456,  test auc: 0.983108
+epoch 764, loss: 0.040704
+epoch 764, 
+ train loss: 0.040704, val loss: 0.198261 
+ val auc: 0.981532,  test auc: 0.983146
+epoch 765, loss: 0.040659
+epoch 765, 
+ train loss: 0.040659, val loss: 0.200126 
+ val auc: 0.981381,  test auc: 0.982949
+epoch 766, loss: 0.040618
+epoch 766, 
+ train loss: 0.040618, val loss: 0.196968 
+ val auc: 0.981569,  test auc: 0.983221
+epoch 767, loss: 0.040568
+epoch 767, 
+ train loss: 0.040568, val loss: 0.200564 
+ val auc: 0.981381,  test auc: 0.983005
+epoch 768, loss: 0.040510
+epoch 768, 
+ train loss: 0.040510, val loss: 0.196597 
+ val auc: 0.981682,  test auc: 0.983286
+epoch 769, loss: 0.040436
+epoch 769, 
+ train loss: 0.040436, val loss: 0.200548 
+ val auc: 0.981381,  test auc: 0.982958
+epoch 770, loss: 0.040358
+epoch 770, 
+ train loss: 0.040358, val loss: 0.197599 
+ val auc: 0.981607,  test auc: 0.983221
+epoch 771, loss: 0.040284
+epoch 771, 
+ train loss: 0.040284, val loss: 0.199713 
+ val auc: 0.981456,  test auc: 0.983127
+epoch 772, loss: 0.040215
+epoch 772, 
+ train loss: 0.040215, val loss: 0.198993 
+ val auc: 0.981456,  test auc: 0.983127
+epoch 773, loss: 0.040158
+epoch 773, 
+ train loss: 0.040158, val loss: 0.198843 
+ val auc: 0.981456,  test auc: 0.983117
+epoch 774, loss: 0.040104
+epoch 774, 
+ train loss: 0.040104, val loss: 0.199863 
+ val auc: 0.981456,  test auc: 0.983089
+epoch 775, loss: 0.040056
+epoch 775, 
+ train loss: 0.040056, val loss: 0.198129 
+ val auc: 0.981682,  test auc: 0.983268
+epoch 776, loss: 0.040021
+epoch 776, 
+ train loss: 0.040021, val loss: 0.201396 
+ val auc: 0.981381,  test auc: 0.983005
+epoch 777, loss: 0.040002
+epoch 777, 
+ train loss: 0.040002, val loss: 0.197010 
+ val auc: 0.981794,  test auc: 0.983352
+epoch 778, loss: 0.040033
+epoch 778, 
+ train loss: 0.040033, val loss: 0.203621 
+ val auc: 0.981381,  test auc: 0.982986
+epoch 779, loss: 0.040155
+epoch 779, 
+ train loss: 0.040155, val loss: 0.194579 
+ val auc: 0.982095,  test auc: 0.983474
+epoch 780, loss: 0.040272
+epoch 780, 
+ train loss: 0.040272, val loss: 0.206290 
+ val auc: 0.980968,  test auc: 0.982827
+epoch 781, loss: 0.040347
+epoch 781, 
+ train loss: 0.040347, val loss: 0.193474 
+ val auc: 0.982207,  test auc: 0.983587
+epoch 782, loss: 0.040190
+epoch 782, 
+ train loss: 0.040190, val loss: 0.206881 
+ val auc: 0.981081,  test auc: 0.982873
+epoch 783, loss: 0.039961
+epoch 783, 
+ train loss: 0.039961, val loss: 0.195146 
+ val auc: 0.982095,  test auc: 0.983437
+epoch 784, loss: 0.039663
+epoch 784, 
+ train loss: 0.039663, val loss: 0.203494 
+ val auc: 0.981419,  test auc: 0.983024
+epoch 785, loss: 0.039482
+epoch 785, 
+ train loss: 0.039482, val loss: 0.199569 
+ val auc: 0.981569,  test auc: 0.983164
+epoch 786, loss: 0.039460
+epoch 786, 
+ train loss: 0.039460, val loss: 0.198738 
+ val auc: 0.981757,  test auc: 0.983277
+epoch 787, loss: 0.039566
+epoch 787, 
+ train loss: 0.039566, val loss: 0.205013 
+ val auc: 0.981269,  test auc: 0.982949
+epoch 788, loss: 0.039772
+epoch 788, 
+ train loss: 0.039772, val loss: 0.194984 
+ val auc: 0.982095,  test auc: 0.983483
+epoch 789, loss: 0.039912
+epoch 789, 
+ train loss: 0.039912, val loss: 0.208404 
+ val auc: 0.980818,  test auc: 0.982798
+epoch 790, loss: 0.039935
+epoch 790, 
+ train loss: 0.039935, val loss: 0.194198 
+ val auc: 0.982282,  test auc: 0.983587
+epoch 791, loss: 0.039642
+epoch 791, 
+ train loss: 0.039642, val loss: 0.207428 
+ val auc: 0.981044,  test auc: 0.982892
+epoch 792, loss: 0.039298
+epoch 792, 
+ train loss: 0.039298, val loss: 0.197317 
+ val auc: 0.982020,  test auc: 0.983455
+epoch 793, loss: 0.039062
+epoch 793, 
+ train loss: 0.039062, val loss: 0.201944 
+ val auc: 0.981494,  test auc: 0.983155
+epoch 794, loss: 0.039053
+epoch 794, 
+ train loss: 0.039053, val loss: 0.203083 
+ val auc: 0.981532,  test auc: 0.983127
+epoch 795, loss: 0.039183
+epoch 795, 
+ train loss: 0.039183, val loss: 0.196881 
+ val auc: 0.981982,  test auc: 0.983455
+epoch 796, loss: 0.039243
+epoch 796, 
+ train loss: 0.039243, val loss: 0.206915 
+ val auc: 0.981081,  test auc: 0.982930
+epoch 797, loss: 0.039197
+epoch 797, 
+ train loss: 0.039197, val loss: 0.196518 
+ val auc: 0.982020,  test auc: 0.983446
+epoch 798, loss: 0.038973
+epoch 798, 
+ train loss: 0.038973, val loss: 0.205453 
+ val auc: 0.981344,  test auc: 0.983033
+epoch 799, loss: 0.038786
+epoch 799, 
+ train loss: 0.038786, val loss: 0.199245 
+ val auc: 0.981757,  test auc: 0.983324
+epoch 800, loss: 0.038690
+epoch 800, 
+ train loss: 0.038690, val loss: 0.201267 
+ val auc: 0.981607,  test auc: 0.983249
+epoch 801, loss: 0.038686
+epoch 801, 
+ train loss: 0.038686, val loss: 0.203612 
+ val auc: 0.981494,  test auc: 0.983164
+epoch 802, loss: 0.038723
+epoch 802, 
+ train loss: 0.038723, val loss: 0.198525 
+ val auc: 0.981944,  test auc: 0.983390
+epoch 803, loss: 0.038701
+epoch 803, 
+ train loss: 0.038701, val loss: 0.205617 
+ val auc: 0.981119,  test auc: 0.982977
+epoch 804, loss: 0.038620
+epoch 804, 
+ train loss: 0.038620, val loss: 0.198748 
+ val auc: 0.981944,  test auc: 0.983408
+epoch 805, loss: 0.038489
+epoch 805, 
+ train loss: 0.038489, val loss: 0.204273 
+ val auc: 0.981381,  test auc: 0.983117
+epoch 806, loss: 0.038387
+epoch 806, 
+ train loss: 0.038387, val loss: 0.200853 
+ val auc: 0.981757,  test auc: 0.983324
+epoch 807, loss: 0.038322
+epoch 807, 
+ train loss: 0.038322, val loss: 0.201648 
+ val auc: 0.981607,  test auc: 0.983286
+epoch 808, loss: 0.038295
+epoch 808, 
+ train loss: 0.038295, val loss: 0.203609 
+ val auc: 0.981419,  test auc: 0.983183
+epoch 809, loss: 0.038279
+epoch 809, 
+ train loss: 0.038279, val loss: 0.200036 
+ val auc: 0.981719,  test auc: 0.983343
+epoch 810, loss: 0.038237
+epoch 810, 
+ train loss: 0.038237, val loss: 0.204785 
+ val auc: 0.981344,  test auc: 0.983089
+epoch 811, loss: 0.038180
+epoch 811, 
+ train loss: 0.038180, val loss: 0.199952 
+ val auc: 0.981832,  test auc: 0.983399
+epoch 812, loss: 0.038135
+epoch 812, 
+ train loss: 0.038135, val loss: 0.204833 
+ val auc: 0.981269,  test auc: 0.983089
+epoch 813, loss: 0.038114
+epoch 813, 
+ train loss: 0.038114, val loss: 0.199401 
+ val auc: 0.981794,  test auc: 0.983371
+epoch 814, loss: 0.038105
+epoch 814, 
+ train loss: 0.038105, val loss: 0.206169 
+ val auc: 0.981156,  test auc: 0.983024
+epoch 815, loss: 0.038147
+epoch 815, 
+ train loss: 0.038147, val loss: 0.198334 
+ val auc: 0.981907,  test auc: 0.983408
+epoch 816, loss: 0.038242
+epoch 816, 
+ train loss: 0.038242, val loss: 0.208993 
+ val auc: 0.981006,  test auc: 0.982892
+epoch 817, loss: 0.038460
+epoch 817, 
+ train loss: 0.038460, val loss: 0.195766 
+ val auc: 0.982207,  test auc: 0.983530
+epoch 818, loss: 0.038490
+epoch 818, 
+ train loss: 0.038490, val loss: 0.210582 
+ val auc: 0.980706,  test auc: 0.982845
+epoch 819, loss: 0.038371
+epoch 819, 
+ train loss: 0.038371, val loss: 0.196260 
+ val auc: 0.982207,  test auc: 0.983605
+epoch 820, loss: 0.037966
+epoch 820, 
+ train loss: 0.037966, val loss: 0.207403 
+ val auc: 0.981194,  test auc: 0.983033
+epoch 821, loss: 0.037656
+epoch 821, 
+ train loss: 0.037656, val loss: 0.201259 
+ val auc: 0.981757,  test auc: 0.983390
+epoch 822, loss: 0.037638
+epoch 822, 
+ train loss: 0.037638, val loss: 0.200753 
+ val auc: 0.981757,  test auc: 0.983390
+epoch 823, loss: 0.037787
+epoch 823, 
+ train loss: 0.037787, val loss: 0.207423 
+ val auc: 0.981119,  test auc: 0.983052
+epoch 824, loss: 0.037929
+epoch 824, 
+ train loss: 0.037929, val loss: 0.197308 
+ val auc: 0.982170,  test auc: 0.983596
+epoch 825, loss: 0.037830
+epoch 825, 
+ train loss: 0.037830, val loss: 0.209241 
+ val auc: 0.981044,  test auc: 0.982920
+epoch 826, loss: 0.037604
+epoch 826, 
+ train loss: 0.037604, val loss: 0.199645 
+ val auc: 0.981869,  test auc: 0.983446
+epoch 827, loss: 0.037369
+epoch 827, 
+ train loss: 0.037369, val loss: 0.205149 
+ val auc: 0.981494,  test auc: 0.983211
+epoch 828, loss: 0.037313
+epoch 828, 
+ train loss: 0.037313, val loss: 0.204884 
+ val auc: 0.981494,  test auc: 0.983268
+epoch 829, loss: 0.037399
+epoch 829, 
+ train loss: 0.037399, val loss: 0.200267 
+ val auc: 0.981832,  test auc: 0.983418
+epoch 830, loss: 0.037471
+epoch 830, 
+ train loss: 0.037471, val loss: 0.208653 
+ val auc: 0.981081,  test auc: 0.983005
+epoch 831, loss: 0.037503
+epoch 831, 
+ train loss: 0.037503, val loss: 0.198404 
+ val auc: 0.982095,  test auc: 0.983559
+epoch 832, loss: 0.037338
+epoch 832, 
+ train loss: 0.037338, val loss: 0.207801 
+ val auc: 0.981269,  test auc: 0.983108
+epoch 833, loss: 0.037152
+epoch 833, 
+ train loss: 0.037152, val loss: 0.201216 
+ val auc: 0.981832,  test auc: 0.983418
+epoch 834, loss: 0.037029
+epoch 834, 
+ train loss: 0.037029, val loss: 0.203613 
+ val auc: 0.981494,  test auc: 0.983305
+epoch 835, loss: 0.037038
+epoch 835, 
+ train loss: 0.037038, val loss: 0.205958 
+ val auc: 0.981456,  test auc: 0.983221
+epoch 836, loss: 0.037085
+epoch 836, 
+ train loss: 0.037085, val loss: 0.200691 
+ val auc: 0.981944,  test auc: 0.983474
+epoch 837, loss: 0.037055
+epoch 837, 
+ train loss: 0.037055, val loss: 0.208294 
+ val auc: 0.981156,  test auc: 0.983080
+epoch 838, loss: 0.036959
+epoch 838, 
+ train loss: 0.036959, val loss: 0.201447 
+ val auc: 0.982020,  test auc: 0.983483
+epoch 839, loss: 0.036823
+epoch 839, 
+ train loss: 0.036823, val loss: 0.206584 
+ val auc: 0.981419,  test auc: 0.983221
+epoch 840, loss: 0.036739
+epoch 840, 
+ train loss: 0.036739, val loss: 0.204638 
+ val auc: 0.981532,  test auc: 0.983315
+epoch 841, loss: 0.036715
+epoch 841, 
+ train loss: 0.036715, val loss: 0.202947 
+ val auc: 0.981719,  test auc: 0.983418
+epoch 842, loss: 0.036732
+epoch 842, 
+ train loss: 0.036732, val loss: 0.207058 
+ val auc: 0.981231,  test auc: 0.983183
+epoch 843, loss: 0.036719
+epoch 843, 
+ train loss: 0.036719, val loss: 0.201288 
+ val auc: 0.981944,  test auc: 0.983502
+epoch 844, loss: 0.036648
+epoch 844, 
+ train loss: 0.036648, val loss: 0.207281 
+ val auc: 0.981269,  test auc: 0.983164
+epoch 845, loss: 0.036551
+epoch 845, 
+ train loss: 0.036551, val loss: 0.202543 
+ val auc: 0.981794,  test auc: 0.983427
+epoch 846, loss: 0.036468
+epoch 846, 
+ train loss: 0.036468, val loss: 0.205329 
+ val auc: 0.981494,  test auc: 0.983258
+epoch 847, loss: 0.036417
+epoch 847, 
+ train loss: 0.036417, val loss: 0.205138 
+ val auc: 0.981532,  test auc: 0.983286
+epoch 848, loss: 0.036392
+epoch 848, 
+ train loss: 0.036392, val loss: 0.203520 
+ val auc: 0.981757,  test auc: 0.983390
+epoch 849, loss: 0.036376
+epoch 849, 
+ train loss: 0.036376, val loss: 0.207127 
+ val auc: 0.981306,  test auc: 0.983193
+epoch 850, loss: 0.036360
+epoch 850, 
+ train loss: 0.036360, val loss: 0.202253 
+ val auc: 0.981794,  test auc: 0.983455
+epoch 851, loss: 0.036323
+epoch 851, 
+ train loss: 0.036323, val loss: 0.207492 
+ val auc: 0.981344,  test auc: 0.983193
+epoch 852, loss: 0.036256
+epoch 852, 
+ train loss: 0.036256, val loss: 0.202391 
+ val auc: 0.981832,  test auc: 0.983493
+epoch 853, loss: 0.036175
+epoch 853, 
+ train loss: 0.036175, val loss: 0.206123 
+ val auc: 0.981419,  test auc: 0.983268
+epoch 854, loss: 0.036107
+epoch 854, 
+ train loss: 0.036107, val loss: 0.204504 
+ val auc: 0.981644,  test auc: 0.983371
+epoch 855, loss: 0.036066
+epoch 855, 
+ train loss: 0.036066, val loss: 0.204284 
+ val auc: 0.981569,  test auc: 0.983380
+epoch 856, loss: 0.036044
+epoch 856, 
+ train loss: 0.036044, val loss: 0.206863 
+ val auc: 0.981456,  test auc: 0.983286
+epoch 857, loss: 0.036022
+epoch 857, 
+ train loss: 0.036022, val loss: 0.203376 
+ val auc: 0.981982,  test auc: 0.983502
+epoch 858, loss: 0.035981
+epoch 858, 
+ train loss: 0.035981, val loss: 0.207715 
+ val auc: 0.981456,  test auc: 0.983221
+epoch 859, loss: 0.035927
+epoch 859, 
+ train loss: 0.035927, val loss: 0.203632 
+ val auc: 0.981832,  test auc: 0.983427
+epoch 860, loss: 0.035861
+epoch 860, 
+ train loss: 0.035861, val loss: 0.206808 
+ val auc: 0.981381,  test auc: 0.983258
+epoch 861, loss: 0.035799
+epoch 861, 
+ train loss: 0.035799, val loss: 0.204726 
+ val auc: 0.981682,  test auc: 0.983380
+epoch 862, loss: 0.035748
+epoch 862, 
+ train loss: 0.035748, val loss: 0.205605 
+ val auc: 0.981569,  test auc: 0.983343
+epoch 863, loss: 0.035704
+epoch 863, 
+ train loss: 0.035704, val loss: 0.206312 
+ val auc: 0.981456,  test auc: 0.983268
+epoch 864, loss: 0.035665
+epoch 864, 
+ train loss: 0.035665, val loss: 0.204779 
+ val auc: 0.981682,  test auc: 0.983352
+epoch 865, loss: 0.035618
+epoch 865, 
+ train loss: 0.035618, val loss: 0.207182 
+ val auc: 0.981419,  test auc: 0.983258
+epoch 866, loss: 0.035563
+epoch 866, 
+ train loss: 0.035563, val loss: 0.204538 
+ val auc: 0.981644,  test auc: 0.983390
+epoch 867, loss: 0.035494
+epoch 867, 
+ train loss: 0.035494, val loss: 0.207325 
+ val auc: 0.981456,  test auc: 0.983305
+epoch 868, loss: 0.035414
+epoch 868, 
+ train loss: 0.035414, val loss: 0.204622 
+ val auc: 0.981682,  test auc: 0.983380
+epoch 869, loss: 0.035338
+epoch 869, 
+ train loss: 0.035338, val loss: 0.206846 
+ val auc: 0.981456,  test auc: 0.983315
+epoch 870, loss: 0.035277
+epoch 870, 
+ train loss: 0.035277, val loss: 0.205555 
+ val auc: 0.981569,  test auc: 0.983361
+epoch 871, loss: 0.035228
+epoch 871, 
+ train loss: 0.035228, val loss: 0.206355 
+ val auc: 0.981494,  test auc: 0.983352
+epoch 872, loss: 0.035185
+epoch 872, 
+ train loss: 0.035185, val loss: 0.206576 
+ val auc: 0.981456,  test auc: 0.983352
+epoch 873, loss: 0.035144
+epoch 873, 
+ train loss: 0.035144, val loss: 0.206135 
+ val auc: 0.981569,  test auc: 0.983380
+epoch 874, loss: 0.035103
+epoch 874, 
+ train loss: 0.035103, val loss: 0.207223 
+ val auc: 0.981381,  test auc: 0.983324
+epoch 875, loss: 0.035074
+epoch 875, 
+ train loss: 0.035074, val loss: 0.205433 
+ val auc: 0.981607,  test auc: 0.983418
+epoch 876, loss: 0.035066
+epoch 876, 
+ train loss: 0.035066, val loss: 0.208830 
+ val auc: 0.981231,  test auc: 0.983258
+epoch 877, loss: 0.035119
+epoch 877, 
+ train loss: 0.035119, val loss: 0.203169 
+ val auc: 0.982057,  test auc: 0.983587
+epoch 878, loss: 0.035226
+epoch 878, 
+ train loss: 0.035226, val loss: 0.211506 
+ val auc: 0.981194,  test auc: 0.983174
+epoch 879, loss: 0.035337
+epoch 879, 
+ train loss: 0.035337, val loss: 0.200801 
+ val auc: 0.982057,  test auc: 0.983690
+epoch 880, loss: 0.035295
+epoch 880, 
+ train loss: 0.035295, val loss: 0.212962 
+ val auc: 0.981081,  test auc: 0.983061
+epoch 881, loss: 0.035172
+epoch 881, 
+ train loss: 0.035172, val loss: 0.201483 
+ val auc: 0.982170,  test auc: 0.983774
+epoch 882, loss: 0.034971
+epoch 882, 
+ train loss: 0.034971, val loss: 0.211103 
+ val auc: 0.981269,  test auc: 0.983230
+epoch 883, loss: 0.034797
+epoch 883, 
+ train loss: 0.034797, val loss: 0.204636 
+ val auc: 0.981907,  test auc: 0.983559
+epoch 884, loss: 0.034693
+epoch 884, 
+ train loss: 0.034693, val loss: 0.207383 
+ val auc: 0.981494,  test auc: 0.983390
+epoch 885, loss: 0.034687
+epoch 885, 
+ train loss: 0.034687, val loss: 0.209066 
+ val auc: 0.981381,  test auc: 0.983361
+epoch 886, loss: 0.034745
+epoch 886, 
+ train loss: 0.034745, val loss: 0.203830 
+ val auc: 0.982057,  test auc: 0.983615
+epoch 887, loss: 0.034797
+epoch 887, 
+ train loss: 0.034797, val loss: 0.211662 
+ val auc: 0.981231,  test auc: 0.983239
+epoch 888, loss: 0.034800
+epoch 888, 
+ train loss: 0.034800, val loss: 0.202446 
+ val auc: 0.982020,  test auc: 0.983671
+epoch 889, loss: 0.034691
+epoch 889, 
+ train loss: 0.034691, val loss: 0.211297 
+ val auc: 0.981231,  test auc: 0.983239
+epoch 890, loss: 0.034553
+epoch 890, 
+ train loss: 0.034553, val loss: 0.204244 
+ val auc: 0.981907,  test auc: 0.983587
+epoch 891, loss: 0.034429
+epoch 891, 
+ train loss: 0.034429, val loss: 0.208443 
+ val auc: 0.981419,  test auc: 0.983352
+epoch 892, loss: 0.034374
+epoch 892, 
+ train loss: 0.034374, val loss: 0.207954 
+ val auc: 0.981532,  test auc: 0.983390
+epoch 893, loss: 0.034383
+epoch 893, 
+ train loss: 0.034383, val loss: 0.205620 
+ val auc: 0.981907,  test auc: 0.983559
+epoch 894, loss: 0.034405
+epoch 894, 
+ train loss: 0.034405, val loss: 0.211059 
+ val auc: 0.981306,  test auc: 0.983277
+epoch 895, loss: 0.034406
+epoch 895, 
+ train loss: 0.034406, val loss: 0.204430 
+ val auc: 0.981832,  test auc: 0.983559
+epoch 896, loss: 0.034352
+epoch 896, 
+ train loss: 0.034352, val loss: 0.211422 
+ val auc: 0.981231,  test auc: 0.983286
+epoch 897, loss: 0.034267
+epoch 897, 
+ train loss: 0.034267, val loss: 0.204978 
+ val auc: 0.981907,  test auc: 0.983568
+epoch 898, loss: 0.034172
+epoch 898, 
+ train loss: 0.034172, val loss: 0.209332 
+ val auc: 0.981419,  test auc: 0.983361
+epoch 899, loss: 0.034103
+epoch 899, 
+ train loss: 0.034103, val loss: 0.207003 
+ val auc: 0.981607,  test auc: 0.983446
+epoch 900, loss: 0.034065
+epoch 900, 
+ train loss: 0.034065, val loss: 0.206855 
+ val auc: 0.981607,  test auc: 0.983437
+epoch 901, loss: 0.034052
+epoch 901, 
+ train loss: 0.034052, val loss: 0.209398 
+ val auc: 0.981456,  test auc: 0.983380
+epoch 902, loss: 0.034047
+epoch 902, 
+ train loss: 0.034047, val loss: 0.205691 
+ val auc: 0.981832,  test auc: 0.983530
+epoch 903, loss: 0.034026
+epoch 903, 
+ train loss: 0.034026, val loss: 0.210932 
+ val auc: 0.981269,  test auc: 0.983296
+epoch 904, loss: 0.033992
+epoch 904, 
+ train loss: 0.033992, val loss: 0.205634 
+ val auc: 0.981794,  test auc: 0.983549
+epoch 905, loss: 0.033935
+epoch 905, 
+ train loss: 0.033935, val loss: 0.210873 
+ val auc: 0.981306,  test auc: 0.983352
+epoch 906, loss: 0.033887
+epoch 906, 
+ train loss: 0.033887, val loss: 0.205970 
+ val auc: 0.981832,  test auc: 0.983568
+epoch 907, loss: 0.033828
+epoch 907, 
+ train loss: 0.033828, val loss: 0.209783 
+ val auc: 0.981456,  test auc: 0.983399
+epoch 908, loss: 0.033769
+epoch 908, 
+ train loss: 0.033769, val loss: 0.207061 
+ val auc: 0.981607,  test auc: 0.983483
+epoch 909, loss: 0.033720
+epoch 909, 
+ train loss: 0.033720, val loss: 0.208471 
+ val auc: 0.981494,  test auc: 0.983455
+epoch 910, loss: 0.033682
+epoch 910, 
+ train loss: 0.033682, val loss: 0.208650 
+ val auc: 0.981494,  test auc: 0.983465
+epoch 911, loss: 0.033653
+epoch 911, 
+ train loss: 0.033653, val loss: 0.207483 
+ val auc: 0.981644,  test auc: 0.983521
+epoch 912, loss: 0.033626
+epoch 912, 
+ train loss: 0.033626, val loss: 0.210089 
+ val auc: 0.981456,  test auc: 0.983399
+epoch 913, loss: 0.033598
+epoch 913, 
+ train loss: 0.033598, val loss: 0.207325 
+ val auc: 0.981644,  test auc: 0.983521
+epoch 914, loss: 0.033562
+epoch 914, 
+ train loss: 0.033562, val loss: 0.210867 
+ val auc: 0.981344,  test auc: 0.983371
+epoch 915, loss: 0.033520
+epoch 915, 
+ train loss: 0.033520, val loss: 0.207719 
+ val auc: 0.981607,  test auc: 0.983549
+epoch 916, loss: 0.033472
+epoch 916, 
+ train loss: 0.033472, val loss: 0.210523 
+ val auc: 0.981381,  test auc: 0.983399
+epoch 917, loss: 0.033428
+epoch 917, 
+ train loss: 0.033428, val loss: 0.208085 
+ val auc: 0.981532,  test auc: 0.983512
+epoch 918, loss: 0.033384
+epoch 918, 
+ train loss: 0.033384, val loss: 0.209854 
+ val auc: 0.981419,  test auc: 0.983418
+epoch 919, loss: 0.033342
+epoch 919, 
+ train loss: 0.033342, val loss: 0.208699 
+ val auc: 0.981569,  test auc: 0.983493
+epoch 920, loss: 0.033302
+epoch 920, 
+ train loss: 0.033302, val loss: 0.209398 
+ val auc: 0.981494,  test auc: 0.983474
+epoch 921, loss: 0.033266
+epoch 921, 
+ train loss: 0.033266, val loss: 0.209466 
+ val auc: 0.981456,  test auc: 0.983474
+epoch 922, loss: 0.033229
+epoch 922, 
+ train loss: 0.033229, val loss: 0.209218 
+ val auc: 0.981419,  test auc: 0.983465
+epoch 923, loss: 0.033191
+epoch 923, 
+ train loss: 0.033191, val loss: 0.209972 
+ val auc: 0.981456,  test auc: 0.983446
+epoch 924, loss: 0.033156
+epoch 924, 
+ train loss: 0.033156, val loss: 0.208992 
+ val auc: 0.981532,  test auc: 0.983493
+epoch 925, loss: 0.033118
+epoch 925, 
+ train loss: 0.033118, val loss: 0.210176 
+ val auc: 0.981381,  test auc: 0.983427
+epoch 926, loss: 0.033082
+epoch 926, 
+ train loss: 0.033082, val loss: 0.208902 
+ val auc: 0.981494,  test auc: 0.983483
+epoch 927, loss: 0.033044
+epoch 927, 
+ train loss: 0.033044, val loss: 0.210379 
+ val auc: 0.981419,  test auc: 0.983437
+epoch 928, loss: 0.033004
+epoch 928, 
+ train loss: 0.033004, val loss: 0.209242 
+ val auc: 0.981532,  test auc: 0.983474
+epoch 929, loss: 0.032972
+epoch 929, 
+ train loss: 0.032972, val loss: 0.210980 
+ val auc: 0.981344,  test auc: 0.983371
+epoch 930, loss: 0.032953
+epoch 930, 
+ train loss: 0.032953, val loss: 0.208400 
+ val auc: 0.981644,  test auc: 0.983530
+epoch 931, loss: 0.032971
+epoch 931, 
+ train loss: 0.032971, val loss: 0.213105 
+ val auc: 0.981156,  test auc: 0.983239
+epoch 932, loss: 0.033102
+epoch 932, 
+ train loss: 0.033102, val loss: 0.205509 
+ val auc: 0.981869,  test auc: 0.983671
+epoch 933, loss: 0.033311
+epoch 933, 
+ train loss: 0.033311, val loss: 0.217097 
+ val auc: 0.980818,  test auc: 0.983024
+epoch 934, loss: 0.033622
+epoch 934, 
+ train loss: 0.033622, val loss: 0.202639 
+ val auc: 0.981982,  test auc: 0.983868
+epoch 935, loss: 0.033760
+epoch 935, 
+ train loss: 0.033760, val loss: 0.221004 
+ val auc: 0.980593,  test auc: 0.982892
+epoch 936, loss: 0.033923
+epoch 936, 
+ train loss: 0.033923, val loss: 0.201462 
+ val auc: 0.982170,  test auc: 0.984000
+epoch 937, loss: 0.033584
+epoch 937, 
+ train loss: 0.033584, val loss: 0.220719 
+ val auc: 0.980593,  test auc: 0.982902
+epoch 938, loss: 0.033388
+epoch 938, 
+ train loss: 0.033388, val loss: 0.203336 
+ val auc: 0.982095,  test auc: 0.983887
+epoch 939, loss: 0.032948
+epoch 939, 
+ train loss: 0.032948, val loss: 0.217689 
+ val auc: 0.980856,  test auc: 0.983024
+epoch 940, loss: 0.032603
+epoch 940, 
+ train loss: 0.032603, val loss: 0.208896 
+ val auc: 0.981607,  test auc: 0.983483
+epoch 941, loss: 0.032503
+epoch 941, 
+ train loss: 0.032503, val loss: 0.209938 
+ val auc: 0.981532,  test auc: 0.983474
+epoch 942, loss: 0.032666
+epoch 942, 
+ train loss: 0.032666, val loss: 0.215663 
+ val auc: 0.981231,  test auc: 0.983174
+epoch 943, loss: 0.032880
+epoch 943, 
+ train loss: 0.032880, val loss: 0.205257 
+ val auc: 0.981944,  test auc: 0.983774
+epoch 944, loss: 0.032851
+epoch 944, 
+ train loss: 0.032851, val loss: 0.218478 
+ val auc: 0.980931,  test auc: 0.983052
+epoch 945, loss: 0.032660
+epoch 945, 
+ train loss: 0.032660, val loss: 0.206368 
+ val auc: 0.981832,  test auc: 0.983699
+epoch 946, loss: 0.032388
+epoch 946, 
+ train loss: 0.032388, val loss: 0.214206 
+ val auc: 0.981344,  test auc: 0.983333
+epoch 947, loss: 0.032262
+epoch 947, 
+ train loss: 0.032262, val loss: 0.211628 
+ val auc: 0.981494,  test auc: 0.983380
+epoch 948, loss: 0.032323
+epoch 948, 
+ train loss: 0.032323, val loss: 0.208255 
+ val auc: 0.981794,  test auc: 0.983615
+epoch 949, loss: 0.032437
+epoch 949, 
+ train loss: 0.032437, val loss: 0.216134 
+ val auc: 0.981194,  test auc: 0.983211
+epoch 950, loss: 0.032598
+epoch 950, 
+ train loss: 0.032598, val loss: 0.205084 
+ val auc: 0.981982,  test auc: 0.983849
+epoch 951, loss: 0.032560
+epoch 951, 
+ train loss: 0.032560, val loss: 0.217719 
+ val auc: 0.981044,  test auc: 0.983155
+epoch 952, loss: 0.032397
+epoch 952, 
+ train loss: 0.032397, val loss: 0.206649 
+ val auc: 0.981832,  test auc: 0.983727
+epoch 953, loss: 0.032130
+epoch 953, 
+ train loss: 0.032130, val loss: 0.214325 
+ val auc: 0.981344,  test auc: 0.983371
+epoch 954, loss: 0.032023
+epoch 954, 
+ train loss: 0.032023, val loss: 0.212314 
+ val auc: 0.981494,  test auc: 0.983437
+epoch 955, loss: 0.032083
+epoch 955, 
+ train loss: 0.032083, val loss: 0.208938 
+ val auc: 0.981757,  test auc: 0.983634
+epoch 956, loss: 0.032186
+epoch 956, 
+ train loss: 0.032186, val loss: 0.216844 
+ val auc: 0.981156,  test auc: 0.983268
+epoch 957, loss: 0.032197
+epoch 957, 
+ train loss: 0.032197, val loss: 0.207412 
+ val auc: 0.981794,  test auc: 0.983709
+epoch 958, loss: 0.032062
+epoch 958, 
+ train loss: 0.032062, val loss: 0.216733 
+ val auc: 0.981119,  test auc: 0.983249
+epoch 959, loss: 0.031895
+epoch 959, 
+ train loss: 0.031895, val loss: 0.210196 
+ val auc: 0.981644,  test auc: 0.983568
+epoch 960, loss: 0.031795
+epoch 960, 
+ train loss: 0.031795, val loss: 0.212680 
+ val auc: 0.981419,  test auc: 0.983437
+epoch 961, loss: 0.031794
+epoch 961, 
+ train loss: 0.031794, val loss: 0.214141 
+ val auc: 0.981344,  test auc: 0.983399
+epoch 962, loss: 0.031839
+epoch 962, 
+ train loss: 0.031839, val loss: 0.209194 
+ val auc: 0.981719,  test auc: 0.983605
+epoch 963, loss: 0.031838
+epoch 963, 
+ train loss: 0.031838, val loss: 0.216143 
+ val auc: 0.981269,  test auc: 0.983268
+epoch 964, loss: 0.031777
+epoch 964, 
+ train loss: 0.031777, val loss: 0.209137 
+ val auc: 0.981757,  test auc: 0.983568
+epoch 965, loss: 0.031655
+epoch 965, 
+ train loss: 0.031655, val loss: 0.214355 
+ val auc: 0.981381,  test auc: 0.983418
+epoch 966, loss: 0.031576
+epoch 966, 
+ train loss: 0.031576, val loss: 0.212123 
+ val auc: 0.981494,  test auc: 0.983474
+epoch 967, loss: 0.031562
+epoch 967, 
+ train loss: 0.031562, val loss: 0.210826 
+ val auc: 0.981719,  test auc: 0.983587
+epoch 968, loss: 0.031571
+epoch 968, 
+ train loss: 0.031571, val loss: 0.215024 
+ val auc: 0.981419,  test auc: 0.983390
+epoch 969, loss: 0.031553
+epoch 969, 
+ train loss: 0.031553, val loss: 0.210018 
+ val auc: 0.981757,  test auc: 0.983577
+epoch 970, loss: 0.031493
+epoch 970, 
+ train loss: 0.031493, val loss: 0.215475 
+ val auc: 0.981494,  test auc: 0.983437
+epoch 971, loss: 0.031417
+epoch 971, 
+ train loss: 0.031417, val loss: 0.211472 
+ val auc: 0.981682,  test auc: 0.983559
+epoch 972, loss: 0.031350
+epoch 972, 
+ train loss: 0.031350, val loss: 0.213607 
+ val auc: 0.981607,  test auc: 0.983483
+epoch 973, loss: 0.031312
+epoch 973, 
+ train loss: 0.031312, val loss: 0.213670 
+ val auc: 0.981607,  test auc: 0.983465
+epoch 974, loss: 0.031292
+epoch 974, 
+ train loss: 0.031292, val loss: 0.211541 
+ val auc: 0.981719,  test auc: 0.983596
+epoch 975, loss: 0.031270
+epoch 975, 
+ train loss: 0.031270, val loss: 0.215279 
+ val auc: 0.981419,  test auc: 0.983380
+epoch 976, loss: 0.031231
+epoch 976, 
+ train loss: 0.031231, val loss: 0.211562 
+ val auc: 0.981682,  test auc: 0.983624
+epoch 977, loss: 0.031171
+epoch 977, 
+ train loss: 0.031171, val loss: 0.215639 
+ val auc: 0.981456,  test auc: 0.983408
+epoch 978, loss: 0.031109
+epoch 978, 
+ train loss: 0.031109, val loss: 0.212895 
+ val auc: 0.981607,  test auc: 0.983530
+epoch 979, loss: 0.031056
+epoch 979, 
+ train loss: 0.031056, val loss: 0.214404 
+ val auc: 0.981456,  test auc: 0.983418
+epoch 980, loss: 0.031016
+epoch 980, 
+ train loss: 0.031016, val loss: 0.214303 
+ val auc: 0.981456,  test auc: 0.983418
+epoch 981, loss: 0.030983
+epoch 981, 
+ train loss: 0.030983, val loss: 0.213206 
+ val auc: 0.981532,  test auc: 0.983465
+epoch 982, loss: 0.030954
+epoch 982, 
+ train loss: 0.030954, val loss: 0.215212 
+ val auc: 0.981381,  test auc: 0.983371
+epoch 983, loss: 0.030924
+epoch 983, 
+ train loss: 0.030924, val loss: 0.212612 
+ val auc: 0.981569,  test auc: 0.983465
+epoch 984, loss: 0.030886
+epoch 984, 
+ train loss: 0.030886, val loss: 0.215250 
+ val auc: 0.981381,  test auc: 0.983361
+epoch 985, loss: 0.030850
+epoch 985, 
+ train loss: 0.030850, val loss: 0.212638 
+ val auc: 0.981456,  test auc: 0.983455
+epoch 986, loss: 0.030809
+epoch 986, 
+ train loss: 0.030809, val loss: 0.214630 
+ val auc: 0.981419,  test auc: 0.983390
+epoch 987, loss: 0.030768
+epoch 987, 
+ train loss: 0.030768, val loss: 0.213679 
+ val auc: 0.981494,  test auc: 0.983418
+epoch 988, loss: 0.030732
+epoch 988, 
+ train loss: 0.030732, val loss: 0.214112 
+ val auc: 0.981494,  test auc: 0.983446
+epoch 989, loss: 0.030700
+epoch 989, 
+ train loss: 0.030700, val loss: 0.214413 
+ val auc: 0.981532,  test auc: 0.983446
+epoch 990, loss: 0.030672
+epoch 990, 
+ train loss: 0.030672, val loss: 0.213316 
+ val auc: 0.981456,  test auc: 0.983418
+epoch 991, loss: 0.030642
+epoch 991, 
+ train loss: 0.030642, val loss: 0.214688 
+ val auc: 0.981456,  test auc: 0.983408
+epoch 992, loss: 0.030610
+epoch 992, 
+ train loss: 0.030610, val loss: 0.213111 
+ val auc: 0.981532,  test auc: 0.983446
+epoch 993, loss: 0.030575
+epoch 993, 
+ train loss: 0.030575, val loss: 0.214590 
+ val auc: 0.981456,  test auc: 0.983418
+epoch 994, loss: 0.030541
+epoch 994, 
+ train loss: 0.030541, val loss: 0.213557 
+ val auc: 0.981532,  test auc: 0.983437
+epoch 995, loss: 0.030506
+epoch 995, 
+ train loss: 0.030506, val loss: 0.214226 
+ val auc: 0.981456,  test auc: 0.983427
+epoch 996, loss: 0.030474
+epoch 996, 
+ train loss: 0.030474, val loss: 0.214099 
+ val auc: 0.981607,  test auc: 0.983483
+epoch 997, loss: 0.030445
+epoch 997, 
+ train loss: 0.030445, val loss: 0.213700 
+ val auc: 0.981644,  test auc: 0.983502
+epoch 998, loss: 0.030418
+epoch 998, 
+ train loss: 0.030418, val loss: 0.214877 
+ val auc: 0.981569,  test auc: 0.983455
+epoch 999, loss: 0.030398
+epoch 999, 
+ train loss: 0.030398, val loss: 0.212981 
+ val auc: 0.981719,  test auc: 0.983540
+AUC: 0.981344
