@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Author: Maosheng Yang, TU Delft (m.yang-2@tudelft.nl)
-
 build the SNN convolution
 
 paper: https://arxiv.org/abs/2010.03633
