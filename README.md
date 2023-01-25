@@ -1,4 +1,2 @@
-This is the code for the simplex prediction and the trajectory prediction experiments. There are detailed README files for the two in the two experiment folders. Note that  
 
-1. For the simplex prediction in folder ['simplex_pred'](./simplex_pred/), we wrote the code from scratch.
-2. For the trajectory prediction in folder ['trajectory_pred'](./trajectory_pred/), we based the code on the implementation [SCoNe_GCN](https://github.com/nglaze00/SCoNe_GCN) from [https://arxiv.org/abs/2102.10058].
+This is the code for the simplex prediction and trajectory prediction experiments. The simplex prediction code in the ['simplex_pred'](./simplex_pred/) folder was written from scratch, while the trajectory prediction code in the ['trajectory_pred'](./trajectory_pred/) folder is based on the [SCoNe_GCN](https://github.com/nglaze00/SCoNe_GCN) implementation from the paper [https://arxiv.org/abs/2102.10058]. Detailed README files for both experiments can be found in the corresponding folders.
