@@ -8,7 +8,7 @@ do
             do 
                 s=$(printf "\--model_name sccnn_node --hidden_features %d --layers %d --filter_order_same %d --realizations %d" $hidden_features $layers $order $realizations)
                 s="${s:1}"
-                python simplex_pred/2-simplex_experiments/HOlink_prediction_sccnn_node.py $s
+                python simplex_pred/2-simplex_experiments/sccnn_node.py $s
             done
         done
     done

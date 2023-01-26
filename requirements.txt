@@ -1,0 +1,19 @@
+# for simplex prediction
+
+numpy==1.23.2
+torch==1.12.1
+scipy==1.7.3
+itertools
+scikit-learn==1.1.1
+sympy==1.10.1
+
+
+# for trajectory prediction 
+numpy==1.23.2
+matplotlib==3.5.1
+jax==0.3.16
+jaxlib==0.3.15+cuda11.cudnn82
+treelib==1.6.1
+pandas==1.4.3
+scipy==1.7.3
+networkx==2.8.5

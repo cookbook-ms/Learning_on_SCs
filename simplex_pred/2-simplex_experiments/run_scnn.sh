@@ -11,7 +11,7 @@ do
                 do 
                     s=$(printf "\--model_name scnn --hidden_features %d --layers %d --filter_order_scnn_k1 %d --filter_order_scnn_k2 %d --realizations %d" $hidden_features $layers $order1 $order2 $realizations)
                     s="${s:1}"
-                    python 2-simplex_experiments/HOlink_prediction.py $s
+                    python 2-simplex_experiments/scnn.py $s
                 done
             done
         done

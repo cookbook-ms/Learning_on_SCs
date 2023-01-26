@@ -15,7 +15,7 @@ Note that the algorithm of trajectory prediction performed in a simplicial compl
 
 
 # Requirements 
-Our implementation requires the same packages as in [PSNN], detailed in https://github.com/nglaze00/SCoNe_GCN, including, Python 3.7; numpy, matplotlib, scipy, networkx, jax, jaxlib, treelib
+Our implementation requires the same packages as in [PSNN], detailed in https://github.com/nglaze00/SCoNe_GCN, including, Python 3; numpy, matplotlib, scipy, networkx, jax, jaxlib, treelib
 
 # Data
 We first use the python file [trajectory_analysis/synthetic_data_gen.py](./trajectory_analysis/synthetic_data_gen.py) to generate a synthetic simplicial complexes, together with trajectories, which was proposed in [Schaub et al]. Specifically, we considered the construction with two holes defiend by 400 points, and generated 1000 trajectories based on random walks in edge spaces, following the same procedures as in [PSNN]. We also randomly split these trajectories into 10 training-test sets. One can do so by specifying the rlz_id and random_split_id in the python file, e.g., 
@@ -63,7 +63,11 @@ We also built the code for other models, including
     ```
 
 # Integral Lipschitz regularization 
-We also applied the integral Lipschitz regularizer to the model [SCNN] and [PSNN] to study if it can help with the stability. Specifically, files [trajectory_analysis/trajectory_stability_experiment.py](./trajectory_analysis/trajectory_stability_experiment.py) and [trajectory_analysis/trajectory_stability_experiment_no_il.py](./trajectory_analysis/trajectory_stability_experiment_no_il.py) implemented the stability experimetns with and without the regularizer. By specifying the `'perturbation'` parameter, one can add perturbations with different norms to the Hodge Laplacians based on the relative perturbation model. For example, we can study the stability of [SCNN] of orders $T_{\rm{d}}=T_{\rm{u}}=3$ with a regularization weight $0.5$ and perturbation level (norm) $0.5$.
+We also applied the integral Lipschitz regularizer to the model [SCNN] and [PSNN] to study if it can help with the stability. Specifically, files [trajectory_analysis/stability_experiment_with_il_rgl.py](./trajectory_analysis/stability_experiment_with_il_rgl.py) and [trajectory_analysis/stability_experiment_no_il_rgl.py](./trajectory_analysis/stability_experiment_no_il_rgl.py) implemented the stability experimetns with and without the regularizer. 
+
+By specifying the `'perturbation'` parameter, one can add perturbations with different norms to the Hodge Laplacians based on the relative perturbation model. For example, we can study the stability of [SCNN] of orders $T_{\rm{d}}=T_{\rm{u}}=3$ with a regularization weight $0.5$ and perturbation level (norm) $0.5$.
 ```sh
 python ./trajectory_analysis/trajectory_stability_experiment.py -model scnn3 -hidden_layers 3_16_3_16_3_16 -weight_il 0.5 -k1_scnn 3 -k2_scnn 3 -perturbation 0.5 
 ```
+
+Using [trajectory_analysis/il_constant_with_rgl.py](./trajectory_analysis/il_constant_with_rgl.py) and [trajectory_analysis/il_constant_no_rgl.py](./trajectory_analysis/il_constant_no_rgl.py) we can visualize the integral lipschitz property of the trained SCNN with and without the regularizer. 

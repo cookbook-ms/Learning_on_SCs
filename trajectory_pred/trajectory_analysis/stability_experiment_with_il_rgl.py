@@ -1,63 +1,6 @@
 '''
-This is the code to perform prediction using different methods 
-
-built based on the paper: https://arxiv.org/abs/2102.10058v3
+Study the stability of SCNN with the regularizer 
 '''
-
-# Following comments are modified based on https://github.com/nglaze00/SCoNe_GCN to contain our model SCCNN
-###########################################
-"""
-This is where you actually train models. See below for docs:
-
-Generate a synthetic graph, with holes in upper left and lower right regions, + paths over the graph:
-    python3 synthetic_data_gen.py
-    -Edit main of synthetic_data_gen.py to change graph size / # of paths
-
-Train a SCoNe model on a dataset:
-    python3 trajectory_experiments.py [args]
-
-    -Command to run standard training / experiment with defaults:
-        python3 trajectory_experiments.py -data_folder_suffix suffix_here
-
-    -The default hyperparameters should work pretty well on the default graph size. You'll probably have to play with
-        them for other graphs, though.
-
-Arguments + default values for trajectory_experiments.py:
-   'model': 'scone'; which model to use, of ('scone', 'ebli', or 'bunch')
-        -'scone': ours
-        -'ebli':  https://arxiv.org/pdf/2010.03633.pdf
-        -'bunch': https://arxiv.org/pdf/2012.06010.pdf
-        -'sccnn1_n': sccnn of convolution order one directly using node features for prediction 
-        -'sccnn1_e': sccnn of convolution order one using edge features for prediction 
-        -'sccnn2_n': sccnn of convolution order two directly using node features for prediction 
-        -'sccnn2_e': sccnn of convolution order two using edge features for prediction
-
-   'epochs': 1000; # of training epochs
-   'learning_rate': 0.001; starting learning rate
-   'weight_decay': 0.00005; ridge regularization constant
-   'batch_size': 100; # of samples per batch (randomly selected)
-   'reverse': 0;  if 1, also compute accuracy over the test set, but reversed (Reverse experiment)
-   'data_folder_suffix': 'schaub2'; set suffix of folder to import data from (trajectory_data_Nhop_suffix)
-   'regional': 0; if 1, trains a model over upper graph region and tests over lower region (Transfer experiment)
-
-   'hidden_layers': 3_16_3_16_3_16 (corresponds to [(3, 16), (3, 16), (3, 16)]; each tuple is a layer (# of shift matrices, # of units in layer) )
-
-        -'scone' and 'ebli' require 3_#_3_#_ ...; 
-        -'scnn' require 3_#_3_#_ ..., its automated by k1 and k2
-        -'bunch' requires 7_#_7_#_ ...
-        -'sccnn1' requires 15_#_15_#_...
-        -'sccnn2' requires 23_#_23_#_...
-
-   'describe': 1; describes the dataset being used
-   'load_data': 1; if 0, generate new data; if 1, load data from folder set in data_folder_suffix
-   'load_model': 0; if 0, train a new model, if 1, load model from file model_name.npy. Must set hidden_layers regardless of choice
-   'markov': 0; include tests using a 2nd-order Markov model
-   'model_name': 'model'; name of model to use when load_model = 1
-   'flip_edges': 0; if 1, flips orientation of a random subset of edges. with tanh activation, should perform equally
-   'multi_graph': '': if not '', also tests on paths over the graph with the folder suffix set here
-   'holes': 1; if generation new data, sets whether the graph should have holes
-   
-"""
 
 
 from cmath import tan
@@ -70,9 +13,10 @@ from pathlib import Path
 path = Path(__file__).parent.absolute()
 os.chdir(path)
 
-from model_matrices import compute_shift_matrices, compute_shift_matrices_sccnn1
+
+from model_matrices import compute_shift_matrices
 from synthetic_data_gen import load_dataset, generate_dataset, neighborhood, conditional_incidence_matrix, flow_to_path
-from trajectory_pred.trajectory_analysis.scone_model import Scone_GCN
+from trajectory_pred.trajectory_analysis.model_stability_with_il_rgl import Scone_GCN
 
 
 def hyperparams():
@@ -82,31 +26,37 @@ def hyperparams():
     For hidden_layers, input [(3, 8), (3, 8)] as 3_8_3_8
     """
     args = sys.argv
-    hyperparams = {'model': 'scone',
+    hyperparams = {'model': 'scnn12',
                    'epochs': 1000,
                    'learning_rate': 0.001,
-                   'weight_decay': 0.000005,
+                   'weight_decay': 0.00005,
+                   'weight_il': 0.0005,
                    'batch_size': 100,
-                   'hidden_layers': [(3, 16), (3, 16), (3, 16)], # where 3 indicates the 1 identity, 1 lower and 1 upper shift # for ebli, replace 3 by 4, for bunch, replace 3 by 7, for scnn, no need to replace, for scnn1, replace 3 by 15, for sccnn2, replace 3 by 23
-                   'k1_scnn': 2,
+                   'hidden_layers': [(3, 16)], 
+                   'k1_scnn': 1,
                    'k2_scnn': 2,
                    'describe': 1,
                    'reverse': 1,
                    'load_data': 1,
                    'load_model': 0,
-                   'normalized': 1, # if to normalize the hodge laplacians
+                   'normalized': 1,
                    'markov': 0,
                    'model_name': 'model',
                    'regional': 0,
                    'flip_edges': 0,
-                   'data_folder_suffix': 'working2_5',
-                   'multi_graph': '',
+                   'data_folder_suffix': 'working',
+                   'multi_graph': '',                   
+                   'perturbation': 0.001, # perturbations levels 
+    #    array([0.001, 0.00199526, 0.00398107, 0.00794328, 0.01584893,
+    #    0.03162278, 0.06309573, 0.12589254, 0.25118864, 0.50118723,
+    #    1.])
                    'holes': 1}
 
     for i in range(len(args) - 1):
         if args[i][0] == '-':
             if args[i][1:] == 'hidden_layers':
                 nums = list(map(int, args[i + 1].split("_")))
+
                 hyperparams['hidden_layers'] = []
                 for j in range(0, len(nums), 2):
                     hyperparams['hidden_layers'] += [(nums[j], nums[j + 1])]
@@ -143,8 +93,10 @@ def scone_func(weights, S_lower, S_upper, Bcond_func, last_node, flow):
     Forward pass of the SCoNe model with variable number of layers
     """
     n_layers = (len(weights) - 1) / 3
+    #print('#weights:',len(weights),'#layers:',n_layers)
     assert n_layers % 1 == 0, 'wrong number of weights'
     cur_out = flow
+    #print(S_lower.size)
     for i in range(int(n_layers)):
         cur_out = cur_out @ weights[i * 3] \
                   + S_lower @ cur_out @ weights[i*3 + 1] \
@@ -153,11 +105,32 @@ def scone_func(weights, S_lower, S_upper, Bcond_func, last_node, flow):
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits) # log of the softmax function 
+    #print(logits)
+    return logits - logsumexp(logits), cur_out # log of the softmax function 
 
+def scnn_func_1(weights, S_lower, S_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
+    """
+    Forward pass of the SCoNe model with variable number of layers
+    """
+    n_layers = (len(weights) - 1) / (1+k1+k2) # k1=k2=1
+    n_k = 1+k1+k2
+    #print('#weights:',len(weights),'#layers:',n_layers)
+    assert n_layers % 1 == 0, 'wrong number of weights'
+    cur_out = flow
+    for i in range(int(n_layers)):
+        cur_out = cur_out @ weights[i*n_k] \
+                  + S_lower @ cur_out @ weights[i*n_k + 1] \
+                  + S_upper @ cur_out @ weights[i*n_k + 2] 
+
+        cur_out = tanh(cur_out)
+
+    logits = Bcond_func(last_node) @ cur_out @ weights[-1]
+    return logits - logsumexp(logits), cur_out
 
 def scnn_func_2(weights, S_lower, S2_lower, S_upper, S2_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
-    '''scnn of order 2, 2 '''
+    """
+    Forward pass of the SCoNe model with variable number of layers
+    """
     n_layers = (len(weights) - 1) / (1+k1+k2) # k1=k2=2
     n_k = 1+k1+k2
     #print('#weights:',len(weights),'#layers:',n_layers)
@@ -173,11 +146,13 @@ def scnn_func_2(weights, S_lower, S2_lower, S_upper, S2_upper, Bcond_func, last_
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 def scnn_func_12(weights, S_lower, S_upper, S2_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
-    '''scnn of order 1, 2 '''
-    n_layers = (len(weights) - 1) / (1+k1+k2) 
+    """
+    Forward pass of the SCoNe model with variable number of layers
+    """
+    n_layers = (len(weights) - 1) / (1+k1+k2) # k1=k2=2
     n_k = 1+k1+k2
     #print('#weights:',len(weights),'#layers:',n_layers)
     assert n_layers % 1 == 0, 'wrong number of weights'
@@ -191,11 +166,10 @@ def scnn_func_12(weights, S_lower, S_upper, S2_upper, Bcond_func, last_node, flo
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 
 def scnn_func_21(weights, S_lower, S2_lower, S_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
-    '''scnn of order 2, 1 '''
     n_layers = (len(weights) - 1) / (1+k1+k2) 
     n_k = 1+k1+k2
     #print('#weights:',len(weights),'#layers:',n_layers)
@@ -210,11 +184,10 @@ def scnn_func_21(weights, S_lower, S2_lower, S_upper, Bcond_func, last_node, flo
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 def scnn_func_13(weights, S_lower, S_upper, S2_upper, S3_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
-    '''scnn of order 1, 3 '''
-    n_layers = (len(weights) - 1) / (1+k1+k2) # k1=k2=2
+    n_layers = (len(weights) - 1) / (1+k1+k2) 
     n_k = 1+k1+k2
     #print('#weights:',len(weights),'#layers:',n_layers)
     assert n_layers % 1 == 0, 'wrong number of weights'
@@ -229,11 +202,10 @@ def scnn_func_13(weights, S_lower, S_upper, S2_upper, S3_upper, Bcond_func, last
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 
 def scnn_func_31(weights, S_lower, S2_lower, S3_lower, S_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
-    '''scnn of order 3, 1 '''
     n_layers = (len(weights) - 1) / (1+k1+k2) 
     n_k = 1+k1+k2
     #print('#weights:',len(weights),'#layers:',n_layers)
@@ -249,12 +221,11 @@ def scnn_func_31(weights, S_lower, S2_lower, S3_lower, S_upper, Bcond_func, last
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 
 def scnn_func_3(weights, S_lower, S2_lower, S3_lower, S_upper, S2_upper, S3_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
-    '''scnn of order 3, 3 '''
-    n_layers = (len(weights) - 1) / (1+k1+k2) # k1=k2=3
+    n_layers = (len(weights) - 1) / (1+k1+k2) 
     n_k = 1+k1+k2
     #print('#weights:',len(weights),'#layers:',n_layers)
     assert n_layers % 1 == 0, 'wrong number of weights'
@@ -271,11 +242,10 @@ def scnn_func_3(weights, S_lower, S2_lower, S3_lower, S_upper, S2_upper, S3_uppe
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 def scnn_func_23(weights, S_lower, S2_lower, S_upper, S2_upper, S3_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
-    '''scnn of order 2, 3 '''
-    n_layers = (len(weights) - 1) / (1+k1+k2)
+    n_layers = (len(weights) - 1) / (1+k1+k2) 
     n_k = 1+k1+k2
     #print('#weights:',len(weights),'#layers:',n_layers)
     assert n_layers % 1 == 0, 'wrong number of weights'
@@ -291,12 +261,11 @@ def scnn_func_23(weights, S_lower, S2_lower, S_upper, S2_upper, S3_upper, Bcond_
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 
 def scnn_func_32(weights, S_lower, S2_lower, S3_lower, S_upper, S2_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
-    '''scnn of order 3, 2 '''
-    n_layers = (len(weights) - 1) / (1+k1+k2) # k1=k2=3
+    n_layers = (len(weights) - 1) / (1+k1+k2) 
     n_k = 1+k1+k2
     #print('#weights:',len(weights),'#layers:',n_layers)
     assert n_layers % 1 == 0, 'wrong number of weights'
@@ -312,10 +281,9 @@ def scnn_func_32(weights, S_lower, S2_lower, S3_lower, S_upper, S2_upper, Bcond_
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 def scnn_func_4(weights, S_lower, S2_lower, S3_lower, S4_lower, S_upper, S2_upper, S3_upper, S4_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
-    '''scnn of order 4, 4 '''
     n_layers = (len(weights) - 1) / (1+k1+k2) # k1=k2=4
     n_k = 1+k1+k2
     #print('#weights:',len(weights),'#layers:',n_layers)
@@ -335,11 +303,10 @@ def scnn_func_4(weights, S_lower, S2_lower, S3_lower, S4_lower, S_upper, S2_uppe
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 
 def scnn_func_5(weights, S_lower, S2_lower, S3_lower, S4_lower, S5_lower, S_upper, S2_upper, S3_upper, S4_upper, S5_upper, Bcond_func, last_node, flow, k1=HYPERPARAMS['k1_scnn'], k2=HYPERPARAMS['k2_scnn']):
-    '''scnn of order 5, 5 '''
     n_layers = (len(weights) - 1) / (1+k1+k2) # k1=k2=4
     n_k = 1+k1+k2
     #print('#weights:',len(weights),'#layers:',n_layers)
@@ -361,7 +328,7 @@ def scnn_func_5(weights, S_lower, S2_lower, S3_lower, S4_lower, S5_lower, S_uppe
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 
 # Ebli function
@@ -385,191 +352,10 @@ def ebli_func(weights, S, S2, S3, Bcond_func, last_node, flow):
         cur_out = tanh(cur_out)
 
     logits = Bcond_func(last_node) @ cur_out @ weights[-1]
-    return logits - logsumexp(logits)
-
-# Bunch function
-def bunch_func(weights, S_00, S_10, S_01, S_11, S_21, S_12, S_22, nbrhoods, last_node, flow):
-    """
-    Forward pass of the Bunch model with variable number of layers
-    directly using the node feature
-    """
-    n_layers = (len(weights)) / 7
-    #print('#weights:',len(weights),'#layers:',n_layers)
-    assert n_layers % 1 == 0, 'wrong number of weights'
-    cur_out = [np.zeros((S_00.shape[1], 1)), flow, np.zeros((S_22.shape[1], 1))]
-
-    for i in range(int(n_layers)):
-        next_out = [None, None, None]
-        # node level
-        next_out[0] = S_00 @ cur_out[0] @ weights[i * 7] \
-                   + S_10 @ cur_out[1] @ weights[i * 7 + 1]
-
-        next_out[1] = S_01 @ cur_out[0] @ weights[i * 7 + 2] \
-                   + S_11 @ cur_out[1] @ weights[i * 7 + 3] \
-                   + S_21 @ cur_out[2] @ weights[i * 7 + 4]
-
-        next_out[2] = S_12 @ cur_out[1] @ weights[i * 7 + 5] \
-                   + S_22 @ cur_out[2] @ weights[i * 7 + 6]
-
-        cur_out = [tanh(c) for c in next_out]
-    '''option 1'''
-    nodes_out = cur_out[0] # use the last layer output on the node level as the final output 
-    # values at nbrs of last node
-    logits = nodes_out[nbrhoods[last_node]]
-    return logits - logsumexp(logits)
+    return logits - logsumexp(logits), cur_out
 
 
-def bunch_func_2(weights, S_00, S_10, S_01, S_11, S_21, S_12, S_22, Bcond_func, last_node, flow):
-    """
-    Forward pass of the Bunch model with variable number of layers
-    also followed by a projection from edge to node 
-    """
-    n_layers = (len(weights)-1) / 7
-    #print('#weights:',len(weights),'#layers:',n_layers)
-    assert n_layers % 1 == 0, 'wrong number of weights'
-    cur_out = [np.zeros((S_00.shape[1], 1)), flow, np.zeros((S_22.shape[1], 1))]
-
-    for i in range(int(n_layers)):
-        next_out = [None, None, None]
-        # node level
-        next_out[0] = S_00 @ cur_out[0] @ weights[i * 7] \
-                   + S_10 @ cur_out[1] @ weights[i * 7 + 1]
-
-        next_out[1] = S_01 @ cur_out[0] @ weights[i * 7 + 2] \
-                   + S_11 @ cur_out[1] @ weights[i * 7 + 3] \
-                   + S_21 @ cur_out[2] @ weights[i * 7 + 4]
-
-        next_out[2] = S_12 @ cur_out[1] @ weights[i * 7 + 5] \
-                   + S_22 @ cur_out[2] @ weights[i * 7 + 6]
-
-        cur_out = [tanh(c) for c in next_out]
-    '''option 2'''
-    # let us consider the edge features then project them to the node space like other models
-    logits = Bcond_func(last_node) @ cur_out[1] @ weights[-1]
-    return logits - logsumexp(logits)
-
-# sccnn1 function
-def sccnn_func_1_n(weights, S_00,S_10,  S_01, S_11_d, S_11_u,S_21,  S_12,S_22, nbrhoods, last_node, flow):
-    """
-    Forward pass of the sccnn1 model with variable number of layers: here we consider the laplacians as shift operators for consistent comparisons with scnn and snn and psnn
-    """
-    ns = 15 # number of shift operators in total including identity matrices
-    n_layers = (len(weights)) / ns
-    assert n_layers % 1 == 0, 'wrong number of weights'
-    cur_out = [np.zeros((S_00.shape[1], 1)), flow, np.zeros((S_22.shape[1], 1))]
-
-    for i in range(int(n_layers)):
-        next_out = [None, None, None]
-        # node level
-        next_out[0] = cur_out[0] @ weights[i*ns] + S_00 @ cur_out[0] @ weights[i*ns+1] \
-                    + S_10 @ cur_out[1] @ weights[i*ns+2] + S_00 @ S_10 @ cur_out[1] @ weights[i*ns+3] 
-
-        next_out[1] = S_01 @ cur_out[0] @ weights[i*ns+4] + S_11_d @ S_01 @ cur_out[0] @ weights[i*ns+5] \
-                   + cur_out[1] @ weights[i*ns+6] + S_11_d @ cur_out[1] @ weights[i*ns+7] + S_11_u @ cur_out[1] @ weights[i*ns+8] \
-                   + S_21 @ cur_out[2] @ weights[i*ns+9] + S_11_u @ S_21 @ cur_out[2] @ weights[i*ns+10] 
-
-        next_out[2] = S_12 @ cur_out[1] @ weights[i*ns+11] + S_22 @ S_12 @ cur_out[1] @ weights[i*ns+12]\
-                   + cur_out[2] @ weights[i*ns+13] + S_22 @ cur_out[2] @ weights[i*ns+14]
-
-        cur_out = [tanh(c) for c in next_out]
-    '''option 1'''
-    nodes_out = cur_out[0] # use the last layer output on the node level as the final output 
-    # values at nbrs of last node
-    logits = nodes_out[nbrhoods[last_node]]
-    return logits - logsumexp(logits)
-
-# sccnn2 function
-def sccnn_func_2_n(weights, S_00,S_10,  S_01, S_11_d, S_11_u,S_21,  S_12,S_22, nbrhoods, last_node, flow):
-    """
-    Forward pass of the sccnn2 model with variable number of layers: here we consider the laplacians as shift operators for consisten comparisons with scnn and snn and psnn
-    """
-    ns = 23 # number of shift operators in total including identity matrices
-    n_layers = (len(weights)) / ns
-    assert n_layers % 1 == 0, 'wrong number of weights'
-    cur_out = [np.zeros((S_00.shape[1], 1)), flow, np.zeros((S_22.shape[1], 1))]
-
-    for i in range(int(n_layers)):
-        next_out = [None, None, None]
-        # node level
-        next_out[0] = cur_out[0] @ weights[i*ns] + S_00 @ cur_out[0] @ weights[i*ns+1] + S_00 @ S_00 @ cur_out[0] @ weights[i*ns+2] \
-                    + S_10 @ cur_out[1] @ weights[i*ns+3] + S_00 @ S_10 @ cur_out[1] @ weights[i*ns+4] + S_00 @ S_00 @ S_10 @ cur_out[1] @ weights[i*ns+5] 
-
-        next_out[1] = S_01 @ cur_out[0] @ weights[i*ns+6] + S_11_d @ S_01 @ cur_out[0] @ weights[i*ns+7] + S_11_d @ S_11_d @ S_01 @ cur_out[0] @ weights[i*ns+8] \
-                   + cur_out[1] @ weights[i*ns+9] + S_11_d @ cur_out[1] @ weights[i*ns+10] + S_11_d @ S_11_d @ cur_out[1] @ weights[i*ns+11] + S_11_u @ cur_out[1] @ weights[i*ns+12] + S_11_u @ S_11_u @ cur_out[1] @ weights[i*ns+13] \
-                   + S_21 @ cur_out[2] @ weights[i*ns+14] + S_11_u @ S_21 @ cur_out[2] @ weights[i*ns+15] + S_11_u @ S_11_u @ S_21 @ cur_out[2] @ weights[i*ns+16]
-
-        next_out[2] = S_12 @ cur_out[1] @ weights[i*ns+17] + S_22 @ S_12 @ cur_out[1] @ weights[i*ns+18] + S_22 @ S_22 @ S_12 @ cur_out[1] @ weights[i*ns+19]\
-                   + cur_out[2] @ weights[i*ns+20] + S_22 @ cur_out[2] @ weights[i*ns+21] + S_22 @ S_22 @ cur_out[2] @ weights[i*ns+22]
-
-        cur_out = [tanh(c) for c in next_out]
-    '''option 1'''
-    nodes_out = cur_out[0] # use the last layer output on the node level as the final output 
-    # values at nbrs of last node
-    logits = nodes_out[nbrhoods[last_node]]
-    return logits - logsumexp(logits)
-
-def sccnn_func_1_e(weights, S_00,S_10,  S_01, S_11_d, S_11_u, S_21,  S_12,S_22, Bcond_func, last_node, flow):
-    """
-    Forward pass of the sccnn1 model with variable number of layers: here we consider the laplacians as shift operators for consisten comparisons with scnn and snn and psnn
-    """
-    ns = 15 # number of shift operators in total including identity matrices
-    n_layers = (len(weights)-1) / ns
-    #print('#weights:',len(weights),'#layers:',n_layers)
-    assert n_layers % 1 == 0, 'wrong number of weights'
-    cur_out = [np.zeros((S_00.shape[1], 1)), flow, np.zeros((S_22.shape[1], 1))]
-
-    for i in range(int(n_layers)):
-        next_out = [None, None, None]
-        # node level
-        next_out[0] = cur_out[0] @ weights[i*ns] + S_00 @ cur_out[0] @ weights[i*ns+1] \
-                    + S_10 @ cur_out[1] @ weights[i*ns+2] + S_00 @ S_10 @ cur_out[1] @ weights[i*ns+3] 
-
-        next_out[1] = S_01 @ cur_out[0] @ weights[i*ns+4] + S_11_d @ S_01 @ cur_out[0] @ weights[i*ns+5] \
-                   + cur_out[1] @ weights[i*ns+6] + S_11_d @ cur_out[1] @ weights[i*ns+7] + S_11_u @ cur_out[1] @ weights[i*ns+8] \
-                   + S_21 @ cur_out[2] @ weights[i*ns+9] + S_11_u @ S_21 @ cur_out[2] @ weights[i*ns+10]
-
-        next_out[2] = S_12 @ cur_out[1] @ weights[i*ns+11] + S_22 @ S_12 @ cur_out[1] @ weights[i*ns+12]\
-                   + cur_out[2] @ weights[i*ns+13] + S_22 @ cur_out[2] @ weights[i*ns+14]
-
-        cur_out = [tanh(c) for c in next_out]
-    '''option 2'''
-    # let us consider the edge features then project them to the node space like other models
-    logits = Bcond_func(last_node) @ cur_out[1] @ weights[-1]
-    return logits - logsumexp(logits)
-
-
-def sccnn_func_2_e(weights, S_00,S_10,  S_01, S_11_d, S_11_u, S_21,  S_12,S_22, Bcond_func, last_node, flow):
-    """
-    Forward pass of the sccnn1 model with variable number of layers: here we consider the laplacians as shift operators for consisten comparisons with scnn and snn and psnn
-    """
-    ns = 23 # number of shift operators in total including identity matrices
-    n_layers = (len(weights)-1) / ns
-    #print('#weights:',len(weights),'#layers:',n_layers)
-    assert n_layers % 1 == 0, 'wrong number of weights'
-    cur_out = [np.zeros((S_00.shape[1], 1)), flow, np.zeros((S_22.shape[1], 1))]
-
-    for i in range(int(n_layers)):
-        next_out = [None, None, None]
-        # node level
-        next_out[0] = cur_out[0] @ weights[i*ns] + S_00 @ cur_out[0] @ weights[i*ns+1] + S_00 @ S_00 @ cur_out[0] @ weights[i*ns+2] \
-                    + S_10 @ cur_out[1] @ weights[i*ns+3] + S_00 @ S_10 @ cur_out[1] @ weights[i*ns+4] + S_00 @ S_00 @ S_10 @ cur_out[1] @ weights[i*ns+5] \
-
-        next_out[1] = S_01 @ cur_out[0] @ weights[i*ns+6] + S_11_d @ S_01 @ cur_out[0] @ weights[i*ns+7] + S_11_d @ S_11_d @ S_01 @ cur_out[0] @ weights[i*ns+8] \
-                   + cur_out[1] @ weights[i*ns+9] + S_11_d @ cur_out[1] @ weights[i*ns+10] + S_11_d @ S_11_d @ cur_out[1] @ weights[i*ns+11] + S_11_u @ cur_out[1] @ weights[i*ns+12] + S_11_u @ S_11_u @ cur_out[1] @ weights[i*ns+13] \
-                   + S_21 @ cur_out[2] @ weights[i*ns+14] + S_11_u @ S_21 @ cur_out[2] @ weights[i*ns+15] + S_11_u @ S_11_u @ S_21 @ cur_out[2] @ weights[i*ns+16]
-
-        next_out[2] = S_12 @ cur_out[1] @ weights[i*ns+17] + S_22 @ S_12 @ cur_out[1] @ weights[i*ns+18] + S_22 @ S_22 @ S_12 @ cur_out[1] @ weights[i*ns+19]\
-                   + cur_out[2] @ weights[i*ns+20] + S_22 @ cur_out[2] @ weights[i*ns+21] + S_22 @ S_22 @ cur_out[2] @ weights[i*ns+22]
-
-        cur_out = [tanh(c) for c in next_out]
-    '''option 2'''
-    # let us consider the edge features then project them to the node space like other models
-    logits = Bcond_func(last_node) @ cur_out[1] @ weights[-1]
-    return logits - logsumexp(logits)
-
-
-
-def data_setup(hops=(1,), load=True, folder_suffix='working0'):
+def data_setup(hops=(1,), load=True, folder_suffix='schaub'):
     """
     Imports and sets up flow, target, and shift matrices for model training. Supports generating data for multiple hops
         at once
@@ -617,36 +403,77 @@ def data_setup(hops=(1,), load=True, folder_suffix='working0'):
             L1_lower = F @ L1_lower @ F
             L1_upper = F @ L1_upper @ F
 
+        # perturbations 
+        epsilon_lower = HYPERPARAMS['perturbation'] 
+        print(np.linalg.norm(L1_lower))  
+        E1_lower_rlz = onp.mean([onp.random.randn(L1_lower.shape[0],L1_lower.shape[1]) for k in range(10)],0)
+        E1_lower = E1_lower_rlz/la.norm(E1_lower_rlz)*epsilon_lower
+        print(np.linalg.norm(E1_lower)) 
+
+        epsilon_upper = epsilon_lower
+        print(np.linalg.norm(L1_upper))
+        E1_upper_rlz = onp.mean([onp.random.randn(L1_upper.shape[0],L1_upper.shape[1]) for k in range(10)],0)
+        E1_upper = E1_upper_rlz/la.norm(E1_upper_rlz)*epsilon_upper
+        print(np.linalg.norm(E1_upper)) 
+
+        L1_lower_perturbed = L1_lower + E1_lower @ L1_lower + L1_lower @ E1_lower
+        L1_upper_perturbed = L1_upper + E1_upper @ L1_upper + L1_upper @ E1_upper
+
+        print(la.norm(L1_lower_perturbed), la.norm(L1_upper_perturbed))
+        print(L1_lower_perturbed.shape, L1_upper_perturbed.shape)
+
         if HYPERPARAMS['model'] == 'scone':
             shifts = [L1_lower, L1_upper]
+            perturbed_shifts = [L1_lower_perturbed, L1_upper_perturbed]
+            # shifts = [L1_lower, L1_lower]
+
+        elif HYPERPARAMS['model'] == 'scnn1':
+            shifts = [L1_lower, L1_upper]
+            perturbed_shifts = [L1_lower_perturbed, L1_upper_perturbed]
+
         elif HYPERPARAMS['model'] == 'scnn2':
             shifts = [L1_lower, L1_lower@L1_lower, L1_upper, L1_upper@L1_upper]
+            perturbed_shifts = [L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed, L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed]
+
         elif HYPERPARAMS['model'] == 'scnn12':
             shifts = [L1_lower, L1_upper, L1_upper@L1_upper]
+            perturbed_shifts = [L1_lower_perturbed, L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed]
+        
         elif HYPERPARAMS['model'] == 'scnn21':
             shifts = [L1_lower, L1_lower@L1_lower, L1_upper]
+            perturbed_shifts = [L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed, L1_upper_perturbed]
+
         elif HYPERPARAMS['model'] == 'scnn13':
             shifts = [L1_lower, L1_upper, L1_upper@L1_upper, L1_upper@L1_upper@L1_upper]
+            perturbed_shifts = [L1_lower_perturbed, L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed] 
+
         elif HYPERPARAMS['model'] == 'scnn31':
             shifts = [L1_lower, L1_lower@L1_lower, L1_lower@L1_lower@L1_lower, L1_upper]
+            perturbed_shifts = [L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed, L1_upper_perturbed] 
+
         elif HYPERPARAMS['model'] == 'scnn23':
-            shifts = [L1_lower, L1_lower@L1_lower, L1_upper, L1_upper@L1_upper, L1_upper@L1_upper@L1_upper]  
+            shifts = [L1_lower, L1_lower@L1_lower, L1_upper, L1_upper@L1_upper, L1_upper@L1_upper@L1_upper]
+            perturbed_shifts = [L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed, L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed]   
+
         elif HYPERPARAMS['model'] == 'scnn32':
             shifts = [L1_lower, L1_lower@L1_lower, L1_lower@L1_lower@L1_lower, L1_upper, L1_upper@L1_upper]  
+            perturbed_shifts = [L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed, L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed]  
+           
         elif HYPERPARAMS['model'] == 'scnn3':
             shifts = [L1_lower, L1_lower@L1_lower, L1_lower@L1_lower@L1_lower,L1_upper, L1_upper@L1_upper, L1_upper@L1_upper@L1_upper]    
+            perturbed_shifts = [L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed, L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed]    
+
         elif HYPERPARAMS['model'] == 'scnn4':
             shifts = [L1_lower, L1_lower@L1_lower, L1_lower@L1_lower@L1_lower, L1_lower@L1_lower@L1_lower@L1_lower, L1_upper, L1_upper@L1_upper, L1_upper@L1_upper@L1_upper, L1_upper@L1_upper@L1_upper@L1_upper] 
+            perturbed_shifts = [L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed, L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed] 
+
         elif HYPERPARAMS['model'] == 'scnn5':
             shifts = [L1_lower, L1_lower@L1_lower, L1_lower@L1_lower@L1_lower, L1_lower@L1_lower@L1_lower@L1_lower, L1_lower@L1_lower@L1_lower@L1_lower@L1_lower, L1_upper, L1_upper@L1_upper, L1_upper@L1_upper@L1_upper, L1_upper@L1_upper@L1_upper@L1_upper, L1_upper@L1_upper@L1_upper@L1_upper@L1_upper] 
+            perturbed_shifts = [L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed, L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed@L1_lower_perturbed, L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed, L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed@L1_upper_perturbed] 
+            
         elif HYPERPARAMS['model'] == 'ebli':
             L1 = L1_lower + L1_upper
             shifts = [L1, L1 @ L1, L1@L1@L1] # L1, L1^2
-        elif HYPERPARAMS['model'] == 'bunch' or HYPERPARAMS['model'] =='bunch_2':
-            # S_00, S_01, S_01, S_11, S_21, S_12, S_22
-            shifts = compute_shift_matrices(B1, B2)
-        elif HYPERPARAMS['model'] == 'sccnn1_n' or HYPERPARAMS['model'] =='sccnn1_e' or HYPERPARAMS['model'] =='sccnn2_n' or HYPERPARAMS['model'] =='sccnn2_e':
-            shifts = compute_shift_matrices_sccnn1(B1, B2)
 
         else:
             raise Exception('invalid model type')
@@ -694,20 +521,17 @@ def data_setup(hops=(1,), load=True, folder_suffix='working0'):
         Nv = nbrhoods[n]
         return B1_jax[Nv]
 
-    '''for bunch model option 1'''
     for i in range(len(inputs_all)):
-        if HYPERPARAMS['model'] == 'bunch' or  HYPERPARAMS['model'] == 'sccnn1_n' or HYPERPARAMS['model'] == 'sccnn2_n':
-            inputs_all[i][0] = nbrhoods
-        else:
+        if HYPERPARAMS['model'] != 'bunch':
             inputs_all[i][0] = Bconds_func
-
+        else:
+            inputs_all[i][0] = nbrhoods
             
     if HYPERPARAMS['flip_edges']:
-        return inputs_all, y_all, train_mask, test_mask, shifts, G_undir, E_lookup, nbrhoods, n_nbrs, target_nodes_all, prefixes, F 
+        return inputs_all, y_all, train_mask, test_mask, shifts, perturbed_shifts, G_undir, E_lookup, nbrhoods, n_nbrs, target_nodes_all, prefixes, F, L1_lower, L1_upper 
     else: 
-        return inputs_all, y_all, train_mask, test_mask, shifts, G_undir, E_lookup, nbrhoods, n_nbrs, target_nodes_all, prefixes
-
-
+        return inputs_all, y_all, train_mask, test_mask, shifts, perturbed_shifts, G_undir, E_lookup, nbrhoods, n_nbrs, target_nodes_all, prefixes, L1_lower, L1_upper 
+##
 def train_model():
     """
     Trains a model to predict the next node in each input path (represented as a flow)
@@ -715,35 +539,26 @@ def train_model():
 
     # load dataset
     if HYPERPARAMS['flip_edges']:
-        inputs_all, y_all, train_mask, test_mask, shifts, G_undir, E_lookup, nbrhoods, n_nbrs, target_nodes_all, prefixes, F = data_setup(hops=(1,), load=HYPERPARAMS['load_data'], folder_suffix=HYPERPARAMS['data_folder_suffix'])
+        inputs_all, y_all, train_mask, test_mask, shifts, perturbed_shifts, G_undir, E_lookup, nbrhoods, n_nbrs, target_nodes_all, prefixes, F, L1_lower, L1_upper  = data_setup(hops=(1,2), load=HYPERPARAMS['load_data'], folder_suffix=HYPERPARAMS['data_folder_suffix'])
     else: 
-        inputs_all, y_all, train_mask, test_mask, shifts, G_undir, E_lookup, nbrhoods, n_nbrs, target_nodes_all, prefixes = data_setup(hops=(1,), load=HYPERPARAMS['load_data'], folder_suffix=HYPERPARAMS['data_folder_suffix'])
+        inputs_all, y_all, train_mask, test_mask, shifts, perturbed_shifts, G_undir, E_lookup, nbrhoods, n_nbrs, target_nodes_all, prefixes, L1_lower, L1_upper  = data_setup(hops=(1,2), load=HYPERPARAMS['load_data'], folder_suffix=HYPERPARAMS['data_folder_suffix'])
         
-    (inputs_1hop, ), (y_1hop, ) = inputs_all, y_all
+    (inputs_1hop, inputs_2hop), (y_1hop, y_2hop) = inputs_all, y_all
     #print(len(inputs_1hop), len(y_1hop))
     last_nodes = inputs_1hop[1]
-
+    print(len(shifts),len(perturbed_shifts))
+    print(shifts[0].shape,perturbed_shifts[0].shape)
     in_axes = tuple(([None] * len(shifts)) + [None, None, 0, 0])
 
     # Initialize model
-    scone = Scone_GCN(HYPERPARAMS['epochs'], HYPERPARAMS['learning_rate'], HYPERPARAMS['batch_size'], HYPERPARAMS['weight_decay'])
+    scone = Scone_GCN(HYPERPARAMS['epochs'], HYPERPARAMS['learning_rate'], HYPERPARAMS['batch_size'], HYPERPARAMS['weight_decay'], HYPERPARAMS['weight_il'], HYPERPARAMS['perturbation'])
 
     if HYPERPARAMS['model'] == 'scone':
         model_func = scone_func
     elif HYPERPARAMS['model'] == 'ebli':
         model_func = ebli_func
-    elif HYPERPARAMS['model'] == 'bunch':
-        model_func = bunch_func
-    elif HYPERPARAMS['model'] == 'bunch_2':
-        model_func = bunch_func_2
-    elif HYPERPARAMS['model'] == 'sccnn1_n':
-        model_func = sccnn_func_1_n
-    elif HYPERPARAMS['model'] == 'sccnn1_e':
-        model_func = sccnn_func_1_e
-    elif HYPERPARAMS['model'] == 'sccnn2_n':
-        model_func = sccnn_func_2_n
-    elif HYPERPARAMS['model'] == 'sccnn2_e':
-        model_func = sccnn_func_2_e
+    elif HYPERPARAMS['model'] == 'scnn1':
+        model_func = scnn_func_1
     elif HYPERPARAMS['model'] == 'scnn2':
         model_func = scnn_func_2
     elif HYPERPARAMS['model'] == 'scnn12':
@@ -768,10 +583,10 @@ def train_model():
         raise Exception('invalid model')
 
 
-    if HYPERPARAMS['model'] in ['scnn2','scnn3','scnn4','scnn5','scnn12','scnn21','scnn13','scnn31','scnn23','scnn32']:
-        scone.setup_scnn(model_func, HYPERPARAMS['hidden_layers'], HYPERPARAMS['k1_scnn'], HYPERPARAMS['k2_scnn'], shifts, inputs_1hop, y_1hop, in_axes, train_mask, model_type=HYPERPARAMS['model'])
+    if HYPERPARAMS['model'] in ['scnn1','scnn2','scnn3','scnn4','scnn5','scnn12','scnn21','scnn13','scnn31','scnn23','scnn32']:
+        scone.setup_scnn(model_func, HYPERPARAMS['hidden_layers'], HYPERPARAMS['k1_scnn'], HYPERPARAMS['k2_scnn'], shifts, perturbed_shifts, inputs_1hop, y_1hop, in_axes, train_mask, model_type=HYPERPARAMS['model'])
     else:
-        scone.setup(model_func, HYPERPARAMS['hidden_layers'], shifts, inputs_1hop, y_1hop, in_axes, train_mask, model_type=HYPERPARAMS['model'])
+        scone.setup(model_func, HYPERPARAMS['hidden_layers'], shifts, perturbed_shifts, inputs_1hop, y_1hop, in_axes, train_mask, model_type=HYPERPARAMS['model'])
 
     if HYPERPARAMS['regional']:
         # Train either on upper region only or all data (synthetic dataset)
@@ -793,10 +608,9 @@ def train_model():
         else:
             scone.weights = onp.load('models/' + HYPERPARAMS['model_name'] + '_' + HYPERPARAMS['model'] + '_' + str(int(HYPERPARAMS['epochs'])) + '.npy', allow_pickle=True)
             print('load successful')
- 
+
         (test_loss, test_acc) = scone.test(inputs_1hop, y_1hop, test_mask, n_nbrs)
         print('test successful')
-
     elif HYPERPARAMS['reverse']:
         # reverse direction of test flows
         # get the reverse data
@@ -810,19 +624,21 @@ def train_model():
             rev_flows_in = rev_flows_in.reshape((n_flows, n_edges, 1))    
             rev_n_nbrs = [len(neighborhood(G_undir, n)) for n in rev_last_nodes]
             rev_inputs_1hop = [inputs_1hop[0], rev_last_nodes, rev_flows_in]
+            # rev_n_nbrs = [len(neighborhood(G_undir, n)) for n in rev_last_nodes]
+            # rev_inputs_1hop = [inputs_1hop[0], rev_last_nodes, rev_flows_in] 
         else:     
-            rev_flows_in, rev_targets_1hop, rev_last_nodes = \
-                onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_flows_in.npy'), onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_targets.npy'), onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_last_nodes.npy')
+            rev_flows_in, rev_targets_1hop, rev_targets_2hop, rev_last_nodes = \
+                onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_flows_in.npy'), onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_targets.npy'), \
+                onp.load('../data/trajectory_data_2hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_targets.npy'), onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_last_nodes.npy')
             rev_n_nbrs = [len(neighborhood(G_undir, n)) for n in rev_last_nodes]
             rev_inputs_1hop = [inputs_1hop[0], rev_last_nodes, rev_flows_in]  
 
-        train_loss, train_acc, test_loss, test_acc = scone.train(inputs_1hop, y_1hop, train_mask, test_mask, n_nbrs, rev_inputs_1hop, rev_targets_1hop, rev_n_nbrs) 
+        train_loss, train_acc, test_loss, test_acc = scone.train(inputs_1hop, y_1hop, train_mask, test_mask, n_nbrs, rev_inputs_1hop, rev_targets_1hop, rev_n_nbrs, L1_lower, L1_upper, HYPERPARAMS['k1_scnn'], HYPERPARAMS['k2_scnn']) 
 
         try:
             os.mkdir('models')
         except:
             pass
-
         if HYPERPARAMS['regional']:
             onp.save('models/' + HYPERPARAMS['model_name'] + '_' + HYPERPARAMS['model'] + '_' + str(int(HYPERPARAMS['epochs'])) + '_regional', scone.weights)
         else: 
@@ -832,16 +648,17 @@ def train_model():
 
     # standard experiment # print the final epoch performance
     print('standard test set:')
-    scone.test(inputs_1hop, y_1hop, test_mask, n_nbrs)
+    scone.test(inputs_1hop, y_1hop, test_mask, n_nbrs, L1_lower, L1_upper, HYPERPARAMS['k1_scnn'], HYPERPARAMS['k2_scnn'])
 
     # report the final epoch performance for reverse data 
     if HYPERPARAMS['reverse']:
-        rev_flows_in, rev_targets_1hop, rev_last_nodes = \
-            onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_flows_in.npy'), onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_targets.npy'), onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_last_nodes.npy')
+        rev_flows_in, rev_targets_1hop, rev_targets_2hop, rev_last_nodes = \
+            onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_flows_in.npy'), onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_targets.npy'), \
+            onp.load('../data/trajectory_data_2hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_targets.npy'), onp.load('../data/trajectory_data_1hop_' + HYPERPARAMS['data_folder_suffix'] + '/rev_last_nodes.npy')
         rev_n_nbrs = [len(neighborhood(G_undir, n)) for n in rev_last_nodes]
         rev_inputs_1hop = [inputs_1hop[0], rev_last_nodes, rev_flows_in] 
         print('Reverse experiment:')
-        scone.test(rev_inputs_1hop, rev_targets_1hop, test_mask, rev_n_nbrs)
+        scone.test(rev_inputs_1hop, rev_targets_1hop, test_mask, rev_n_nbrs, L1_lower, L1_upper, HYPERPARAMS['k1_scnn'], HYPERPARAMS['k2_scnn'])
 
 
 if __name__ == '__main__':

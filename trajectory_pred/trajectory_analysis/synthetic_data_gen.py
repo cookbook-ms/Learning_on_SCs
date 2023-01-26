@@ -1,41 +1,10 @@
 '''
 This is the code to generate the data
 
- from the paper https://arxiv.org/abs/2102.10058v3
+from the paper https://arxiv.org/abs/2102.10058v3
+
+We refer to https://github.com/nglaze00/SCoNe_GCN for a detailed description 
 '''
-
-
-"""
-Synthetic dataset generation; to generate a dataset, edit the function call in __main__ and run this file. The dataset
-    will be saved into two folders: trajectory_data_1hop_ + your_folder_suffix, and trajectory_data_2hop_ + suffix.
-    -Generating a dataset also generates a pdf with a cool pic of your graph!
-
-If you want to use your own data, it'd be helpful to read this, and generate a synthetic one to better understand the
-    format.
-
-Description of dataset; your dataset should have all of these files:
-trajectory_data_1hop/
-    -B1.npy: B1 incidence matrix (nodes-edges); generate with incidence_matrices()
-    -B2.npy: B2 incidence matrix (edges-faces); generate with incidence_matrices()
-    -flows_in.npy: array of flows, each with dimension (n_edges) representing each path; 1 if this edge is traversed
-        "forward" (lower # node -> higher # node), -1 if traversed in "reverse", 0 if not traversed
-        -convert path (list of nodes) to flow with path_to_flow()
-    -G_undir.pkl: undirected networkx graph representing the dataset's graphs
-    -last_nodes.npy: the last node in each trajectory prefix; we forecast the step from this node to one of its neighbors
-    -rev_flows_in.npy: same as flows_in, but reversed path direction -- (1,2,3) becomes (3,2,1)
-    -rev_last_nodes.npy: same as last_nodes, but for reversed paths
-    -rev_target_nodes.npy: same, for reversed paths
-    -rev_targets.npy: same as targets, for reversed paths
-    -target_nodes.npy: the correct suffix node for each trajectory; we're trying to predict this one
-    -targets: for each path, a vector of dimension (max_degree) representing which neighbor is the correct suffix
-        -neighbors are ordered by increasing node number
-    -test_mask.npy: vector of length n_trajectories; 1 if this trajectory is in the test set, else 0
-    -train_mask.npy: same, for training set
-trajectory_data_2hop/
-    -Pretty much the same, but for predicting the second "hop" after the known prefix. My code doesn't actually do any
-    multi-hop predictions atm, so you can just copy-paste your 1hop data to the 2-hop folder, and it should work fine.
-
-"""
 
 
 

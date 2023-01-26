@@ -7,6 +7,7 @@
 [GNN]:https://arxiv.org/abs/1606.09375
 [CF-SC]:https://arxiv.org/abs/2201.12584
 [SCF]:https://arxiv.org/abs/2201.11720
+[Benson 2018]: https://arxiv.org/abs/1802.06916
 
 This is a README file for the task of simplex prediction base on the SCCNN in the paper Convolutional Learning on Simplicial Complexes. 
 
@@ -45,7 +46,7 @@ Consider a 2-simplex prediction, i.e., triangle prediction, performed in a simpl
 In the method of SCCNN of order two, there are nodes, edges and triangles involved. 
 
 1. The inputs on nodes and edges are the given node and edge signals, i.e., 0- and 1-cochains. For the inputs on triangles (positive in the trianing set), we give the input as zeros, as we do not assume any prior knowledges on triangels. 
-2. During the training, given above inputs, an SCCNN model is used to learn features on nodes, edges, and triangles. A SCCNN convolution layer is written in [2-simplex_experiments/sccnn_conv_einsum.py](./2-simplex_experiments/sccnn_conv_einsum.py), which is detailed later on and [2-simplex_experiments/sccnn_einsum.py](./2-simplex_experiments/sccnn_einsum.py) stacks them into an SCCNN. 
+2. During the training, given above inputs, an SCCNN model is used to learn features on nodes, edges, and triangles. A SCCNN convolution layer is written in [2-simplex_experiments/sccnn_conv.py](./2-simplex_experiments/sccnn_conv.py), which is detailed later on and [2-simplex_experiments/sccnn_model.py](./2-simplex_experiments/sccnn_model.py) stacks them into an SCCNN. 
 3. Given the outputs of the SCCNN on three nodes, or three edges for each triangle, we use an MLP to compute a score, which is defined in [2-simplex_experiments/tri_predictor.py](./2-simplex_experiments/tri_predictor.py)
 4. A binary cross entropy loss function is used and an AUC can be computed, which are defined in [2-simplex_experiments/tri_predictor.py](./2-simplex_experiments/tri_predictor.py) 
 
@@ -59,7 +60,7 @@ The trained models are saved in folders [2-simplex_experiments/model_nn_sccnn_no
 
 
 ## Convolution Layer of an SCCNN
-A convolutional layer of an SCCNN is defined in [2-simplex_experiments/sccnn_conv_einsum.py](./2-simplex_experiments/sccnn_conv_einsum.py). Without loss of generality, we explain how the convolution on edges is performed.
+A convolutional layer of an SCCNN is defined in [2-simplex_experiments/sccnn_conv.py](./2-simplex_experiments/sccnn_conv.py). Without loss of generality, we explain how the convolution on edges is performed.
 
 1. Obtain the lower and upper projections from nodes and triangels, where the projection matrices follow [Bunch Model]. 
 ```py
@@ -109,23 +110,35 @@ X1 = torch.cat((X1n,X11,X1p),2)
 y1 = torch.einsum('nik,iok->no',X1,self.W1)
 ```
 
-4. Note that the multi-step simplicial convolution is performed in Chebyshev fashion, defined in [2-simplex_experiments/chebyshev.py](./2-simplex_experiments/chebyshev.py), which avoids matrix-matrix multiplication. 
-
-5. The SCCNN performed in a simplicial complex of order one is defined in [2-simplex_experiments/sccnn_conv_einsum.py](./2-simplex_experiments/sccnn_conv_einsum.py) too, in class ```sccnn_conv_no_b2``` with a suffix ```no_b2```.
-   
-6. Other modified models used for ablation study are defined in [2-simplex_experiments/sccnn_conv_einsum.py](./2-simplex_experiments/sccnn_conv_einsum.py) too. 
+4. Note that the multi-step simplicial convolution is performed in a recursive fashion, defined in [2-simplex_experiments/chebyshev.py](./2-simplex_experiments/chebyshev.py), which avoids matrix-matrix multiplication and admits a linear complexity as studied. 
 
 # To run the code
 To run the code for 2-simplex prediction based on SCCNN-Node, one can simply run 
 ```sh
-python ./2-simplex_experiments/HOlink_prediction_sccnn_node.py 
+python ./2-simplex_experiments/sccnn_node.py 
+```
+Or others, by running 
+```sh
+python ./2-simplex_experiments/heuristic_method.py # for heuristic methods based on means 
+python ./2-simplex_experiments/sccnn_edge.py 
+python ./2-simplex_experiments/bunch_node.py 
+python ./2-simplex_experiments/bunch_edge.py 
+python ./2-simplex_experiments/scnn.py  # for psnn, snn, scnn
+python ./2-simplex_experiments/gnn.py
 ```
 Here we include the trained models for SCCNN-Node with $L=2,T=2$ and $F=32$ in the folder [2-simplex_experiments/model_nn_sccnn_node](./2-simplex_experiments/model_nn_sccnn_node) and the text files that record the training losses in the folder [2-simplex_experiments/loss_files](./2-simplex_experiments/loss_files).
 
+We can run [2-simplex_experiments/auc_extraction.py](./2-simplex_experiments/auc_extraction.py) to extract the AUC results for all methods, exported in a file, e.g., [sccnn_node_auc_1layers_32features.txt](./2-simplex_experiments/loss_files/sccnn_node_auc_1layers_32features.txt)
+
 # Other models
 Other models include: 
-1. [Bunch Model]: defined in [2-simplex_experiments/bunch_conv_einsum.py](./2-simplex_experiments/bunch_conv_einsum.py)
-2. [SNN]: defined in [2-simplex_experiments/snn_conv_einsum.py](./2-simplex_experiments/snn_conv_einsum.py)
-3. [SCNN]: defined in [2-simplex_experiments/scnn_conv_einsum.py](./2-simplex_experiments/scnn_conv_einsum.py)
-4. [PSNN]: defined in [2-simplex_experiments/psnn_conv_einsum.py](./2-simplex_experiments/psnn_conv_einsum.py)
-5. [CF-SC]: defined in [2-simplex_experiments/sccnn_conv_einsum.py](./2-simplex_experiments/sccnn_conv_einsum.py') where the nonlinearity is replaced by identity and the stacked in [2-simplex_experiments/sccnn_einsum_id](./2-simplex_experiments/sccnn_einsum_id.py). 
+1. Heuristic mean methods [Benson 2018]: implemented in [2-simplex_experiments/heuristic_method.py](./2-simplex_experiments/heuristic_method.py)
+1. [Bunch Model]: defined in [2-simplex_experiments/bunch_conv.py](./2-simplex_experiments/bunch_conv.py) and [2-simplex_experiments/bunch_model.py](./2-simplex_experiments/bunch_model.py) stacks the layers
+2. GNN and simplicial NNs on one simplex level:
+   1. [GNN]: defined in [2-simplex_experiments/gnn_conv.py](./2-simplex_experiments/gnn_conv.py)
+   2. [SNN]: defined in [2-simplex_experiments/snn_conv.py](./2-simplex_experiments/snn_conv.py)
+   3. [SCNN]: defined in [2-simplex_experiments/scnn_conv.py](./2-simplex_experiments/scnn_conv.py)
+   4. [PSNN]: defined in [2-simplex_experiments/psnn_conv.py](./2-simplex_experiments/psnn_conv.py)
+3. [CF-SC]: defined in [2-simplex_experiments/sccnn_conv.py](./2-simplex_experiments/sccnn_conv.py) where the nonlinearity is replaced by identity and the stacked in [2-simplex_experiments/sccnn_filter_model](./2-simplex_experiments/sccnn_filter_model.py). 
+4. The SCCNN-Node performed in a simplicial complex of order one: defined in [2-simplex_experiments/sccnn_conv.py](./2-simplex_experiments/sccnn_conv.py) too, in class ```sccnn_conv_sc_1``` with a suffix ```sc_1```. The prediction with this SCCNN is in [2-simplex_experiments/ablation_stability/sccnn_node_sc_order1.py](./2-simplex_experiments/ablation_stability/sccnn_node_sc_order1.py). Likewise, SCCNN-Edge of order one, and Bunch-Node and Bunch-Edge of order one are included as well.
+5.  Other modified models used for ablation study are also defined in [2-simplex_experiments/sccnn_conv.py](./2-simplex_experiments/sccnn_conv.py). We use suffix to indicate which component is missing. For example, class ```sccnn_conv_no_n_to_e_sc_1``` denotes the case without node to edge contribution in a simplicial complex of order one. These studies can be implemented by [2-simplex_experiments/ablation_stability/sccnn_node_ablation_sc_order1.py](./2-simplex_experiments/ablation_stability/sccnn_node_ablation_sc_order1.py)
